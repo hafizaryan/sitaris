@@ -1,0 +1,137 @@
+<!-- Extend layout utama -->
+<?= $this->extend('layout/main') ?>
+
+<style>
+    .custom-toast {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        /* Initial position outside of the screen */
+        background-color: #26B99A;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: right 0.5s ease-in-out;
+        z-index: 9999;
+    }
+
+    .show-toast {
+        right: 34px;
+        /* Move in from the right side */
+    }
+</style>
+
+<!-- Mulai bagian konten -->
+<?= $this->section('content') ?>
+
+<div class="x_panel">
+    <br>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-end">
+            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>index">Beranda</a> / <?= $judul; ?></li>
+        </ol>
+    </nav>
+    <div class="x_title" style="border-bottom: none;"><br>
+        <h3 style="text-align: center;">Profil Pengguna</h3>
+        <div class="clearfix"></div>
+    </div>
+    <style>
+        #custom-toast {
+            align-items: center;
+            text-align: center;
+            background-color: #26B99A;
+            /* Warna latar belakang hijau */
+            color: white;
+            /* Warna teks putih */
+            padding: 10px;
+            /* Jarak antara teks dan pinggiran div */
+            border-radius: 5px;
+            /* Sudut bulat */
+        }
+
+        input[readonly] {
+            cursor: not-allowed;
+        }
+    </style>
+
+    <!-- Tampilkan pemberitahuan jika berhasil -->
+    <?php if (session()->has('success')) : ?>
+        <div id="custom-toast" style="align-items: center; text-align: center;" class="custom-toast">
+            <i class="fas fa-check-circle checkmark-icon"></i>
+            <?= session('success') ?>
+        </div>
+    <?php endif; ?>
+
+    <?php if (session()->has('error')) : ?>
+        <div class="alert alert-danger">
+            <?= session('error') ?>
+        </div>
+    <?php endif; ?>
+
+    <?php foreach ($model as $key => $value) {
+        // $loggedInUserId = 123; // Ganti dengan id_user yang sedang login
+        if ((isset($_SESSION['userData']['id_user']) && $_SESSION['userData']['id_user'] === $value['id_user'])) { ?>
+            <div class="x_content" style="display: block;">
+                <br>
+                <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+                    <!-- <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="foto"></label>
+                        <div class="profile_pic">
+                            <img src="<?= base_url('uploads/foto_profil/' . session('userData')['foto']) ?>" alt="Profile Picture" class="img-circle profile_img resized-profile-img" style="width: 100%; align-items: center;" onclick="openImage()">
+                        </div>
+                    </div> -->
+                    <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">Nama
+                        </label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input readonly type="text" id="first-name" value="<?= $value["nama"] ?>" required="required" class="form-control parsley-success" data-parsley-id="5">
+                            <ul class="parsley-errors-list" id="parsley-id-5"></ul>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">NIP/NIK/NIM
+                        </label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input readonly type="text" id="first-name" value="<?= $value["no_identitas"] ?>" required="required" class="form-control parsley-success" data-parsley-id="5">
+                            <ul class="parsley-errors-list" id="parsley-id-5"></ul>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">Username
+                        </label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input readonly type="text" id="first-name" value="<?= $value["username"] ?>" required="required" class="form-control parsley-success" data-parsley-id="5">
+                            <ul class="parsley-errors-list" id="parsley-id-5"></ul>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="last-name">Email
+                        </label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input readonly type="text" id="last-name" value="<?= $value["email"] ?>" required="required" class="form-control parsley-success" data-parsley-id="7">
+                            <ul class="parsley-errors-list" id="parsley-id-7"></ul>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="level">Level Pengguna
+                        </label>
+                        <div class="col-md-6 col-sm-6 ">
+                            <input readonly type="text" id="level" value="<?= $value["role_user"] ?>" required="required" class="form-control parsley-success" data-parsley-id="7">
+                            <ul class="parsley-errors-list" id="parsley-id-7"></ul>
+                        </div>
+                    </div>
+
+                    <div class="ln_solid"></div>
+                    <div class="item form-group">
+                        <div class="col-md-6 col-sm-6 offset-md-3">
+                            <a href="/user/ubahdata/<?= $value["id_user"] ?>" class="btn btn-success pull-right"> <i class="fas fa-edit fa-md"></i> Edit Profil</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+    <?php }
+    } ?>
+</div>
+<div class="clearfix"></div>
+<?= $this->endSection() ?>

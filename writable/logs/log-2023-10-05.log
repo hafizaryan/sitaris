@@ -1,0 +1,400 @@
+INFO - 2023-10-05 17:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-05 17:30:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-05 17:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-05 17:50:45 --> mysqli_sql_exception: Table 'manlab_nasya.barang' doesn't exist in engine in C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\manlab nasya\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\manlab nasya\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\manlab nasya\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\manlab nasya\app\Controllers\BarangController.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(934): App\Controllers\BarangController->index()
+#8 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+#9 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\manlab nasya\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\manlab nasya\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-05 17:50:45 --> Table 'manlab_nasya.barang' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`
+LEFT JOIN `pendanaan` ON `pendanaan`.`id_pendanaan` = `barang`.`id_pendanaan`
+LEFT JOIN `ruangan` ON `ruangan`.`id_ruangan` = `barang`.`id_ruangan`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\BarangController.php(55): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-05 17:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-05 17:50:49 --> mysqli_sql_exception: Table 'manlab_nasya.barang' doesn't exist in engine in C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\manlab nasya\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\manlab nasya\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\manlab nasya\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\manlab nasya\app\Controllers\Home.php(53): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\manlab nasya\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\manlab nasya\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-05 17:50:49 --> Table 'manlab_nasya.barang' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(53): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-05 17:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-05 17:51:10 --> mysqli_sql_exception: Table 'manlab_nasya.barang' doesn't exist in engine in C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\manlab nasya\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\manlab nasya\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\manlab nasya\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\manlab nasya\app\Controllers\Home.php(53): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\manlab nasya\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\manlab nasya\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-05 17:51:10 --> Table 'manlab_nasya.barang' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(53): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-05 17:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-05 17:53:52 --> mysqli_sql_exception: Table 'manlab_nasya.barang' doesn't exist in engine in C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\manlab nasya\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\manlab nasya\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\manlab nasya\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\manlab nasya\app\Controllers\Home.php(53): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\manlab nasya\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\manlab nasya\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-05 17:53:52 --> Table 'manlab_nasya.barang' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(53): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-05 17:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-05 17:55:06 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'manlab_nasya' in C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'manlab_nasya', 3306, '', 0)
+#1 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\manlab nasya\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\manlab nasya\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\manlab nasya\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\manlab nasya\app\Controllers\Home.php(53): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\manlab nasya\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\manlab nasya\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'manlab_nasya' in C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\manlab nasya\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\manlab nasya\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\manlab nasya\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\manlab nasya\app\Controllers\Home.php(53): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\manlab nasya\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\manlab nasya\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-05 17:55:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'manlab_nasya'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(53): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-05 17:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-05 17:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

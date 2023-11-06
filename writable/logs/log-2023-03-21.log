@@ -1,0 +1,749 @@
+CRITICAL - 2023-03-21 01:18:03 --> Invalid file: "layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/header.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/header', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('index')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 03:07:19 --> Cannot declare class App\Models\BarangModel, because the name is already in use
+in APPPATH\Models\PemusnahanBarangModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-21 03:13:27 --> Undefined array key "tgl_pemusnahan"
+in APPPATH\Views\pemusnahan_barang\tambah.php on line 27.
+ 1 APPPATH\Views\pemusnahan_barang\tambah.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_pemusnahan"', 'APPPATH\\Views\\pemusnahan_barang\\tambah.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pemusnahan_barang/tambah', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(33): view('pemusnahan_barang/tambah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 03:13:59 --> Undefined array key "tgl_pemusnahan"
+in APPPATH\Views\pemusnahan_barang\tambah.php on line 27.
+ 1 APPPATH\Views\pemusnahan_barang\tambah.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_pemusnahan"', 'APPPATH\\Views\\pemusnahan_barang\\tambah.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pemusnahan_barang/tambah', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(33): view('pemusnahan_barang/tambah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 03:14:27 --> Undefined array key "tgl_pemusnahan"
+in APPPATH\Views\pemusnahan_barang\tambah.php on line 27.
+ 1 APPPATH\Views\pemusnahan_barang\tambah.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_pemusnahan"', 'APPPATH\\Views\\pemusnahan_barang\\tambah.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pemusnahan_barang/tambah', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(33): view('pemusnahan_barang/tambah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 03:21:11 --> Undefined array key "tgl_pemusnahan"
+in APPPATH\Views\pemusnahan_barang\tambah.php on line 27.
+ 1 APPPATH\Views\pemusnahan_barang\tambah.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_pemusnahan"', 'APPPATH\\Views\\pemusnahan_barang\\tambah.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pemusnahan_barang/tambah', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(33): view('pemusnahan_barang/tambah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 03:23:54 --> Undefined array key "waktu"
+in APPPATH\Views\pemusnahan_barang\tambah.php on line 55.
+ 1 APPPATH\Views\pemusnahan_barang\tambah.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "waktu"', 'APPPATH\\Views\\pemusnahan_barang\\tambah.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pemusnahan_barang/tambah', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(34): view('pemusnahan_barang/tambah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 03:25:52 --> Call to a member function getClientName() on null
+in APPPATH\Controllers\PemusnahanBarangController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 03:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-21 03:28:27 --> Undefined array key "tanggal_pemusnahan"
+in APPPATH\Views\pemusnahan_barang\index.php on line 37.
+ 1 APPPATH\Views\pemusnahan_barang\index.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_pemusnahan"', 'APPPATH\\Views\\pemusnahan_barang\\index.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/pemusnahan_barang/index', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(19): view('/pemusnahan_barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 03:30:31 --> Undefined array key "id_barang"
+in APPPATH\Views\pemusnahan_barang\index.php on line 41.
+ 1 APPPATH\Views\pemusnahan_barang\index.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_barang"', 'APPPATH\\Views\\pemusnahan_barang\\index.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/pemusnahan_barang/index', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(19): view('/pemusnahan_barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 03:33:06 --> Undefined array key "edit"
+in APPPATH\Views\pemusnahan_barang\index.php on line 43.
+ 1 APPPATH\Views\pemusnahan_barang\index.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "edit"', 'APPPATH\\Views\\pemusnahan_barang\\index.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/pemusnahan_barang/index', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(19): view('/pemusnahan_barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 03:47:23 --> Undefined property: App\Controllers\PemusnahanBarangController::$req
+in APPPATH\Controllers\PemusnahanBarangController.php on line 62.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PemusnahanBarangController::$req', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 03:48:38 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 03:49:08 --> Invalid file: "pemusnahan_barang/_form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pemusnahan_barang/_form.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pemusnahan_barang/_form', [], true)
+ 3 APPPATH\Controllers\PemusnahanBarangController.php(72): view('pemusnahan_barang/_form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 03:51:22 --> Undefined array key "nama_barang"
+in APPPATH\Views\pemusnahan_barang\edit.php on line 68.
+ 1 APPPATH\Views\pemusnahan_barang\edit.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_barang"', 'APPPATH\\Views\\pemusnahan_barang\\edit.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pemusnahan_barang/edit', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(72): view('pemusnahan_barang/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 04:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-21 04:11:21 --> Undefined variable $v
+in APPPATH\Views\pemusnahan_barang\index.php on line 43.
+ 1 APPPATH\Views\pemusnahan_barang\index.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $v', 'APPPATH\\Views\\pemusnahan_barang\\index.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/pemusnahan_barang/index', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(19): view('/pemusnahan_barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:11:52 --> Undefined variable $v
+in APPPATH\Views\pemusnahan_barang\index.php on line 43.
+ 1 APPPATH\Views\pemusnahan_barang\index.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $v', 'APPPATH\\Views\\pemusnahan_barang\\index.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/pemusnahan_barang/index', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(19): view('/pemusnahan_barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:12:20 --> Undefined variable $v
+in APPPATH\Views\pemusnahan_barang\index.php on line 43.
+ 1 APPPATH\Views\pemusnahan_barang\index.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $v', 'APPPATH\\Views\\pemusnahan_barang\\index.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/pemusnahan_barang/index', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(19): view('/pemusnahan_barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:19:27 --> Undefined variable $value
+in APPPATH\Views\pemusnahan_barang\edit.php on line 41.
+ 1 APPPATH\Views\pemusnahan_barang\edit.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'APPPATH\\Views\\pemusnahan_barang\\edit.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pemusnahan_barang/edit', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(72): view('pemusnahan_barang/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:20:39 --> Undefined variable $value
+in APPPATH\Views\pemusnahan_barang\edit.php on line 41.
+ 1 APPPATH\Views\pemusnahan_barang\edit.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'APPPATH\\Views\\pemusnahan_barang\\edit.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pemusnahan_barang/edit', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(72): view('pemusnahan_barang/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:21:09 --> Undefined variable $value
+in APPPATH\Views\pemusnahan_barang\edit.php on line 41.
+ 1 APPPATH\Views\pemusnahan_barang\edit.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'APPPATH\\Views\\pemusnahan_barang\\edit.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pemusnahan_barang/edit', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(72): view('pemusnahan_barang/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:49:18 --> Class "App\Controllers\Services" not found
+in APPPATH\Controllers\BaseController.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:49:49 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:49:49 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:49:50 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:49:50 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:50:17 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:50:17 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:50:17 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:50:17 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:50:21 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:50:22 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:50:22 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:50:22 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:53:37 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:53:37 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:53:37 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:53:37 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:56:35 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:56:36 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:56:36 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:56:36 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:56:57 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:56:57 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:56:58 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:56:58 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:57:17 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:57:17 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:57:17 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:57:17 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:57:37 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:57:37 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:57:37 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:57:37 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:58:09 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:58:46 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:58:46 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:58:47 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:58:47 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:59:13 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:59:13 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:59:14 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 04:59:14 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:03:27 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:03:27 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:03:27 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:03:27 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:03:49 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:03:50 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:03:50 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:03:50 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:07:15 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:07:15 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:07:15 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:07:15 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 70.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:09:57 --> Undefined variable $url
+in APPPATH\Views\pemusnahan_barang\tambah.php on line 13.
+ 1 APPPATH\Views\pemusnahan_barang\tambah.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $url', 'APPPATH\\Views\\pemusnahan_barang\\tambah.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pemusnahan_barang/tambah', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(34): view('pemusnahan_barang/tambah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:10:23 --> Undefined variable $key
+in APPPATH\Views\pemusnahan_barang\tambah.php on line 18.
+ 1 APPPATH\Views\pemusnahan_barang\tambah.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'APPPATH\\Views\\pemusnahan_barang\\tambah.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pemusnahan_barang\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pemusnahan_barang/tambah', [], true)
+ 5 APPPATH\Controllers\PemusnahanBarangController.php(34): view('pemusnahan_barang/tambah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 05:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-21 05:12:47 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 62.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:12:47 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 62.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:12:47 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 62.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:12:47 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 62.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:13:28 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 62.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:13:28 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 62.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:13:28 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 62.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 05:13:28 --> Undefined array key 0
+in APPPATH\Controllers\PemusnahanBarangController.php on line 62.
+ 1 APPPATH\Controllers\PemusnahanBarangController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\PemusnahanBarangController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PemusnahanBarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PemusnahanBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

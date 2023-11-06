@@ -1,0 +1,457 @@
+INFO - 2023-05-30 07:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 07:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-30 07:09:35 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'manajemen_lab', 3306, '', 0)
+#1 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\CI4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\CI4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp2\htdocs\CI4\app\Controllers\Home.php(46): CodeIgniter\BaseModel->first()
+#7 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Home->login2()
+#8 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp2\htdocs\CI4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\CI4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp2\htdocs\CI4\app\Controllers\Home.php(46): CodeIgniter\BaseModel->first()
+#6 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Home->login2()
+#7 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#11 {main}
+CRITICAL - 2023-05-30 07:09:35 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Home.php(46): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login2()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-30 08:18:36 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'manajemen_lab', 3306, '', 0)
+#1 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\CI4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\CI4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp2\htdocs\CI4\app\Controllers\Home.php(46): CodeIgniter\BaseModel->first()
+#7 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Home->login2()
+#8 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp2\htdocs\CI4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\CI4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp2\htdocs\CI4\app\Controllers\Home.php(46): CodeIgniter\BaseModel->first()
+#6 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Home->login2()
+#7 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#11 {main}
+CRITICAL - 2023-05-30 08:18:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Home.php(46): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login2()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-30 08:19:07 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'man_lab', 3306, '', 0)
+#1 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\CI4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\CI4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp2\htdocs\CI4\app\Controllers\Home.php(46): CodeIgniter\BaseModel->first()
+#7 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Home->login2()
+#8 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp2\htdocs\CI4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\CI4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp2\htdocs\CI4\app\Controllers\Home.php(46): CodeIgniter\BaseModel->first()
+#6 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Home->login2()
+#7 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#11 {main}
+CRITICAL - 2023-05-30 08:19:07 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Home.php(46): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login2()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-30 08:28:40 --> mysqli_sql_exception: Unknown column 'id_user' in 'field list' in C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp2\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp2\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\CI4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\CI4\app\Controllers\Home.php(87): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Home->register2()
+#10 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-05-30 08:28:40 --> Unknown column 'id_user' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `peminjam` (`id_user`, `nama_peminjam`, `asal_peminjam`, `organisasi`) VALUES (:id_user:, :nama_peminjam:, :asal_peminjam:, :organisasi:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(87): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->register2()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-30 08:30:06 --> mysqli_sql_exception: Unknown column 'asal_peminjam' in 'field list' in C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp2\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp2\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\CI4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\CI4\app\Controllers\Home.php(87): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Home->register2()
+#10 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-05-30 08:30:06 --> Unknown column 'asal_peminjam' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `peminjam` (`id_user`, `nama_peminjam`, `asal_peminjam`, `organisasi`) VALUES (:id_user:, :nama_peminjam:, :asal_peminjam:, :organisasi:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(87): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->register2()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-30 08:30:32 --> mysqli_sql_exception: Column 'nama_peminjam' cannot be null in C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp2\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp2\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\CI4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\CI4\app\Controllers\Home.php(87): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Home->register2()
+#10 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-05-30 08:30:32 --> Column 'nama_peminjam' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `peminjam` (`id_user`, `nama_peminjam`) VALUES (:id_user:, :nama_peminjam:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(87): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->register2()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-30 08:31:29 --> mysqli_sql_exception: Column 'nama_peminjam' cannot be null in C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp2\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp2\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\CI4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\CI4\app\Controllers\Home.php(87): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Home->register2()
+#10 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-05-30 08:31:29 --> Column 'nama_peminjam' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `peminjam` (`id_user`, `nama_peminjam`, `asal_peminjam`, `organisasi`) VALUES (:id_user:, :nama_peminjam:, :asal_peminjam:, :organisasi:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(87): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->register2()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-30 08:31:39 --> mysqli_sql_exception: Column 'nama_peminjam' cannot be null in C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp2\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp2\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp2\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\CI4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\CI4\app\Controllers\Home.php(87): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Home->register2()
+#10 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp2\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-05-30 08:31:39 --> Column 'nama_peminjam' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `peminjam` (`id_user`, `nama_peminjam`, `asal_peminjam`, `organisasi`) VALUES (:id_user:, :nama_peminjam:, :asal_peminjam:, :organisasi:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(87): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->register2()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 08:35:58 --> Undefined variable $nama_barang_tambah_baik
+in APPPATH\Controllers\BarangTambahController.php on line 41.
+ 1 APPPATH\Controllers\BarangTambahController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_barang_tambah_baik', 'APPPATH\\Controllers\\BarangTambahController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangTambahController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangTambahController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 08:36:59 --> Undefined array key "id_barang2"
+in APPPATH\Views\peminjaman_barang\index.php on line 56.
+ 1 APPPATH\Views\peminjaman_barang\index.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_barang2"', 'APPPATH\\Views\\peminjaman_barang\\index.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/peminjaman_barang/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanBarangController.php(36): view('/peminjaman_barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanBarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 08:37:14 --> Undefined variable $nama_barang_tambah_baik
+in APPPATH\Controllers\BarangTambahController.php on line 41.
+ 1 APPPATH\Controllers\BarangTambahController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_barang_tambah_baik', 'APPPATH\\Controllers\\BarangTambahController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangTambahController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangTambahController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 08:37:30 --> Undefined variable $nama_barang_tambah_rusak
+in APPPATH\Controllers\BarangTambahController.php on line 42.
+ 1 APPPATH\Controllers\BarangTambahController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_barang_tambah_rusak', 'APPPATH\\Controllers\\BarangTambahController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangTambahController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangTambahController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-30 08:37:44 --> Undefined array key "id_barang2"
+in APPPATH\Views\peminjaman_barang\index.php on line 56.
+ 1 APPPATH\Views\peminjaman_barang\index.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_barang2"', 'APPPATH\\Views\\peminjaman_barang\\index.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/peminjaman_barang/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanBarangController.php(36): view('/peminjaman_barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanBarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-30 08:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-30 08:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

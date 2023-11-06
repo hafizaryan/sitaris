@@ -1,0 +1,18 @@
+INFO - 2023-09-21 20:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 20:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 20:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 20:34:16 --> file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed!
+in APPPATH\Controllers\Home.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed!', 'APPPATH\\Controllers\\Home.php', 115)
+ 2 APPPATH\Controllers\Home.php(115): file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&response=')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login2()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-09-21 20:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 20:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 20:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 20:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 20:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 20:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

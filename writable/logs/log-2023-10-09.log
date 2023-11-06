@@ -1,0 +1,1386 @@
+INFO - 2023-10-09 13:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 13:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 13:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 13:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 13:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 13:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 13:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 13:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 13:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 13:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 13:58:00 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori+Mouse+Merk+Mouse+Wearnes+2015-4.MOU.LZ9+Spesifikasi+-&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori Mouse Merk Mouse Wearnes 2015-4.MOU.LZ9 Spesifikasi -', 'FCPATH\\qr_cache', 'a63379e9afef0c4495ec3f0ce0055f27')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 13:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 13:59:05 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori+Keyboard+Merk+Keyboard+Wearnes+2015-4.KEY.BN2+Spesifikasi+-&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori Keyboard Merk Keyboard Wearnes 2015-4.KEY.BN2 Spesifikasi -', 'FCPATH\\qr_cache', 'e12185cf0100b364582126ce953fb6ec')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 13:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 13:59:54 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori+Keyboard+Merk+Keyboard+Wearnes+2015-4.KEY.BN2+Spesifikasi+-&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori Keyboard Merk Keyboard Wearnes 2015-4.KEY.BN2 Spesifikasi -', 'FCPATH\\qr_cache', 'e12185cf0100b364582126ce953fb6ec')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:00:20 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori+Keyboard+Merk+Keyboard+Wearnes+2015-4.KEY.BN2+Spesifikasi+-&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori Keyboard Merk Keyboard Wearnes 2015-4.KEY.BN2 Spesifikasi -', 'FCPATH\\qr_cache', 'e12185cf0100b364582126ce953fb6ec')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:01:04 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori+Keyboard+Merk+Keyboard+Wearnes+2015-4.KEY.BN2+Spesifikasi+-&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori Keyboard Merk Keyboard Wearnes 2015-4.KEY.BN2 Spesifikasi -', 'FCPATH\\qr_cache', 'e12185cf0100b364582126ce953fb6ec')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:07:39 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-10-09 14:22:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\peminjaman_ruangan\index.php on line 152.
+ 1 APPPATH\Views\peminjaman_ruangan\index.php(152): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman_ruangan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('peminjaman_ruangan/index', [], true)
+ 5 APPPATH\Controllers\PeminjamanRuanganController.php(53): view('peminjaman_ruangan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PeminjamanRuanganController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamanRuanganController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:45:25 --> file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. 
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. ', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori++Merk+Lenovo+2015-1.CPU.WC5+Spesifikasi+Intel+%C2%AE+CoreTM+i5-6500%2C+3.20GHz%2C+RAM+4+GB%2C+HDD+1+TB%2C+CPU+Lenovo&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori  Merk Lenovo 2015-1.CPU.WC5 Spesifikasi Intel ® CoreTM i5-6500, 3.20GHz, RAM 4 GB, HDD 1 TB, CPU Lenovo', 'FCPATH\\qr_cache', 'f306d02d805b53c1aa3e0ea664c8b6f7')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:47:07 --> file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. 
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. ', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori+Keyboard+Merk+Keyboard+Lenovo+2015-4.KEY.AW9+Spesifikasi+-&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori Keyboard Merk Keyboard Lenovo 2015-4.KEY.AW9 Spesifikasi -', 'FCPATH\\qr_cache', 'fc5fa8494782d2f4894625da0b70bd24')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:47:19 --> file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. 
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. ', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori+Keyboard+Merk+Keyboard+Lenovo+2015-4.KEY.AW9+Spesifikasi+-&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori Keyboard Merk Keyboard Lenovo 2015-4.KEY.AW9 Spesifikasi -', 'FCPATH\\qr_cache', 'fc5fa8494782d2f4894625da0b70bd24')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:48:42 --> Call to undefined function generateAndCacheQRCode()
+in APPPATH\Views\barang\index.php on line 293.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 4 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:49:11 --> Undefined variable $cachedImagePath
+in APPPATH\Views\barang\index.php on line 302.
+ 1 APPPATH\Views\barang\index.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cachedImagePath', 'APPPATH\\Views\\barang\\index.php', 302)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 5 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:49:38 --> Undefined variable $cachedImagePath
+in APPPATH\Views\barang\index.php on line 302.
+ 1 APPPATH\Views\barang\index.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cachedImagePath', 'APPPATH\\Views\\barang\\index.php', 302)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 5 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:51:13 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori+Keyboard+Merk+Keyboard+Wearnes+2015-4.KEY.IH3+Spesifikasi+-&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori Keyboard Merk Keyboard Wearnes 2015-4.KEY.IH3 Spesifikasi -', 'FCPATH\\qr_cache', '41221f6d7f7cac6cca6ce053e4abfbe5')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:51:58 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori+Keyboard+Merk+Keyboard+Wearnes+2015-4.KEY.IH3+Spesifikasi+-&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori Keyboard Merk Keyboard Wearnes 2015-4.KEY.IH3 Spesifikasi -', 'FCPATH\\qr_cache', '41221f6d7f7cac6cca6ce053e4abfbe5')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:52:41 --> file_get_contents(https://quickchart.io/qr?text=Tahun+2015+Kategori+Keyboard+Merk+Keyboard+Wearnes+2015-4.KEY.IH3+Spesifikasi+-&amp;centerImageUrl=): Failed to open stream: HTTP request failed!
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://quickchart.io/qr?text=Tahun+2015+Kategori+Keyboard+Merk+Keyboard+Wearnes+2015-4.KEY.IH3+Spesifikasi+-&amp;centerImageUrl=): Failed to open stream: HTTP request failed!', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori+Keyboard+Merk+Keyboard+Wearnes+2015-4.KEY.IH3+Spesifikasi+-&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori Keyboard Merk Keyboard Wearnes 2015-4.KEY.IH3 Spesifikasi -', 'FCPATH\\qr_cache', '41221f6d7f7cac6cca6ce053e4abfbe5')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:53:09 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori+Keyboard+Merk+Keyboard+Wearnes+2015-4.KEY.IH3+Spesifikasi+-&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori Keyboard Merk Keyboard Wearnes 2015-4.KEY.IH3 Spesifikasi -', 'FCPATH\\qr_cache', '41221f6d7f7cac6cca6ce053e4abfbe5')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:53:40 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2021+Kategori+Komputer+Merk+Lenovo+2021-4.KOM.ZA1+Spesifikasi+ThinkCentre+V510z+Intel+Core+I7-7700T%2C+RAM+8+GB%2C+HDD+1+TB%2C+Win10Pro&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2021 Kategori Komputer Merk Lenovo 2021-4.KOM.ZA1 Spesifikasi ThinkCentre V510z Intel Core I7-7700T, RAM 8 GB, HDD 1 TB, Win10Pro', 'FCPATH\\qr_cache', 'bf93483e62c506c92859211dd67b4ec3')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:54:18 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2021+Kategori+Komputer+Merk+Lenovo+2021-4.KOM.ZA1+Spesifikasi+ThinkCentre+V510z+Intel+Core+I7-7700T%2C+RAM+8+GB%2C+HDD+1+TB%2C+Win10Pro&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2021 Kategori Komputer Merk Lenovo 2021-4.KOM.ZA1 Spesifikasi ThinkCentre V510z Intel Core I7-7700T, RAM 8 GB, HDD 1 TB, Win10Pro', 'FCPATH\\qr_cache', 'bf93483e62c506c92859211dd67b4ec3')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 14:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:55:10 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2021+Kategori+Komputer+Merk+Lenovo+2021-4.KOM.ZA1+Spesifikasi+ThinkCentre+V510z+Intel+Core+I7-7700T%2C+RAM+8+GB%2C+HDD+1+TB%2C+Win10Pro&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2021 Kategori Komputer Merk Lenovo 2021-4.KOM.ZA1 Spesifikasi ThinkCentre V510z Intel Core I7-7700T, RAM 8 GB, HDD 1 TB, Win10Pro', 'FCPATH\\qr_cache', 'bf93483e62c506c92859211dd67b4ec3')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:57:11 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2014+Kategori++Merk+Acer+2014-1.CPU.VY8+Spesifikasi+Aspire+Intel+Core+i3+&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2014 Kategori  Merk Acer 2014-1.CPU.VY8 Spesifikasi Aspire Intel Core i3 ', 'FCPATH\\qr_cache', '5dab36ce807a1963b3bb3a064e6a7fe2')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:57:45 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2014+Kategori++Merk+Acer+2014-1.CPU.VY8+Spesifikasi+Aspire+Intel+Core+i3+&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2014 Kategori  Merk Acer 2014-1.CPU.VY8 Spesifikasi Aspire Intel Core i3 ', 'FCPATH\\qr_cache', '5dab36ce807a1963b3bb3a064e6a7fe2')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:58:10 --> file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. 
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. ', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2014+Kategori++Merk+Acer+2014-1.CPU.VY8+Spesifikasi+Aspire+Intel+Core+i3+&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2014 Kategori  Merk Acer 2014-1.CPU.VY8 Spesifikasi Aspire Intel Core i3 ', 'FCPATH\\qr_cache', '5dab36ce807a1963b3bb3a064e6a7fe2')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 14:58:56 --> file_get_contents(https://quickchart.io/qr?text=Tahun+2014+Kategori++Merk+Acer+2014-1.CPU.VY8+Spesifikasi+Aspire+Intel+Core+i3+&amp;centerImageUrl=): Failed to open stream: HTTP request failed!
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://quickchart.io/qr?text=Tahun+2014+Kategori++Merk+Acer+2014-1.CPU.VY8+Spesifikasi+Aspire+Intel+Core+i3+&amp;centerImageUrl=): Failed to open stream: HTTP request failed!', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2014+Kategori++Merk+Acer+2014-1.CPU.VY8+Spesifikasi+Aspire+Intel+Core+i3+&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2014 Kategori  Merk Acer 2014-1.CPU.VY8 Spesifikasi Aspire Intel Core i3 ', 'FCPATH\\qr_cache', '5dab36ce807a1963b3bb3a064e6a7fe2')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 14:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:00:00 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2014+Kategori++Merk+Acer+2014-1.CPU.VY8+Spesifikasi+Aspire+Intel+Core+i3+&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2014 Kategori  Merk Acer 2014-1.CPU.VY8 Spesifikasi Aspire Intel Core i3 ', 'FCPATH\\qr_cache', '5dab36ce807a1963b3bb3a064e6a7fe2')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:00:06 --> file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. 
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. ', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2014+Kategori++Merk+Acer+2014-1.CPU.VY8+Spesifikasi+Aspire+Intel+Core+i3+&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2014 Kategori  Merk Acer 2014-1.CPU.VY8 Spesifikasi Aspire Intel Core i3 ', 'FCPATH\\qr_cache', '5dab36ce807a1963b3bb3a064e6a7fe2')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:01:40 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2023+Kategori++Merk+Cutter+2023-1.CUT.TB4+Spesifikasi+-&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2023 Kategori  Merk Cutter 2023-1.CUT.TB4 Spesifikasi -', 'FCPATH\\qr_cache', 'faa8d0d5526bb5e814acf3cba4cbb67b')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:05:53 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori++Merk+Lenovo+2015-1.CPU.VP3+Spesifikasi+Intel+Core+i3+win+7&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori  Merk Lenovo 2015-1.CPU.VP3 Spesifikasi Intel Core i3 win 7', 'FCPATH\\qr_cache', '8dd96cb24746e70833cb3bd71af79a93')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:06:15 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2015+Kategori++Merk+Lenovo+2015-1.CPU.VP3+Spesifikasi+Intel+Core+i3+win+7&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2015 Kategori  Merk Lenovo 2015-1.CPU.VP3 Spesifikasi Intel Core i3 win 7', 'FCPATH\\qr_cache', '8dd96cb24746e70833cb3bd71af79a93')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:07:18 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\index.php on line 278.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\index.php', 278)
+ 2 APPPATH\Views\barang\index.php(278): file_get_contents('https://quickchart.io/qr?text=Tahun+2012+Kategori++Merk+Acer+2012-1.CPU.NU0+Spesifikasi+Aspire+M3985+i3-2120+Mini+Tower+Intel%C2%AE+Core%E2%84%A2+i3+4+GB+DDR3-SDRAM+500+GB+HDD+Windows+7&centerImageUrl=')
+ 3 APPPATH\Views\barang\index.php(293): generateAndCacheQRCode('Tahun 2012 Kategori  Merk Acer 2012-1.CPU.NU0 Spesifikasi Aspire M3985 i3-2120 Mini Tower Intel® Core™ i3 4 GB DDR3-SDRAM 500 GB HDD Windows 7', 'FCPATH\\qr_cache', 'd2f467f5d4f6a597eca464ff8c5b6a72')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang/index', [], true)
+ 7 APPPATH\Controllers\BarangController.php(58): view('/barang/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:11:20 --> file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. 
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. ', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+Tp-Link+2018-4.USB.UE8+Spesifikasi+TL-WN725N+150Mbps+Wireless+N+Nano+USB+Adapter+TL-WN725N&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk Tp-Link 2018-4.USB.UE8 Spesifikasi TL-WN725N 150Mbps Wireless N Nano USB Adapter TL-WN725N', 'FCPATH\\qr_cache', '1af4ddb0d9a4dc053b0a058dcb3f7e49')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:12:17 --> file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. 
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. ', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+Tp-Link+2018-4.USB.UE8+Spesifikasi+TL-WN725N+150Mbps+Wireless+N+Nano+USB+Adapter+TL-WN725N&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk Tp-Link 2018-4.USB.UE8 Spesifikasi TL-WN725N 150Mbps Wireless N Nano USB Adapter TL-WN725N', 'FCPATH\\qr_cache', '1af4ddb0d9a4dc053b0a058dcb3f7e49')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:16:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:21:04 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+Tp-Link+2018-4.USB.UE8+Spesifikasi+TL-WN725N+150Mbps+Wireless+N+Nano+USB+Adapter+TL-WN725N&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk Tp-Link 2018-4.USB.UE8 Spesifikasi TL-WN725N 150Mbps Wireless N Nano USB Adapter TL-WN725N', 'FCPATH\\qr_cache', '1af4ddb0d9a4dc053b0a058dcb3f7e49')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:21:42 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+Tp-Link+2018-4.USB.RN6+Spesifikasi+TL-WN725N+150Mbps+Wireless+N+Nano+USB+Adapter+TL-WN725N&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk Tp-Link 2018-4.USB.RN6 Spesifikasi TL-WN725N 150Mbps Wireless N Nano USB Adapter TL-WN725N', 'FCPATH\\qr_cache', '68ffffe03db82e27f456940f5ef0c029')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:22:33 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+Tp-Link+2018-4.USB.EN0+Spesifikasi+TL-WN725N+150Mbps+Wireless+N+Nano+USB+Adapter+TL-WN725N&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk Tp-Link 2018-4.USB.EN0 Spesifikasi TL-WN725N 150Mbps Wireless N Nano USB Adapter TL-WN725N', 'FCPATH\\qr_cache', '774feb9d75d4ece80554e3c940a94990')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:23:10 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+Tp-Link+2018-4.USB.KJ5+Spesifikasi+TL-WN725N+150Mbps+Wireless+N+Nano+USB+Adapter+TL-WN725N&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk Tp-Link 2018-4.USB.KJ5 Spesifikasi TL-WN725N 150Mbps Wireless N Nano USB Adapter TL-WN725N', 'FCPATH\\qr_cache', 'e65c701eec87991b7255c3473c028790')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:23:20 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+Tp-Link+2018-4.USB.KJ5+Spesifikasi+TL-WN725N+150Mbps+Wireless+N+Nano+USB+Adapter+TL-WN725N&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk Tp-Link 2018-4.USB.KJ5 Spesifikasi TL-WN725N 150Mbps Wireless N Nano USB Adapter TL-WN725N', 'FCPATH\\qr_cache', 'e65c701eec87991b7255c3473c028790')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:23:42 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+Tp-Link+2018-4.USB.KJ5+Spesifikasi+TL-WN725N+150Mbps+Wireless+N+Nano+USB+Adapter+TL-WN725N&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk Tp-Link 2018-4.USB.KJ5 Spesifikasi TL-WN725N 150Mbps Wireless N Nano USB Adapter TL-WN725N', 'FCPATH\\qr_cache', 'e65c701eec87991b7255c3473c028790')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:25:22 --> file_get_contents(): SSL: Handshake timed out
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: Handshake timed out', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+GARMIN+2018-.GPS.IZ8+Spesifikasi+Dimensions%2C+WxHxD%3A+2.4%22+x+6.3%22+x+1.4%22+%286.1+x+16.0+x+3.6+cm%29%2C+Display+size%2C+WxH%3A+1.43%22+x+2.15%22+%283.6+x+5.5+cm%29%3B+2.6%22+diag+%286.6+cm%29%2C+Display+resolution%2C+WxH%3A+160+x+240+pixels%2C+Display+type%3A+transflective%2C+65-K+color+TFT%2C+Weight%3A+9.2+oz+%28260.1+g%29+with+batteries%2C+Battery%3A+2+AA+batteries+%28not+included%29%3B+NiMH+or+Lithium+recommended%2C+Battery+life%3A+20+hours%2C+Waterproof%3A+yes+%28IPX7%29%2C+Floats%3A+no%2C+High-sensitivity+receiver%3A+yes%2C+Interface%3A+high-speed+USB+and+NMEA+0183+compatible.&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk GARMIN 2018-.GPS.IZ8 Spesifikasi Dimensions, WxHxD: 2.4" x 6.3" x 1.4" (6.1 x 16.0 x 3.6 cm), Display size, WxH: 1.43" x 2.15" (3.6 x 5.5 cm); 2.6" diag (6.6 cm), Display resolution, WxH: 160 x 240 pixels, Display type: transflective, 65-K color TFT, Weight: 9.2 oz (260.1 g) with batteries, Battery: 2 AA batteries (not included); NiMH or Lithium recommended, Battery life: 20 hours, Waterproof: yes (IPX7), Floats: no, High-sensitivity receiver: yes, Interface: high-speed USB and NMEA 0183 compatible.', 'FCPATH\\qr_cache', '009feb4df4dca11a7fe5384e52596273')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:25:40 --> file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. 
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. ', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+GARMIN+2018-.GPS.IZ8+Spesifikasi+Dimensions%2C+WxHxD%3A+2.4%22+x+6.3%22+x+1.4%22+%286.1+x+16.0+x+3.6+cm%29%2C+Display+size%2C+WxH%3A+1.43%22+x+2.15%22+%283.6+x+5.5+cm%29%3B+2.6%22+diag+%286.6+cm%29%2C+Display+resolution%2C+WxH%3A+160+x+240+pixels%2C+Display+type%3A+transflective%2C+65-K+color+TFT%2C+Weight%3A+9.2+oz+%28260.1+g%29+with+batteries%2C+Battery%3A+2+AA+batteries+%28not+included%29%3B+NiMH+or+Lithium+recommended%2C+Battery+life%3A+20+hours%2C+Waterproof%3A+yes+%28IPX7%29%2C+Floats%3A+no%2C+High-sensitivity+receiver%3A+yes%2C+Interface%3A+high-speed+USB+and+NMEA+0183+compatible.&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk GARMIN 2018-.GPS.IZ8 Spesifikasi Dimensions, WxHxD: 2.4" x 6.3" x 1.4" (6.1 x 16.0 x 3.6 cm), Display size, WxH: 1.43" x 2.15" (3.6 x 5.5 cm); 2.6" diag (6.6 cm), Display resolution, WxH: 160 x 240 pixels, Display type: transflective, 65-K color TFT, Weight: 9.2 oz (260.1 g) with batteries, Battery: 2 AA batteries (not included); NiMH or Lithium recommended, Battery life: 20 hours, Waterproof: yes (IPX7), Floats: no, High-sensitivity receiver: yes, Interface: high-speed USB and NMEA 0183 compatible.', 'FCPATH\\qr_cache', '009feb4df4dca11a7fe5384e52596273')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:25:47 --> file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. 
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. ', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+GARMIN+2018-.GPS.IZ8+Spesifikasi+Dimensions%2C+WxHxD%3A+2.4%22+x+6.3%22+x+1.4%22+%286.1+x+16.0+x+3.6+cm%29%2C+Display+size%2C+WxH%3A+1.43%22+x+2.15%22+%283.6+x+5.5+cm%29%3B+2.6%22+diag+%286.6+cm%29%2C+Display+resolution%2C+WxH%3A+160+x+240+pixels%2C+Display+type%3A+transflective%2C+65-K+color+TFT%2C+Weight%3A+9.2+oz+%28260.1+g%29+with+batteries%2C+Battery%3A+2+AA+batteries+%28not+included%29%3B+NiMH+or+Lithium+recommended%2C+Battery+life%3A+20+hours%2C+Waterproof%3A+yes+%28IPX7%29%2C+Floats%3A+no%2C+High-sensitivity+receiver%3A+yes%2C+Interface%3A+high-speed+USB+and+NMEA+0183+compatible.&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk GARMIN 2018-.GPS.IZ8 Spesifikasi Dimensions, WxHxD: 2.4" x 6.3" x 1.4" (6.1 x 16.0 x 3.6 cm), Display size, WxH: 1.43" x 2.15" (3.6 x 5.5 cm); 2.6" diag (6.6 cm), Display resolution, WxH: 160 x 240 pixels, Display type: transflective, 65-K color TFT, Weight: 9.2 oz (260.1 g) with batteries, Battery: 2 AA batteries (not included); NiMH or Lithium recommended, Battery life: 20 hours, Waterproof: yes (IPX7), Floats: no, High-sensitivity receiver: yes, Interface: high-speed USB and NMEA 0183 compatible.', 'FCPATH\\qr_cache', '009feb4df4dca11a7fe5384e52596273')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:28:20 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: An existing connection was forcibly closed by the remote host', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+GARMIN+2018-.GPS.IZ8+Spesifikasi+Dimensions%2C+WxHxD%3A+2.4%22+x+6.3%22+x+1.4%22+%286.1+x+16.0+x+3.6+cm%29%2C+Display+size%2C+WxH%3A+1.43%22+x+2.15%22+%283.6+x+5.5+cm%29%3B+2.6%22+diag+%286.6+cm%29%2C+Display+resolution%2C+WxH%3A+160+x+240+pixels%2C+Display+type%3A+transflective%2C+65-K+color+TFT%2C+Weight%3A+9.2+oz+%28260.1+g%29+with+batteries%2C+Battery%3A+2+AA+batteries+%28not+included%29%3B+NiMH+or+Lithium+recommended%2C+Battery+life%3A+20+hours%2C+Waterproof%3A+yes+%28IPX7%29%2C+Floats%3A+no%2C+High-sensitivity+receiver%3A+yes%2C+Interface%3A+high-speed+USB+and+NMEA+0183+compatible.&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk GARMIN 2018-.GPS.IZ8 Spesifikasi Dimensions, WxHxD: 2.4" x 6.3" x 1.4" (6.1 x 16.0 x 3.6 cm), Display size, WxH: 1.43" x 2.15" (3.6 x 5.5 cm); 2.6" diag (6.6 cm), Display resolution, WxH: 160 x 240 pixels, Display type: transflective, 65-K color TFT, Weight: 9.2 oz (260.1 g) with batteries, Battery: 2 AA batteries (not included); NiMH or Lithium recommended, Battery life: 20 hours, Waterproof: yes (IPX7), Floats: no, High-sensitivity receiver: yes, Interface: high-speed USB and NMEA 0183 compatible.', 'FCPATH\\qr_cache', '009feb4df4dca11a7fe5384e52596273')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:34:50 --> file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. 
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. ', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+GARMIN+2018-.GPS.IZ8+Spesifikasi+Dimensions%2C+WxHxD%3A+2.4%22+x+6.3%22+x+1.4%22+%286.1+x+16.0+x+3.6+cm%29%2C+Display+size%2C+WxH%3A+1.43%22+x+2.15%22+%283.6+x+5.5+cm%29%3B+2.6%22+diag+%286.6+cm%29%2C+Display+resolution%2C+WxH%3A+160+x+240+pixels%2C+Display+type%3A+transflective%2C+65-K+color+TFT%2C+Weight%3A+9.2+oz+%28260.1+g%29+with+batteries%2C+Battery%3A+2+AA+batteries+%28not+included%29%3B+NiMH+or+Lithium+recommended%2C+Battery+life%3A+20+hours%2C+Waterproof%3A+yes+%28IPX7%29%2C+Floats%3A+no%2C+High-sensitivity+receiver%3A+yes%2C+Interface%3A+high-speed+USB+and+NMEA+0183+compatible.&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk GARMIN 2018-.GPS.IZ8 Spesifikasi Dimensions, WxHxD: 2.4" x 6.3" x 1.4" (6.1 x 16.0 x 3.6 cm), Display size, WxH: 1.43" x 2.15" (3.6 x 5.5 cm); 2.6" diag (6.6 cm), Display resolution, WxH: 160 x 240 pixels, Display type: transflective, 65-K color TFT, Weight: 9.2 oz (260.1 g) with batteries, Battery: 2 AA batteries (not included); NiMH or Lithium recommended, Battery life: 20 hours, Waterproof: yes (IPX7), Floats: no, High-sensitivity receiver: yes, Interface: high-speed USB and NMEA 0183 compatible.', 'FCPATH\\qr_cache', '009feb4df4dca11a7fe5384e52596273')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:36:36 --> file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. 
+in APPPATH\Views\barang\cetak_qr.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for quickchart.io failed: No such host is known. ', 'APPPATH\\Views\\barang\\cetak_qr.php', 112)
+ 2 APPPATH\Views\barang\cetak_qr.php(112): file_get_contents('https://quickchart.io/qr?text=Tahun+2018+Kategori++Merk+GARMIN+2018-.GPS.IZ8+Spesifikasi+Dimensions%2C+WxHxD%3A+2.4%22+x+6.3%22+x+1.4%22+%286.1+x+16.0+x+3.6+cm%29%2C+Display+size%2C+WxH%3A+1.43%22+x+2.15%22+%283.6+x+5.5+cm%29%3B+2.6%22+diag+%286.6+cm%29%2C+Display+resolution%2C+WxH%3A+160+x+240+pixels%2C+Display+type%3A+transflective%2C+65-K+color+TFT%2C+Weight%3A+9.2+oz+%28260.1+g%29+with+batteries%2C+Battery%3A+2+AA+batteries+%28not+included%29%3B+NiMH+or+Lithium+recommended%2C+Battery+life%3A+20+hours%2C+Waterproof%3A+yes+%28IPX7%29%2C+Floats%3A+no%2C+High-sensitivity+receiver%3A+yes%2C+Interface%3A+high-speed+USB+and+NMEA+0183+compatible.&centerImageUrl=')
+ 3 APPPATH\Views\barang\cetak_qr.php(125): generateAndCacheQRCode('Tahun 2018 Kategori  Merk GARMIN 2018-.GPS.IZ8 Spesifikasi Dimensions, WxHxD: 2.4" x 6.3" x 1.4" (6.1 x 16.0 x 3.6 cm), Display size, WxH: 1.43" x 2.15" (3.6 x 5.5 cm); 2.6" diag (6.6 cm), Display resolution, WxH: 160 x 240 pixels, Display type: transflective, 65-K color TFT, Weight: 9.2 oz (260.1 g) with batteries, Battery: 2 AA batteries (not included); NiMH or Lithium recommended, Battery life: 20 hours, Waterproof: yes (IPX7), Floats: no, High-sensitivity receiver: yes, Interface: high-speed USB and NMEA 0183 compatible.', 'FCPATH\\qr_cache', '009feb4df4dca11a7fe5384e52596273')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\barang\\cetak_qr.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/cetak_qr', [], true)
+ 7 APPPATH\Controllers\BarangController.php(516): view('barang/cetak_qr', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->cetakQr()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-09 15:47:55 --> mysqli_sql_exception: Column 'deskripsi_maintenance' cannot be null in C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\manlab nasya\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\manlab nasya\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\manlab nasya\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\manlab nasya\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\manlab nasya\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\manlab nasya\app\Controllers\MaintenanceController.php(88): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(934): App\Controllers\MaintenanceController->insertData()
+#10 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+#11 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\manlab nasya\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\manlab nasya\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-10-09 15:47:55 --> Column 'deskripsi_maintenance' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `maintenance` (`id_barang`, `tgl_maintenance`, `kategori_maintenance`, `biaya`, `deskripsi_maintenance`, `bukti`, `status`) VALUES (:id_barang:, :tgl_maintenance:, :kategori_maintenance:, :biaya:, :deskripsi_maintenance:, :bukti:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\MaintenanceController.php(88): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MaintenanceController->insertData()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-09 15:48:18 --> mysqli_sql_exception: Column 'deskripsi_maintenance' cannot be null in C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\manlab nasya\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\manlab nasya\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\manlab nasya\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\manlab nasya\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\manlab nasya\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\manlab nasya\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\manlab nasya\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\manlab nasya\app\Controllers\MaintenanceController.php(88): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(934): App\Controllers\MaintenanceController->insertData()
+#10 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+#11 C:\xampp\htdocs\manlab nasya\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\manlab nasya\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\manlab nasya\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-10-09 15:48:18 --> Column 'deskripsi_maintenance' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `maintenance` (`id_barang`, `tgl_maintenance`, `kategori_maintenance`, `biaya`, `deskripsi_maintenance`, `bukti`, `status`) VALUES (:id_barang:, :tgl_maintenance:, :kategori_maintenance:, :biaya:, :deskripsi_maintenance:, :bukti:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\MaintenanceController.php(88): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MaintenanceController->insertData()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:50:37 --> Undefined array key 0
+in APPPATH\Controllers\MaintenanceController.php on line 109.
+ 1 APPPATH\Controllers\MaintenanceController.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\MaintenanceController.php', 109)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MaintenanceController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:50:37 --> Undefined array key 0
+in APPPATH\Controllers\MaintenanceController.php on line 109.
+ 1 APPPATH\Controllers\MaintenanceController.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\MaintenanceController.php', 109)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MaintenanceController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:58:53 --> Undefined array key 0
+in APPPATH\Controllers\MaintenanceController.php on line 109.
+ 1 APPPATH\Controllers\MaintenanceController.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\MaintenanceController.php', 109)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MaintenanceController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-09 15:58:53 --> Undefined array key 0
+in APPPATH\Controllers\MaintenanceController.php on line 109.
+ 1 APPPATH\Controllers\MaintenanceController.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\MaintenanceController.php', 109)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MaintenanceController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-09 15:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 15:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 16:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 16:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 16:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 16:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 16:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 16:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 16:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-09 16:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

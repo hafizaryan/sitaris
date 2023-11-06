@@ -1,0 +1,86 @@
+INFO - 2023-10-02 14:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-02 14:39:55 --> file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+in APPPATH\Controllers\Home.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'APPPATH\\Controllers\\Home.php', 115)
+ 2 APPPATH\Controllers\Home.php(115): file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&response=')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login2()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-02 14:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-02 14:40:21 --> file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+in APPPATH\Controllers\Home.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'APPPATH\\Controllers\\Home.php', 115)
+ 2 APPPATH\Controllers\Home.php(115): file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&response=')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login2()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-02 14:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-02 14:41:34 --> file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+in APPPATH\Controllers\Home.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'APPPATH\\Controllers\\Home.php', 115)
+ 2 APPPATH\Controllers\Home.php(115): file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&response=')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login2()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-02 14:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-02 14:42:13 --> file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+in APPPATH\Controllers\Home.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'APPPATH\\Controllers\\Home.php', 115)
+ 2 APPPATH\Controllers\Home.php(115): file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&response=')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login2()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-02 14:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-02 14:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-02 14:49:22 --> file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+in APPPATH\Controllers\Home.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'APPPATH\\Controllers\\Home.php', 115)
+ 2 APPPATH\Controllers\Home.php(115): file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&response=')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login2()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-10-02 14:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-02 14:50:25 --> file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+in APPPATH\Controllers\Home.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&amp;response=): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'APPPATH\\Controllers\\Home.php', 115)
+ 2 APPPATH\Controllers\Home.php(115): file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6Lcn_s4nAAAAAMOmMTcS7TGP7VvLlKbbWbovihQU&response=')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login2()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
