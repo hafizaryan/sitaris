@@ -46,6 +46,7 @@
     }
 
     .google {
+      position: relative;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -58,6 +59,7 @@
       width: 100%;
       max-width: 400px;
       min-width: min-content;
+      margin-top: none;
     }
 
     .google:hover {
@@ -67,13 +69,10 @@
 
     .google svg {
       fill: #EA4335;
-      width: 20px;
-      height: 20px;
+      width: 50px;
+      height: 35px;
       margin-right: 10px;
-    }
-
-    .google span {
-      font-size: 16px;
+      padding-top: 10px;
     }
 
     .masuk {
@@ -109,6 +108,34 @@
       font-size: 16px;
     }
 
+    .wrapper {
+      position: relative;
+      margin-top: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      transition: all 0.2s ease;
+    }
+
+    label {
+      position: absolute;
+      left: 10px;
+      top: 12px;
+      padding: 0 4px;
+      pointer-events: none;
+      transition: all 0.2s ease;
+    }
+
+    input:not(:placeholder-shown)+label,
+    input:focus+label {
+      top: -8px;
+      font-size: 13px;
+      background: white;
+    }
+
     @media (max-width: 768px) {
       .logo {
         margin-right: 0;
@@ -126,12 +153,10 @@
       .masuk,
       .google {
         max-width: none;
-        width: auto;
-        margin: 10px auto;
+        width: 100%;
       }
     }
 
-    /* CSS untuk elemen input dan tombol mata */
     #togglePassword {
       position: absolute;
       top: 20%;
@@ -139,13 +164,27 @@
       transform: translateY(-30%);
       cursor: pointer;
     }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
   </style>
 </head>
 
 <body class="login">
   <div>
     <div class="login_wrapper" style="margin-top: none;">
-      <div class="animate form login_form">
+      <div class="animate form login_form" style="padding-top: none;">
         <div class="logo ">
           <img src="<?= base_url() ?>/gentelella-master/production/images/logo.jpeg" alt="Logo" class="img-circle profile_img">
         </div>
@@ -162,11 +201,13 @@
                 <?php echo session('success'); ?>
               </div>
             <?php endif; ?>
-            <div>
-              <input type="text" id="userInput" class="form-control" maxlength="20" placeholder="Username" name="username" id="username" required oninput="filterAlphanumeric(this)">
+            <div class="wrapper">
+              <input type="text" id="userInput" class="form-control" maxlength="20" placeholder="" name="username" id="username" required oninput="filterAlphanumeric(this)">
+              <label for="userInput">Username</label>
             </div>
-            <div style="position: relative;">
-              <input type="password" class="form-control" maxlength="20" placeholder="Password" name="password" id="password" required>
+            <div class="wrapper">
+              <input type="password" class="form-control" maxlength="20" placeholder="" name="password" id="password" required>
+              <label for="userInput">Password</label>
               <i id="togglePassword" class="fa fa-eye" onclick="togglePasswordVisibility()"></i>
               <a href="#" onclick="showAlert()" style="text-decoration: none;">Lupa Password?</a>
             </div>
@@ -176,7 +217,7 @@
               <button type="submit" class="masuk">Masuk</button>
             </div>
           </form>
-          <!-- <div id="google-login-button" class="google">
+          <div id="google-login-button" class="google">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="LgbsSe-Bz112c">
               <g>
                 <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
@@ -186,24 +227,44 @@
                 <path fill="none" d="M0 0h48v48H0z"></path>
               </g>
             </svg>
-            <span>Lanjutkan dengan Google</span>
-          </div> -->
+            <span onclick="showAlert2()">Lanjutkan dengan Google</span>
+          </div>
           </form>
           <div>
             <br>
-            <h1> SI<b>TARIS</b> SI</h1><br>
-            <!-- <p>Sistem Informasi Inventaris Laboratorium Sistem Informasi<br> Copyright © <?php echo date('Y') ?></p> -->
+            <h1> SI<b>TARIS</b> SI</h1>
             <p>Powered by <a style="text-decoration: none;" href="<?= base_url('pengembang'); ?>" target="_blank"><b>Sitaris Dev</b></a><br> Copyright © <?php echo date('Y') ?> <br> Sistem Informasi Inventaris Laboratorium Sistem Informasi</p>
           </div>
         </section>
       </div>
     </div>
   </div>
+  <svg version="2.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+    <defs>
+      <linearGradient id="bg">
+        <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+        <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+        <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+      </linearGradient>
+      <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+	s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+    </defs>
+    <g>
+      <use xlink:href='#wave' opacity=".3">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="10s" calcMode="spline" values="270 230; -334 180; 270 230" keyTimes="0; .5; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+      </use>
+      <use xlink:href='#wave' opacity=".6">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s" calcMode="spline" values="-270 230;243 220;-270 230" keyTimes="0; .6; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+      </use>
+      <use xlink:href='#wave' opacity=".9">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s" calcMode="spline" values="0 230;-140 200;0 230" keyTimes="0; .4; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+      </use>
+    </g>
+  </svg>
 </body>
 <!-- Custom JS -->
 <script src="https://www.google.com/recaptcha/api.js?render=6LdFjE8oAAAAAORk5aKHi1UkwcH5UXkIO7gPI0tU"></script>
 <script src="https://apis.google.com/js/platform.js?onload=startApp" async defer></script>
-
 <script>
   // Fungsi untuk menyaring karakter non-alphanumeric dari input
   function filterAlphanumeric(input) {
@@ -214,6 +275,10 @@
   // Fungsi untuk memunculkan notifikasi hubungi admin untuk mengubah password
   function showAlert() {
     alert("Silahkan hubungi admin untuk mengubah password Anda");
+  }
+
+  function showAlert2() {
+    alert("Maaf, fitur sedang dalam pengembangan :)");
   }
 
   // Fungsi untuk validasi username

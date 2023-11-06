@@ -132,20 +132,14 @@
             --bs-btn-active-border-color: #5a23c8;
         }
 
-        /* Styles untuk kontainer */
-        /* Styles untuk kontainer kartu developer */
         .container {
             display: flex;
             justify-content: center;
-            /* Membuat konten berada di tengah secara horizontal */
             align-items: center;
-            /* Membuat konten berada di tengah secara vertikal */
             flex-wrap: wrap;
-            /* Mengatur agar kartu-kartu terdistribusi ke dalam beberapa baris jika diperlukan */
+
         }
 
-
-        /* Styles untuk kartu developer */
         .developer-card {
             border: 1px solid #ccc;
             padding: 20px;
@@ -156,14 +150,11 @@
             margin: 20px;
         }
 
-
-        /* Styles untuk gambar avatar developer */
         .developer-avatar {
             max-width: 100%;
             border-radius: 50%;
         }
 
-        /* Styles untuk info developer */
         .developer-info h2 {
             font-size: 1.5rem;
             margin-top: 10px;
@@ -173,75 +164,22 @@
             margin-top: 5px;
         }
 
-        /* Styles responsif */
-        @media screen and (max-width: 768px) {
-
-
-
-            /* Tampilan vertikal pada layar kecil */
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            /* Mengisi lebar kartu developer pada layar kecil */
-            .developer-card {
-                width: 270px;
-                height: 270px;
-                margin-bottom: 20px;
-            }
-
-            /* Adjust text alignment for smaller screens */
-            .developer-info h2 {
-                font-size: 1.2rem;
-                /* Reduce font size for smaller screens */
-                text-align: center;
-                /* Center align text */
-            }
-
-            /* Adjust paragraph text */
-            .developer-info p {
-                text-align: center;
-                color: transparent;
-                /* Center align text */
-            }
-
-            /* Adjust header text alignment */
-            h1 {
-                text-align: center;
-                font-size: 25px;
-                /* Center align headers */
-            }
-
-            .mt-5,
-            .my-5 {
-                margin-top: 7rem !important;
-            }
-        }
-
-        /* Styles untuk menghilangkan scrollbar horizontal */
         body {
             overflow-x: hidden;
         }
-    </style>
-    <style>
-        /* General styles */
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
-            /* Set your desired background color */
         }
 
-        /* Header styles */
         .header {
             text-align: center;
             padding: 2rem 0;
             background-color: #343a40;
-            /* Set your header background color */
             color: #ffffff;
-            /* Set your header text color */
         }
 
         .header h1 {
@@ -261,10 +199,10 @@
             margin-bottom: 2rem;
         }
 
-
         .developer-card img {
             max-width: 100%;
             border-radius: 50%;
+            margin-top: none !important;
         }
 
         .developer-info h2 {
@@ -276,21 +214,44 @@
             margin-top: 5px;
         }
 
-        /* Responsive styles */
         @media screen and (max-width: 768px) {
             .container {
                 padding: 1rem;
             }
 
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
             .developer-card {
-                width: 100%;
-                /* Full width on small screens */
-                margin: 1rem 0;
-                /* Reduce margin on small screens */
+                width: 270px;
+                height: 270px;
+                margin-bottom: 20px;
+                padding-bottom: 10px;
+            }
+
+            .developer-info h2 {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+            .developer-info p {
+                text-align: center;
+                color: transparent;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .mt-5,
+            .my-5 {
+                margin-top: 7rem !important;
             }
         }
     </style>
-
 </head>
 
 <body>
@@ -310,19 +271,18 @@
                 </div>
             </div>
         </section>
-        <!-- <h1 class="fw-light" style="text-align: center;">Dibimbing Oleh</h1>
+        <h1 class="fw-light" style="text-align: center;">Dibimbing Oleh</h1>
         <div class="album bg-body-tertiary">
             <div class="container" style="display: flex; justify-content: center;">
                 <div class="developer-card" style="align-items: center;">
                     <img src="<?= base_url() ?>/gentelella-master/production/images/kalab.jpg" alt="<?= base_url() ?>/gentelella-master." class="img-circle profile_img">
                     <div class="developer-info">
-                        <h2>Tengku Khairil Ahsyar, S.Kom., M.Kom. <a href="#" target="_blank"><span><i class="fab fa-linkedin"></i></span></a> </h2>
-                        <p><span><i class="fas fa-envelope"></i></span>
-                            tengkukhairil@uin-suska.ac.id</p>
+                        <h2>T. Khairil, M.Kom. <a href="#" target="_blank"><span></span></a> </h2>
+                        <p><span><i class="fas fa-envelope"></i><a href="mailto:tengkukhairil@uin-suska.ac.id" target="_blank"> tengkukhairil@uin-suska.ac.id</a></span></p>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <h1 class="fw-light" style="text-align: center;">Dikembangkan Oleh</h1>
         <div class="album bg-body-tertiary">
             <!-- Kontainer Kartu Developer -->
@@ -330,28 +290,29 @@
                 <div class="developer-card">
                     <img src="<?= base_url() ?>/gentelella-master/production/images/hafiz.jpg" alt="<?= base_url() ?>/gentelella-master." class="img-circle profile_img">
                     <div class="developer-info">
-                        <h2>Hafiz Aryan <a href="https://www.linkedin.com/in/hafiz-aryan-siregar-539454214" target="_blank"><span><i class="fab fa-linkedin"></i></span></a> </h2>
-                        <p><span><i class="fas fa-envelope"></i></span> hafizaryansiregar@gmail.com</p>
+                        <h2>Hafiz Aryan <a href="https://www.linkedin.com/in/hafiz-aryan-siregar-539454214" target="_blank"><span></span></a> </h2>
+                        <p><span><i class="fas fa-envelope"></i><a href="mailto:hafizaryansiregar@gmail.com" target="_blank"> hafizaryansiregar@gmail.com</a></span> </p>
                     </div>
                 </div>
                 <div class="developer-card">
                     <img src="<?= base_url() ?>/gentelella-master/production/images/nasya.jpg" alt="<?= base_url() ?>/gentelella-master." class="img-circle profile_img">
                     <div class="developer-info">
-                        <h2>Nasya Amirah <a href="#" target="_blank"><span><i class="fab fa-linkedin"></i></span></a> </h2>
-                        <p><span><i class="fas fa-envelope"></i></span> nasyaamirah30@gmail.com</p>
+                        <h2>Nasya Amirah <a href="#" target="_blank"><span></span></a> </h2>
+                        <p><span><i class="fas fa-envelope"></i><a href="mailto:nasyaamirah30@gmail.com" target="_blank"> nasyaamirah30@gmail.com</a></span> </p>
                     </div>
                 </div>
                 <div class="developer-card">
                     <img src="<?= base_url() ?>/gentelella-master/production/images/indah.jpg" alt="<?= base_url() ?>/gentelella-master." class="img-circle profile_img">
                     <div class="developer-info">
-                        <h2>Indah Nirwana <a href="https://www.linkedin.com/in/indah-nirwana-3a9605265/" target="_blank"><span><i class="fab fa-linkedin"></i></span></a> </h2>
-                        <p><span><i class="fas fa-envelope"></i></span> indahnirwana30@gmail.com</p>
+                        <h2>Indah Nirwana <a href="#" target="_blank"><span></span></a> </h2>
+                        <p><span><i class="fas fa-envelope"></i><a href="mailto:indahnirwana30@gmail.com" target="_blank"> indahnirwana30@gmail.com</a></span> </p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <br><br>
 </body>
 
 </html>

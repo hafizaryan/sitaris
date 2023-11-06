@@ -46,6 +46,7 @@
     }
 
     .google {
+      position: relative;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -58,6 +59,7 @@
       width: 100%;
       max-width: 400px;
       min-width: min-content;
+      margin-top: none;
     }
 
     .google:hover {
@@ -67,13 +69,10 @@
 
     .google svg {
       fill: #EA4335;
-      width: 20px;
-      height: 20px;
+      width: 50px;
+      height: 35px;
       margin-right: 10px;
-    }
-
-    .google span {
-      font-size: 16px;
+      padding-top: 10px;
     }
 
     .masuk {
@@ -109,6 +108,34 @@
       font-size: 16px;
     }
 
+    .wrapper {
+      position: relative;
+      margin-top: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      transition: all 0.2s ease;
+    }
+
+    label {
+      position: absolute;
+      left: 10px;
+      top: 12px;
+      padding: 0 4px;
+      pointer-events: none;
+      transition: all 0.2s ease;
+    }
+
+    input:not(:placeholder-shown)+label,
+    input:focus+label {
+      top: -8px;
+      font-size: 13px;
+      background: white;
+    }
+
     @media (max-width: 768px) {
       .logo {
         margin-right: 0;
@@ -126,18 +153,30 @@
       .masuk,
       .google {
         max-width: none;
-        width: auto;
-        margin: 10px auto;
+        width: 100%;
       }
     }
 
-    /* CSS untuk elemen input dan tombol mata */
     #togglePassword {
       position: absolute;
       top: 20%;
       right: 10px;
       transform: translateY(-30%);
       cursor: pointer;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
     }
   </style>
 </head>
@@ -162,11 +201,13 @@
                 <?php echo session('success'); ?>
               </div>
             <?php endif; ?>
-            <div>
-              <input type="text" id="userInput" class="form-control" maxlength="20" placeholder="Username" name="username" id="username" required oninput="filterAlphanumeric(this)">
+            <div class="wrapper">
+              <input type="text" id="userInput" class="form-control" maxlength="20" placeholder="" name="username" id="username" required oninput="filterAlphanumeric(this)">
+              <label for="userInput">Username</label>
             </div>
-            <div style="position: relative;">
-              <input type="password" class="form-control" maxlength="20" placeholder="Password" name="password" id="password" required>
+            <div class="wrapper">
+              <input type="password" class="form-control" maxlength="20" placeholder="" name="password" id="password" required>
+              <label for="userInput">Password</label>
               <i id="togglePassword" class="fa fa-eye" onclick="togglePasswordVisibility()"></i>
               <a href="#" onclick="showAlert()" style="text-decoration: none;">Lupa Password?</a>
             </div>
@@ -176,7 +217,7 @@
               <button type="submit" class="masuk">Masuk</button>
             </div>
           </form>
-          <!-- <div id="google-login-button" class="google">
+          <div id="google-login-button" class="google">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="LgbsSe-Bz112c">
               <g>
                 <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
@@ -186,13 +227,12 @@
                 <path fill="none" d="M0 0h48v48H0z"></path>
               </g>
             </svg>
-            <span>Lanjutkan dengan Google</span>
-          </div> -->
+            <span onclick="showAlert2()">Lanjutkan dengan Google</span>
+          </div>
           </form>
           <div>
             <br>
-            <h1> SI<b>TARIS</b> SI</h1><br>
-            <!-- <p>Sistem Informasi Inventaris Laboratorium Sistem Informasi<br> Copyright © <?php echo date('Y') ?></p> -->
+            <h1> SI<b>TARIS</b> SI</h1>
             <p>Powered by <a style="text-decoration: none;" href="<?= base_url('pengembang'); ?>" target="_blank"><b>Sitaris Dev</b></a><br> Copyright © <?php echo date('Y') ?> <br> Sistem Informasi Inventaris Laboratorium Sistem Informasi</p>
           </div>
         </section>

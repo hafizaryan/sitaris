@@ -86,7 +86,6 @@
                                         <label class="col-md-3 col-xs-12 control-label">Kategori Barang <span style="color: red;">*</span></label>
                                         <div class="col-md-6 col-xs-12 control-label">
                                             <div class="input-group">
-
                                                 <select name="kategori_barang" class="form-control" id="kategori_barang" required>
                                                     <option value="" selected disabled>Pilih kategori</option>
                                                     <?php

@@ -39,9 +39,9 @@ $routes->get('/404', 'Home::tolak');
 $routes->get('/peminjaman_berhasil', 'Home::peminjamanBerhasil');
 $routes->post('/login', 'Home::login2');
 $routes->get('/logout', 'Home::logout');
-// $routes->set404Override(function () {
-//     return view('404');
-// });
+$routes->set404Override(function () {
+    return view('404');
+});
 
 // Penamaan file php dan tabel database menggunakan snake_case
 // Penamaan fungsi di Controller menggunakan camelCase
