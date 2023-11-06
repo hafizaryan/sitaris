@@ -5,11 +5,14 @@ namespace App\Controllers;
 // namespace App\Models;
 
 use App\Models\BarangModel;
+use TCPDF;
 
 // use App\Controllers\Mailjet;
 // use App\Controllers\PeminjamanBarangModel;
 use App\Models\PeminjamanBarangModel;
 use App\Models\ReferensiModel;
+use App\Models\UserModel;
+
 // use App\Models\PeminjamanBarangModel as ModelsPeminjamanBarangModel;
 
 use CodeIgniter\Controller;
@@ -315,7 +318,6 @@ class PeminjamanBarangController extends BaseController
 	public function edit()
 	{
 		$id = $this->request->uri->getSegment(3);
-
 		$data['id'] = $id;
 		$data['judul'] = 'Edit Peminjaman Barang';
 		// $data['url'] = 'Peminjaman_barang/ubah';
@@ -406,5 +408,91 @@ class PeminjamanBarangController extends BaseController
 			// Berkas tidak ditemukan, atur respon sesuai kebutuhan
 			return $this->response->setStatusCode(404);
 		}
+	}
+
+
+	// public function cetak($id)
+	//     {
+	//         $id = $this->request->uri->getSegment(3);
+	//         $data['model'] = $this->modelPeminjamanBarang->where(["id_barang" => $id])->findAll();    
+
+	//         $userModel = new UserModel();
+	//         $kalabUsers = $userModel->getUsersByRole('kalab');
+	//         $kalabNames = [];
+	//         $kalabNips = [];
+
+	//         foreach ($kalabUsers as $user) {
+	//             $kalabNames[] = $user['nama'];
+	//             $kalabNips[] = $user['no_identitas'];
+	//         }
+
+	//         $data['kalabNames'] = $kalabNames;
+	//         $data['kalabNips'] = $kalabNips;
+
+	//         $pdf = new TCPDF('L', PDF_UNIT, 'A4', true, 'UTF-8', false);
+	//         $pdf->SetCreator(PDF_CREATOR);
+	//         $pdf->SetAuthor('Dea Venditama');
+	//         $pdf->SetTitle('Peminjaman Barang');
+	//         $pdf->SetSubject('Peminjaman Barang');
+	//         $pdf->setPrintHeader(false);
+	//         $pdf->setPrintFooter(false);
+
+	//         $pdf->AddPage();
+	//         $html = view('peminjaman_barang/cetak', $data);
+	//         $pdf->writeHTML($html, true, false, true, false, '');
+
+	//         $this->response->setContentType('application/pdf');
+	//         $pdf->Output('Peminjaman Barang.pdf', 'I');
+	//     }}
+
+	public function cetak()
+	{
+		ini_set('max_execution_time', 360); // Ubah menjadi waktu yang sesuai
+
+		$id = $this->request->uri->getSegment(3);
+		$userModel = new UserModel();
+
+		// Dapatkan pengguna dengan peran "kalab"
+		$kalabUsers = $userModel->getUsersByRole('kalab');
+
+		// Simpan nama-nama pengguna "kalab" dan nomor identitas (NIP)
+		$kalabNames = [];
+		$kalabNips = [];
+
+		foreach ($kalabUsers as $user) {
+			$kalabNames[] = $user['nama'];
+			$kalabNips[] = $user['no_identitas'];
+		}
+
+		$data['kalabNames'] = $kalabNames;
+		$data['kalabNips'] = $kalabNips;
+		$data['model'] = $this->modelPeminjamanBarang->findAll();
+
+		// Create the TCPDF instance
+		$pdf = new TCPDF('L', PDF_UNIT, 'A4', true, 'UTF-8', false);
+		$pdf->SetCreator(PDF_CREATOR);
+		$pdf->SetAuthor('SITARIS DEV');
+		$pdf->SetTitle('Cetak QR Code');
+		$pdf->SetSubject('Barang');
+		$pdf->setPrintHeader(false);
+		$pdf->setPrintFooter(false);
+
+		// Add a page with letterhead content
+		$pdf->AddPage();
+
+		// Get the view content
+		$html = view('peminjaman_barang/cetak', $data);
+
+		$pageWidth = $pdf->getPageWidth();
+		$contentWidth = 5500; // Sesuaikan dengan lebar konten Anda
+		$xPosition = ($pageWidth - $contentWidth) / 2;
+
+		// Add the main content at centered position
+		$pdf->SetXY($xPosition, 0); // Anda dapat mengatur posisi Y sesuai kebutuhan
+		$pdf->writeHTML($html, true, false, true, false, '');
+
+		// Output the PDF
+		$this->response->setContentType('application/pdf');
+		$pdf->Output('Laporan Data Inventaris Laboratorium.pdf', 'I');
 	}
 }

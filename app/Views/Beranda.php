@@ -70,7 +70,7 @@
     .google svg {
       fill: #EA4335;
       width: 50px;
-      height: 35px;
+      height: 30px;
       margin-right: 10px;
       padding-top: 10px;
     }

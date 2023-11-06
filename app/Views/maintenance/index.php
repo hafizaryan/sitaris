@@ -79,7 +79,7 @@
                             <th>Kategori</th>
                             <th>Biaya</th>
                             <th>Tanggal</th>
-                            <th>Status</th>
+                            <!-- <th>Status</th> -->
                             <th class="center-text" width="120px">Aksi</th>
                         </tr>
                     </thead>
@@ -95,15 +95,15 @@
                                 <td><?= $value["kategori_maintenance"] ?></td>
                                 <td>Rp.<?= number_format(floatval($value["biaya"]), 0, ',', '.') ?>.-</td>
                                 <td><?= date('d', strtotime($value["tgl_maintenance"])) . ' ' . bulanIndonesia(date('F', strtotime($value["tgl_maintenance"]))) . ' ' . date('Y', strtotime($value["tgl_maintenance"])) ?></td>
-                                <td>
+                                <!-- <td>
                                     <?php
-                                    if ($value["status"] === "Sedang Proses") {
+                                    if ($value["status"] === "Sedang_Proses") {
                                         echo '<span style="color: red;">Sedang Proses</span>';
                                     } elseif ($value["status"] === "Selesai") {
                                         echo '<span style="color: green;">Selesai</span>';
                                     }
                                     ?>
-                                </td>
+                                </td> -->
                                 <?php if (session('userData')['role_user'] == "Admin") : ?>
                                     <td class="center">
                                         <!-- Edit link with icon -->

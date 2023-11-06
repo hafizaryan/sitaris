@@ -270,14 +270,14 @@ $this->section('content');
                             <tr>
                                 <td class="center"><?php echo $no; ?></td>
                                 <td class="center">
-                                        <?php $qrData = "Tahun " . $value["tahun_barang"]  .  " Merk " . $value["nama_barang"] . " Spesifikasi " . $value["spek_barang"];
-                                        $centerImageUrl = "";
-                                        $qrCodeImageUrl = "https://quickchart.io/qr?text=" . urlencode($qrData) . "&centerImageUrl=" . urlencode($centerImageUrl);
-                                        ?>
-                                        <a href="<?= $qrCodeImageUrl ?>" target="_blank">
-                                            <img width="40px" src="<?= $qrCodeImageUrl ?>" alt="QR Code" loading="lazy">
-                                        </a>
-                                    </td>
+                                    <?php $qrData = "Tahun " . $value["tahun_barang"]  .  " Merk " . $value["nama_barang"] . " Spesifikasi " . $value["spek_barang"];
+                                    $centerImageUrl = "";
+                                    $qrCodeImageUrl = "https://quickchart.io/qr?text=" . urlencode($qrData) . "&centerImageUrl=" . urlencode($centerImageUrl);
+                                    ?>
+                                    <a href="<?= $qrCodeImageUrl ?>" target="_blank">
+                                        <img width="40px" src="<?= $qrCodeImageUrl ?>" alt="QR Code" loading="lazy">
+                                    </a>
+                                </td>
                                 <td><?= $value["nama_barang"] ?></td>
                                 <td><?= str_replace('_', ' ', $value["sub_kategori"]) ?></td>
                                 <td><?= $value["spek_barang"] ?></td>

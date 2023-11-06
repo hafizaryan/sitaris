@@ -6,16 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cetak</title>
     <style>
-        table {
-            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
+        @media print {
+            thead {
+                display: table-header-group;
+            }
         }
 
-        table td,
-        #table th {
-            border: 1px solid #ddd;
+        body {
+            font-family: sans-serif
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        #header-img {
+            width: 100%;
+            max-height: 130px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            vertical-align: middle;
+            padding: 5px;
+        }
+
+        table th,
+        table td {
+            border: 1px solid black;
             padding: 8px;
+            font-size: 11px;
             text-align: center;
         }
 
@@ -30,72 +52,122 @@
         table th {
             padding-top: 10px;
             padding-bottom: 10px;
-            text-align: left;
-            background-color: #4CAF50;
+            background-color: #5DA5FA;
             color: white;
-            text-align: center;
-            /* vertical-align:middle; */
+            vertical-align: middle;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            vertical-align: middle;
+        }
+
+        .ttd {
+            font-size: 11px;
+        }
+
+        .tebal {
+            font-weight: bold;
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1 valign="center">Cetak Barang</h1>
-
-    <!-- <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" BORDER="1" style="border-spacing:15px"> -->
-    <table id="table">
-        <thead>
-            <tr style="font-size:10px">
-                <th width="40px" valign="center">
-                    <div>NO</div>
-                </th>
-                <th>Tanggal Peminjaman</th>
-                <th>Tanggal Pengembalian</th>
-                <th>Keterlambatan Pengembalian</th>
-                <th>Asal Peminjam</th>
-                <th>Organisasi</th>
-                <th>Nama Peminjam</th>
-                <th>Keterangan</th>
-                <th>Status Pinjam</th>
-
-            </tr>
-        </thead>
-
-        <tbody>
-            <?php
-            $no = 0;
-            foreach ($model as $key => $value) {
-                $no++;
-                $tgl1 = strtotime($value['tgl_pengembalian']);
-                $tgl2 = strtotime(date("Y-m-d"));
-                $tgl = $tgl1 - $tgl2;
-                $hari = $tgl / 60 / 60 / 24;
-            ?>
-
-                <tr style="font-size:10px">
-                    <td width="40px"><?php echo $no; ?></td>
-                    <td><?= $value["tgl_peminjaman"]; ?></td>
-                    <td><?= $value["tgl_pengembalian"]; ?></td>
-                    <td>
-                        <?php
-                        if ($hari >= 0) {
-                            echo 'Sisa ' . $hari . ' Hari Lagi';
-                        } else {
-                            echo 'Terlambat ' . abs($hari) . ' Hari';
-                        }
-                        ?>
-                    </td>
-                    <td><?= $value["asal_peminjam"] ?></td>
-                    <td><?= $value["organisasi"] ?></td>
-                    <td><?= $value["nama_peminjam"] ?></td>
-                    <td><?= $value["keterangan"] ?></td>
-                    <td><?= $value["status_pinjam"] ?></td>
-
+    <img id="header-img" src="gentelella-master/production/images/kopL.jpeg" width="6000%" alt="Header Image">
+    <h4 class="centered">DAFTAR PEMINJAMAN BARANG LABORTORIUM PROGRAM STUDI SISTEM INFORMASI FAKULTAS SAINS DAN TEKNOLOGI UIN SUSKA RIAU</h4><br>
+    <div>
+        <table>
+            <thead>
+                <tr class="tebal">
+                    <th>NO</th>
+                    <th>Asal Peminjam</th>
+                    <th>Organisasi</th>
+                    <th>Nama Peminjam</th>
+                    <th>Tanggal</th>
+                    <th>Biaya</th>
                 </tr>
-            <?php } ?>
-        </tbody>
-    </table>
-
+            </thead>
+        </table>
+        <table class="table">
+            <tbody>
+                <?php
+                $no = 0;
+                foreach ($model as $value) {
+                    $no++;
+                ?>
+                    <tr>
+                        <td><?php echo $no; ?></td>
+                        <td><?= $value["asal_peminjam"] ?></td>
+                        <td><?= $value["organisasi"] ?></td>
+                        <td><?= $value["nama_peminjam"] ?></td>
+                        <td><?= date('d', strtotime($value["tgl_peminjaman"])) . ' ' . bulanIndonesia(date('F', strtotime($value["tgl_peminjaman"]))) . ' ' . date('Y', strtotime($value["tgl_peminjaman"])) ?></td>
+                        <td>Rp.<?= number_format(floatval($value["biaya_peminjaman"]), 0, ',', '.') ?>.-</td>
+                    </tr>
+                <?php } ?>
+            </tbody>
+        </table>
+    </div>
+    <div class="ttd">
+        <?php
+        // Fungsi untuk mengubah nama bulan bahasa Inggris menjadi bahasa Indonesia
+        function bulanIndonesia($bulan)
+        {
+            $bulan = strtolower($bulan);
+            switch ($bulan) {
+                case 'january':
+                    return 'Januari';
+                case 'february':
+                    return 'Februari';
+                case 'march':
+                    return 'Maret';
+                case 'april':
+                    return 'April';
+                case 'may':
+                    return 'Mei';
+                case 'june':
+                    return 'Juni';
+                case 'july':
+                    return 'Juli';
+                case 'august':
+                    return 'Agustus';
+                case 'september':
+                    return 'September';
+                case 'october':
+                    return 'Oktober';
+                case 'november':
+                    return 'November';
+                case 'december':
+                    return 'Desember';
+                default:
+                    return $bulan;
+            }
+        }
+        // Mengubah format tanggal menjadi format Indonesia
+        $tanggal = date('d');
+        $bulanInggris = date('F');
+        $bulanIndonesia = bulanIndonesia($bulanInggris);
+        $tahun = date('Y');
+        ?>
+        <div class="ttd"><span style="color: white;">====================================================================================</span><?= 'Pekanbaru, ' . $tanggal . ' ' . $bulanIndonesia . ' ' . $tahun ?>
+        </div>
+        <span style="color: white;">====================================================================================</span>Kepala Laboratorium
+        <br><span style="color: white;">====================================================================================</span>Program Studi Sistem Informasi,
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div><span style="color: white;">===================================================================================</span><b><?php foreach ($kalabNames as $kalabName) : ?>
+                    <u class="custom-u"><?= $kalabName ?></u> <?php endforeach; ?>
+                <span style="color: white;">===================================================================================</span><b><?php foreach ($kalabNips as $kalabNip) : ?>
+                        <?= $kalabNip ?><br><?php endforeach; ?>
+        </div>
+    </div>
 </body>
 
 </html>

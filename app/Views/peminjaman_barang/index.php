@@ -70,14 +70,24 @@
             <h6 class="m-0 font-weight-bold" style="color: #2A3F54;">PEMINJAMAN BARANG</h6>
         </div>
         <div class="card-body">
-            <!-- <div class="col-md-0 col-sm-0 col-mr-100">
-                <input readonly type="text" id="first-name" required="required" class="form-control parsley-success" data-parsley-id="5" value="Rp.100.000.-">
-            </div>
             <br>
-            <button type="button" class="btn btn-info pull-right " target="_blank" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-file-pdf"></i> Laporan</button>
-            <div class="col-md-0 col-sm-0">
-                <a href="peminjaman_ruangan/tambah_biaya" class="btn btn-success">Biaya Peminjaman</a>
-            </div> -->
+            <a href="<?= base_url('peminjaman_barang/cetak'); ?>" target="_blank" class="btn btn-info pull-right"><i class="fas fa-file-pdf"></i> Cetak</a>
+            <div class="row">
+                <div class="col-md-5">
+                    <?php foreach ($id_referensi as $referensi) : ?>
+                        <div class="input-group">
+                            <input type="text" readonly value="Biaya Peminjaman = Rp.<?php echo number_format(floatval($referensi["biaya"]), 0, ',', '.') ?>.- / Hari" name="biaya" class="form-control" maxlength="20" autofocus required />
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                <div class="col-md-7">
+                    <?php if (session('userData')['role_user'] == "Admin") : ?>
+                        <a href="peminjaman_ruangan/tambah_biaya" class="btn btn-success"><i class="fas fa-edit fa-md"></i> Edit</a>
+                    <?php elseif (session('userData')['role_user'] == "Kalab") : ?>
+                        <a href="peminjaman_ruangan/tambah_biaya" class="btn btn-success"><i class="fas fa-edit fa-md"></i> Edit</a>
+                    <?php endif; ?>
+                </div>
+            </div>            
             <div class="table-responsive" style="max-height: 1100px; overflow-y: auto;">
                 <table id="datatable" class="table text-center table-striped table-bordered" style="width:100%">
                     <thead>
@@ -92,7 +102,6 @@
                         </tr>
                     </thead>
                     <tbody>
-
                         <?php
                         $no = 0;
                         foreach ($model as $key => $value) {
@@ -103,7 +112,6 @@
                                 <td class="text-left">
                                     <ul>
                                         <?php
-
                                         foreach ($value['nama_barang'] as $idBarang) { ?>
                                             <li><?= $idBarang['nama_barang']; ?></li>
                                         <?php   } ?>
@@ -136,13 +144,13 @@
                                     '<?= $value["asal_peminjam"] ?>', 
                                     '<?= $value["asal_peminjam"] ?>', 
                                     '<?= $value["nama_fakultas"] ?>',
-                                     '<?= $value["nama_prodi"] ?>', '<?= $value["nama_peminjam"] ?>', 
-                                     '<?= $value["email_peminjam"] ?>', '<?= $value["no_hp"] ?>', 
-                                     '<?= date('d', strtotime($value["tgl_peminjaman"])) . ' ' . bulanIndonesia(date('F', strtotime($value["tgl_peminjaman"]))) . ' ' . date('Y', strtotime($value["tgl_peminjaman"])) ?>',
-                                     '<?= date('d', strtotime($value["tgl_pengembalian"])) . ' ' . bulanIndonesia(date('F', strtotime($value["tgl_pengembalian"]))) . ' ' . date('Y', strtotime($value["tgl_pengembalian"])) ?>',
-                                     '<?= $value["biaya_peminjaman"] ?>',
-                                     '<?= base_url('/uploads/' . $value['bukti_peminjaman']) ?>', 
-                                     '<?= $value["keterangan"] ?>')">
+                                    '<?= $value["nama_prodi"] ?>', '<?= $value["nama_peminjam"] ?>', 
+                                    '<?= $value["email_peminjam"] ?>', '<?= $value["no_hp"] ?>', 
+                                    '<?= date('d', strtotime($value["tgl_peminjaman"])) . ' ' . bulanIndonesia(date('F', strtotime($value["tgl_peminjaman"]))) . ' ' . date('Y', strtotime($value["tgl_peminjaman"])) ?>',
+                                    '<?= date('d', strtotime($value["tgl_pengembalian"])) . ' ' . bulanIndonesia(date('F', strtotime($value["tgl_pengembalian"]))) . ' ' . date('Y', strtotime($value["tgl_pengembalian"])) ?>',
+                                    '<?= $value["biaya_peminjaman"] ?>',
+                                    '<?= base_url('/uploads/' . $value['bukti_peminjaman']) ?>', 
+                                    '<?= $value["keterangan"] ?>')">
                                         <i class="fas fa-info-circle fa-2x" style="color: #5a738e;"></i>
                                     </a>
                                     <a href="/peminjaman_barang/download/<?= $value["id_peminjaman_barang"] ?>" target="_blank">

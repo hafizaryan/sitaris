@@ -144,11 +144,11 @@
 
         .developer-card {
             border: 1px solid #ccc;
-            padding: 20px;
-            width: 290px;
+            padding: 10px;
+            width: 240px;
             background-color: white;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-right: 30px;
+            margin-right: 20px;
             margin: 20px;
         }
 

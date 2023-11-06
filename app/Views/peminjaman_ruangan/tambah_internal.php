@@ -179,7 +179,7 @@
                                     <label class="col-md-3 col-xs-12 control-label">Surat Peminjaman <span style="color: red;">*</span></label>
                                     <div class="col-md-6 col-xs-12 control-label">
                                         <div class="input-group">
-                                            <input type="file" name="bukti_peminjaman" id="bukti_peminjaman" class="form-control" accept=".pdf" onchange="validateImageFile()" autofocus />
+                                            <input type="file" name="bukti_peminjaman" id="bukti_peminjaman" class="form-control" accept=".pdf" onchange="validateImageFile()" autofocus required />
                                             <span class="input-group-addon">
                                                 <button type="button" id="previewButton" onclick="showPdfPreview()"><i class="fas fa-eye"></i></button>
                                             </span>

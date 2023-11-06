@@ -5,7 +5,7 @@
     <br>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-end">
-        <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>index">Beranda</a> / <a href="<?= base_url(); ?>maintenance">Maintenance</a> / Tambah</li>
+            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>index">Beranda</a> / <a href="<?= base_url(); ?>maintenance">Maintenance</a> / Tambah</li>
         </ol>
     </nav>
     <!-- START WIDGETS -->
@@ -142,11 +142,11 @@
                                 <div class="col-md-6 col-xs-12 control-label">
                                     <div class="">
                                         <select class="form-control" name="status" required>
-                                            <option value="" disabled selected>Pilih Status</option>
+                                            <option value="" disabled selected>Pilih Status</option>                                         
                                             <?php
-                                            $enumValues = array("Sedang Proses", "Selesai");
+                                            $enumValues = array("Sedang_Proses", "Selesai");
                                             foreach ($enumValues as $enumValue) {
-                                                echo "<option>$enumValue</option>";
+                                                echo "<option value=\"$enumValue\">$enumValue</option>";
                                             }
                                             ?>
                                         </select>

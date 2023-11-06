@@ -1,27 +1,22 @@
 <?= $this->extend('layout/main'); ?>
 <?= $this->section('content'); ?>
 <style>
-    /* CSS for mobile responsiveness */
     @media (max-width: 768px) {
 
-        /* Reduce font sizes for better readability */
         .text-xs {
             font-size: 12px;
         }
 
-        /* Adjust breadcrumb font size */
         .breadcrumb {
-            /* margin-top: 5px; */
+
             font-size: 10px;
         }
 
-        /* Reduce the number of cards per row */
         .col-xl-3 {
             flex: 0 0 50%;
             max-width: 50%;
         }
 
-        /* Adjust padding or margins for better spacing */
         .card-body {
             padding: 20px;
         }
@@ -70,7 +65,7 @@
                         <a href="barang">
                             <div class="h5 mb-0 text-gray-800">
                                 <?php
-                                $jumlahKomputer = 0; // Inisialisasi variabel untuk menghitung jumlah komputer
+                                $jumlahKomputer = 0;
                                 foreach ($barang as $item) {
                                     if ($item['sub_kategori'] == 'Komputer') {
                                         $jumlahKomputer++;
@@ -197,12 +192,10 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var toast = document.getElementById('custom-toast');
-
         if (toast) {
             setTimeout(function() {
                 toast.classList.add('show-toast');
             }, 100);
-
             setTimeout(function() {
                 toast.classList.remove('show-toast');
             }, 3000);

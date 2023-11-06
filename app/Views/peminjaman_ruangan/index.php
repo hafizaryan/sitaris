@@ -95,7 +95,6 @@
                 foreach ($uniqueIds as $id) {
                     // Cari indeks pertama dari elemen dengan 'id_ruangan' yang sesuai
                     $index = array_search($id, array_column($model, 'id_ruangan'));
-
                     // Jika indeks ditemukan, tampilkan 'id_ruangan' dan 'nama_ruangan'
                     if ($index !== false) {
                         $nama_ruangan = $model[$index]['nama_ruangan'];
@@ -114,31 +113,77 @@
                         <th>Nama Ruangan</th>
                         <th>Asal Peminjam</th>
                         <th>Nama Peminjam</th>
-                        <!-- <th>Konfirmasi</th> -->
+                        <th>Lama Peminjaman</th>
+                        <th>Konfirmasi</th>
                         <th class="center-text">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
-
                     <?php
-
                     $no = 0;
                     usort($model, function ($a, $b) {
                         return $b['id_peminjaman_ruangan'] - $a['id_peminjaman_ruangan'];
                     });
                     foreach ($model as $key => $value) {
                         $no++;
-
                     ?>
                         <tr>
                             <td class="center"><?php echo $no; ?></td>
                             <td><?= $value["nama_ruangan"] ?></td>
                             <td><?= $value["organisasi"] ?></td>
                             <td><?= $value["nama_peminjam"] ?></td>
-                            <!-- <td>
-                                <input id="emailInput" type="text" hidden value="<?= $value["email_peminjam"] ?>">
-                                <button id="send-email" type="button">Konfirmasi</button>
-                            </td> -->
+                            <td><?= $value["lama_peminjaman"] ?> Hari</td>
+                            <td>
+                                <a href="mailto:<?= $value["email_peminjam"] ?>?subject=Konfirmasi Peminjaman&body=Peminjaman Anda telah berhasil diterima%0D%0A%0D%0ASITARIS DEV%0D%0A%0D%0A[Catatan: Ini adalah pesan otomatis, jangan membalas email ini]" target="_blank">
+                                    <button id="konfirmasiButton" class="btn btn-sm btn-warning" type="button" style="color:white">Konfirmasi</button>
+                                </a>
+
+                                <script>
+                                    var button = document.getElementById("konfirmasiButton");
+                                    var confirmationKey = "confirmationStatus";
+
+                                    // Periksa apakah sudah ada status konfirmasi di cookie
+                                    var isConfirmed = getCookie(confirmationKey);
+
+                                    if (isConfirmed === "true") {
+                                        button.innerText = "Dikonfirmasi";
+                                        button.disabled = true;
+                                    }
+
+                                    button.addEventListener("click", function() {
+                                        if (isConfirmed !== "true") {
+                                            button.innerText = "Dikonfirmasi";
+                                            button.disabled = true;
+                                            // Simpan status konfirmasi di cookie
+                                            setCookie(confirmationKey, "true", 365); // Simpan selama satu tahun
+                                        }
+                                    });
+
+                                    // Fungsi untuk mengatur cookie
+                                    function setCookie(name, value, days) {
+                                        var expires = "";
+                                        if (days) {
+                                            var date = new Date();
+                                            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                                            expires = "; expires=" + date.toUTCString();
+                                        }
+                                        document.cookie = name + "=" + value + expires + "; path=/";
+                                    }
+
+                                    // Fungsi untuk mendapatkan nilai cookie
+                                    function getCookie(name) {
+                                        var nameEQ = name + "=";
+                                        var ca = document.cookie.split(';');
+                                        for (var i = 0; i < ca.length; i++) {
+                                            var c = ca[i];
+                                            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                                            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+                                        }
+                                        return null;
+                                    }
+                                </script>
+
+                            </td>
                             <td class="center" style="width: 120px;">
                                 <?php if (session('userData')['role_user'] == "Admin") : ?>
                                     <a href="javascript:confirmDelete('peminjaman_ruangan/hapus/<?= $value["id_peminjaman_ruangan"] ?>')">
@@ -156,6 +201,7 @@
                                     <i class="fas fa-download fa-2x"></i>
                                 </a>
                             </td>
+
                         </tr>
                     <?php } ?>
                 </tbody>

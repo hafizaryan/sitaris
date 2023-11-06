@@ -231,7 +231,7 @@ $this->section('content');
                             <th>Diinputkan Oleh</th>
                             <th>Diedit Oleh</th>
                             <th>Tanggal diedit</th>
-                            <th class="center">Aksi</th>
+                            <th class="center-text" style="width: 50px;">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>

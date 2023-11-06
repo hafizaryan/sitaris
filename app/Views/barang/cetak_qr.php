@@ -97,27 +97,20 @@
                             if (!is_dir($cachePath)) {
                                 mkdir($cachePath, 0777, true);
                             }
-
                             $cachedImagePath = $cachePath . '/' . $cacheKey . '.png';
-
                             // Periksa apakah gambar QR sudah ada dalam cache
                             if (file_exists($cachedImagePath)) {
                                 return $cachedImagePath;
                             }
-
                             $centerImageUrl = ""; // Isi dengan URL gambar Anda
                             $qrCodeImageUrl = "https://quickchart.io/qr?text=" . urlencode($qrData) . "&centerImageUrl=" . urlencode($centerImageUrl);
-
                             // Unduh gambar QR dari QuickChart dan simpan dalam cache
                             $qrImageData = file_get_contents($qrCodeImageUrl);
                             file_put_contents($cachedImagePath, $qrImageData);
-
                             return $cachedImagePath;
                         }
-
                         // Contoh penggunaan
                         $cachePath = './qr_cache'; // Ubah sesuai dengan path cache yang Anda inginkan
-
                         // Mulai pengulangan data
                         foreach ($model as $value) {
                             $qrData = "Tahun " . $value["tahun_barang"]  .  " Kategori " . $value["sub_kategori"] .  " Merk " . $value["nama_barang"] . " Spesifikasi " . $value["spek_barang"];
@@ -155,7 +148,6 @@
                         <?php
                         } // Selesai pengulangan data
                         ?>
-
                     </tbody>
                 </table>
             </div>
