@@ -41,7 +41,6 @@
 			width: min-content;
 			height: 100%;
 			overflow-y: auto;
-			/* overflow-x: none; */
 		}
 
 		.top_nav {
@@ -52,7 +51,6 @@
 			z-index: 1000;
 		}
 
-		/* CSS untuk membuat elemen <footer> transparan */
 		.footer {
 			background-color: #F7F7F7;
 			border: none;
@@ -62,7 +60,6 @@
 			min-height: 10px !important;
 		}
 
-		/* Style for the button */
 		.tombol {
 			padding: 10px 20px;
 			border: 1px solid #73879C;
@@ -75,7 +72,6 @@
 			margin-left: 5px;
 		}
 
-		/* Style for the dropdown menu */
 		.dropdown-menu {
 			background-color: #fff !important;
 			border: 1px solid #73879C;
@@ -83,7 +79,6 @@
 			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 		}
 
-		/* Style for dropdown menu items */
 		.dropdown-item {
 			color: #333;
 			padding: 10px 20px;
@@ -105,7 +100,6 @@
 		@media (max-width: 767px) {
 			body {
 				overflow-x: hidden;
-				/* Menghilangkan scroll horizontal jika ada */
 			}
 
 			.nav_menu {
@@ -192,7 +186,6 @@
 			}
 		}
 
-
 		.img-circle.profile_img {
 			width: 80%;
 			height: 80%;
@@ -218,7 +211,6 @@
 			margin-top: 10px;
 		}
 	</style>
-
 </head>
 
 <body class="nav-md">
@@ -267,7 +259,7 @@
 						<div class="menu_section">
 							<ul class="nav side-menu">
 								<?php if (session('userData')['role_user'] == "Admin") : ?>
-									<li><a href="<?= base_url('index') ?>"><i class="fas fa-home"></i> Beranda </a></li>
+									<li><a href="<?= base_url('dashboard') ?>"><i class="fas fa-home"></i> Beranda </a></li>
 									<li><a href="<?= base_url('pendanaan') ?>"><i class="fas fa-dollar"></i> Pendanaan</a></li>
 									<li><a href="<?= base_url('barang') ?>"><i class="fas fa-cubes"></i> Barang </a></li>
 									<li class=""><a><i class="fas fa-map"></i> Posisi Barang<span class="fa fa-chevron-down"></span></a>
@@ -296,7 +288,7 @@
 										</ul>
 									</li>
 								<?php elseif (session('userData')['role_user'] == "Kalab") : ?>
-									<li><a href="<?= base_url('index') ?>"><i class="fas fa-home"></i> Beranda </a></li>
+									<li><a href="<?= base_url('dashboard') ?>"><i class="fas fa-home"></i> Beranda </a></li>
 									<li><a href="<?= base_url('pendanaan') ?>"><i class="fas fa-dollar"></i> Pendanaan</a></li>
 									<li><a href="<?= base_url('barang') ?>"><i class="fas fa-cubes"></i> Barang </a></li>
 									<li class=""><a><i class="fas fa-map"></i> Posisi Barang<span class="fa fa-chevron-down"></span></a>
@@ -317,7 +309,7 @@
 									<li><a href="<?= base_url('pemusnahan_barang') ?>"><i class="fas fa-trash"></i> Pemusnahan Barang</a></li>
 									<li><a href="<?= base_url('user') ?>"><i class="fas fa-users"></i></i> Pengguna</a></li>
 								<?php elseif (session('userData')['role_user'] == "Kaprodi") : ?>
-									<li><a href="<?= base_url('index') ?>"><i class="fas fa-home"></i> Beranda </a></li>
+									<li><a href="<?= base_url('dashboard') ?>"><i class="fas fa-home"></i> Beranda </a></li>
 									<li><a href="<?= base_url('pendanaan') ?>"><i class="fas fa-dollar"></i> Pendanaan</a></li>
 									<li class=""><a><i class="fas fa-map"></i> Posisi Barang<span class="fa fa-chevron-down"></span></a>
 										<ul class="nav child_menu" style="display: none;">
@@ -336,7 +328,7 @@
 									<li><a href="<?= base_url('maintenance') ?>"><i class="fas fa-wrench"></i> Maintenance</a></li>
 									<li><a href="<?= base_url('pemusnahan_barang') ?>"><i class="fas fa-trash"></i> Pemusnahan Barang</a></li>
 								<?php elseif (session('userData')['role_user'] == "Sekprodi") : ?>
-									<li><a href="<?= base_url('index') ?>"><i class="fas fa-home"></i> Beranda </a></li>
+									<li><a href="<?= base_url('dashboard') ?>"><i class="fas fa-home"></i> Beranda </a></li>
 									<li><a href="<?= base_url('pendanaan') ?>"><i class="fas fa-dollar"></i> Pendanaan</a></li>
 									<li class=""><a><i class="fas fa-map"></i> Posisi Barang<span class="fa fa-chevron-down"></span></a>
 										<ul class="nav child_menu" style="display: none;">
@@ -355,7 +347,7 @@
 									<li><a href="<?= base_url('maintenance') ?>"><i class="fas fa-wrench"></i> Maintenance</a></li>
 									<li><a href="<?= base_url('pemusnahan_barang') ?>"><i class="fas fa-trash"></i> Pemusnahan Barang</a></li>
 								<?php elseif (session('userData')['role_user'] == "Aslab") : ?>
-									<li><a href="<?= base_url('index') ?>"><i class="fas fa-home"></i> Beranda </a></li>
+									<li><a href="<?= base_url('dashboard') ?>"><i class="fas fa-home"></i> Beranda </a></li>
 									<li><a href="<?= base_url('barang') ?>"><i class="fas fa-cubes"></i> Barang </a></li>
 									<li class=""><a><i class="fas fa-map"></i> Posisi Barang<span class="fa fa-chevron-down"></span></a>
 										<ul class="nav child_menu" style="display: none;">
@@ -434,128 +426,6 @@
 		</div>
 		<div class="clearfix"></div>
 	</footer>
-
-	<!-- jQuery -->
-	<script src="<?= base_url() ?>/gentelella-master/vendors/jquery/dist/jquery.min.js"></script>
-	<!-- Bootstrap -->
-	<script src="<?= base_url() ?>/gentelella-master/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<!-- FastClick -->
-	<script src="<?= base_url() ?>/gentelella-master/vendors/fastclick/lib/fastclick.js"></script>
-	<!-- NProgress -->
-	<script src="<?= base_url() ?>/gentelella-master/vendors/nprogress/nprogress.js"></script>
-	<!-- iCheck -->
-	<script src="<?= base_url() ?>/gentelella-master/vendors/iCheck/icheck.min.js"></script>
-	<!-- Datatables -->
-	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/jszip/dist/jszip.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/pdfmake/build/pdfmake.min.js"></script>
-	<script src="<?= base_url() ?>/gentelella-master/vendors/pdfmake/build/vfs_fonts.js"></script>
-	<!-- Custom Theme Scripts -->
-	<script src="<?= base_url() ?>/gentelella-master/build/js/custom.min.js"></script>
-	<!-- <script>
-		document.addEventListener("DOMContentLoaded", function() {
-			var fullscreenButton = document.getElementById("fullscreenButton");
-			fullscreenButton.addEventListener("click", toggleFullScreen);
-
-			// Check if fullscreen mode was active before
-			var isFullscreen = localStorage.getItem("fullscreen");
-			if (isFullscreen === "true") {
-				enterFullscreen(document.documentElement);
-			}
-
-			function toggleFullScreen() {
-				var element = document.documentElement; // Whole document
-				if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
-					exitFullscreen();
-				} else {
-					enterFullscreen(element);
-				}
-			}
-
-			function enterFullscreen(element) {
-				if (element.requestFullscreen) {
-					element.requestFullscreen();
-				} else if (element.webkitRequestFullscreen) {
-					element.webkitRequestFullscreen();
-				} else if (element.mozRequestFullScreen) {
-					element.mozRequestFullScreen();
-				} else if (element.msRequestFullscreen) {
-					element.msRequestFullscreen();
-				}
-
-				// Store fullscreen status
-				localStorage.setItem("fullscreen", "true");
-			}
-
-			function exitFullscreen() {
-				if (document.exitFullscreen) {
-					document.exitFullscreen();
-				} else if (document.webkitExitFullscreen) {
-					document.webkitExitFullscreen();
-				} else if (document.mozCancelFullScreen) {
-					document.mozCancelFullScreen();
-				} else if (document.msExitFullscreen) {
-					document.msExitFullscreen();
-				}
-
-				// Remove fullscreen status
-				localStorage.removeItem("fullscreen");
-			}
-		});
-
-		function openImage() {
-			// Buat elemen <div> untuk lapisan latar belakang gelap
-			var overlay = document.createElement("div");
-			overlay.style.position = "fixed";
-			overlay.style.top = "0";
-			overlay.style.left = "0";
-			overlay.style.width = "100%";
-			overlay.style.height = "100%";
-			overlay.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-			overlay.style.zIndex = "9999";
-
-			// Buat elemen <img> untuk menampilkan foto yang diperbesar
-			var enlargedImage = document.createElement("img");
-			enlargedImage.src = "<?= base_url('uploads/foto_profil/' . session('userData')['foto']) ?>";
-			enlargedImage.style.display = "block";
-			enlargedImage.style.margin = "auto";
-			enlargedImage.style.maxWidth = "80%";
-			enlargedImage.style.maxHeight = "80%";
-			enlargedImage.style.position = "absolute";
-			enlargedImage.style.top = "50%";
-			enlargedImage.style.left = "50%";
-			enlargedImage.style.transform = "translate(-50%, -50%)";
-
-			// Tambahkan elemen <img> ke dalam elemen lapisan latar belakang
-			overlay.appendChild(enlargedImage);
-
-			// Tambahkan elemen lapisan latar belakang ke dalam elemen body
-			document.body.appendChild(overlay);
-
-			// Fungsi untuk menutup tampilan foto saat diklik
-			overlay.onclick = function() {
-				document.body.removeChild(overlay);
-			};
-		}
-
-		function confirmLogout() {
-			if (confirm("Apakah Anda yakin ingin keluar?")) {
-				window.location.href = "<?php echo base_url('logout') ?>";
-			}
-		}
-	</script> -->
-	<!-- Skrip JavaScript untuk mengelola fitur fullscreen, tampilan gambar yang diperbesar, dan konfirmasi logout -->
 
 	<script>
 		// Menunggu hingga seluruh dokumen selesai dimuat sebelum menjalankan skrip
@@ -663,6 +533,34 @@
 			}
 		}
 	</script>
+	<!-- jQuery -->
+	<script src="<?= base_url() ?>/gentelella-master/vendors/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="<?= base_url() ?>/gentelella-master/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- FastClick -->
+	<script src="<?= base_url() ?>/gentelella-master/vendors/fastclick/lib/fastclick.js"></script>
+	<!-- NProgress -->
+	<script src="<?= base_url() ?>/gentelella-master/vendors/nprogress/nprogress.js"></script>
+	<!-- iCheck -->
+	<script src="<?= base_url() ?>/gentelella-master/vendors/iCheck/icheck.min.js"></script>
+	<!-- Datatables -->
+	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/jszip/dist/jszip.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/pdfmake/build/pdfmake.min.js"></script>
+	<script src="<?= base_url() ?>/gentelella-master/vendors/pdfmake/build/vfs_fonts.js"></script>
+	<!-- Custom Theme Scripts -->
+	<script src="<?= base_url() ?>/gentelella-master/build/js/custom.min.js"></script>
 </body>
 
 </html>

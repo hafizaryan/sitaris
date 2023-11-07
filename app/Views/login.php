@@ -227,7 +227,7 @@
                 <path fill="none" d="M0 0h48v48H0z"></path>
               </g>
             </svg>
-            <span >Lanjutkan dengan Google</span>
+            <span>Lanjutkan dengan Google</span>
           </div>
           </form>
           <div>

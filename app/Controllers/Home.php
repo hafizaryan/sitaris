@@ -47,7 +47,7 @@ class Home extends BaseController
     }
 
     // Fungsi Dashboard
-    public function index()
+    public function dashboard()
     {
         $data['judul'] = 'Beranda';
         $data['barang'] = $this->modelBarang->findAll();
@@ -63,15 +63,15 @@ class Home extends BaseController
         $data['gedung'] = $this->modelGedung->findAll();
         $data['ruangan'] = $this->modelRuangan->findAll();
         $data['user'] = $this->modelUser->findAll();
-        return view('index', $data);
+        return view('dashboard', $data);
     }
 
-    public function beranda()
-    {
-        $session = session();
-        $session->remove('status');
-        return view('Beranda');
-    }
+    // public function beranda()
+    // {
+    //     $session = session();
+    //     $session->remove('status');
+    //     return view('Beranda');
+    // }
 
     public function index2()
     {
@@ -158,7 +158,7 @@ class Home extends BaseController
 
         // Login berhasil arahkan ke index dengan pesan sukses
         $success_message = 'Login berhasil. Selamat Datang, ' . $user["nama"] . '!';
-        return redirect()->to(base_url('index'))->with('success', $success_message);
+        return redirect()->to(base_url('dashboard'))->with('success', $success_message);
     }
 
     // Fungsi logout
