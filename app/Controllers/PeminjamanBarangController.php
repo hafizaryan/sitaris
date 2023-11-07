@@ -45,7 +45,7 @@ class PeminjamanBarangController extends BaseController
 			return redirect()->to(base_url() . '/login');
 		}
 
-		$data['judul'] = 'Peminjaman Ruangan';
+		$data['judul'] = 'Peminjaman Barang';
 
 		// Ambil data peminjaman ruangan dengan join ke tabel lain
 		$data['model'] = $this->getDataPeminjaman();

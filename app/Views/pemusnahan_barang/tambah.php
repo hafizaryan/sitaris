@@ -5,7 +5,7 @@
     <br>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-end">
-            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>index">Beranda</a> / <a href="<?= base_url(); ?>pemusnahan_barang">Pemusnahan Barang</a> / Tambah</li>
+            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <a href="<?= base_url(); ?>pemusnahan_barang">Pemusnahan Barang</a> / Tambah</li>
         </ol>
     </nav>
     <!-- START WIDGETS -->

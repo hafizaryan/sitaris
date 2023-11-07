@@ -39,7 +39,7 @@
     <br>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-end">
-            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>index">Beranda</a> / <?= $judul; ?></li>
+            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <?= $judul; ?></li>
         </ol>
     </nav>
     <!-- Page Heading -->
@@ -172,7 +172,7 @@
         </div>
     </div>
 </div>
-<br><br>
+<br><br><br><br><br><br>
 <!-- /.container-fluid -->
 <?php
 $value = array(

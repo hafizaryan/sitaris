@@ -5,7 +5,7 @@
     <br>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-end">
-            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>index">Beranda</a> / <a href="<?= base_url(); ?>gedung">Gedung</a> / Tambah</li>
+            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <a href="<?= base_url(); ?>gedung">Gedung</a> / Tambah</li>
         </ol>
     </nav>
     <!-- START WIDGETS -->
@@ -87,7 +87,7 @@
         </div>
     </div>
 </div>
-
+<br><br><br><br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     $(document).ready(function() {

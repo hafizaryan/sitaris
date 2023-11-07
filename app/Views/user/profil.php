@@ -28,7 +28,7 @@
     <br>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-end">
-            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>index">Beranda</a> / <?= $judul; ?></li>
+            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <?= $judul; ?></li>
         </ol>
     </nav>
     <div class="x_title" style="border-bottom: none;"><br>
@@ -132,6 +132,6 @@
             </div>
     <?php }
     } ?>
-</div>
+</div><br><br><br>
 <div class="clearfix"></div>
 <?= $this->endSection() ?>

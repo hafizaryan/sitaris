@@ -236,7 +236,7 @@
 			<div class="col-md-3 left_col">
 				<div class="left_col scroll-view">
 					<div class="navbar nav_title" style="border: 0;">
-						<a href="<?= base_url(); ?>index" class="site_title mt-4" style="text-align: center;">
+						<a href="<?= base_url(); ?>dashboard" class="site_title mt-4" style="text-align: center;">
 							<h4>SI<b>TARIS</b> SI</h4>
 						</a>
 					</div>
@@ -365,7 +365,7 @@
 					</div>
 					<!-- /sidebar menu -->
 					<div class="sidebar-footer hidden-small">
-						<a data-toggle="tooltip" data-placement="top" title="Beranda" href="/index">
+						<a data-toggle="tooltip" data-placement="top" title="Beranda" href="/dashboard">
 							<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
 						</a>
 						<a id="fullscreenButton" data-toggle="tooltip" data-placement="top" title="Full Screen">

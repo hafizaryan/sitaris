@@ -40,7 +40,7 @@
     <br>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-end">
-            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>index">Beranda</a> / <?= $judul; ?></li>
+            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <?= $judul; ?></li>
         </ol>
     </nav>
     <!-- Page Heading -->
@@ -187,7 +187,7 @@
         }
     </script>
 </div>
-<div class="clearfix"></div>
+<div class="clearfix"></div><br><br><br><br>
 <?php
 // Fungsi untuk mengubah nama bulan bahasa Inggris menjadi bahasa Indonesia
 function bulanIndonesia($bulan)

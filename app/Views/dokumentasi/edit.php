@@ -5,7 +5,7 @@
     <br>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-end">
-            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>index">Beranda</a> / <a href="<?= base_url(); ?>dokumentas">Dokumentasi</a> / Edit</li>
+            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <a href="<?= base_url(); ?>dokumentas">Dokumentasi</a> / Edit</li>
         </ol>
     </nav>
     <!-- START WIDGETS -->
@@ -86,7 +86,7 @@
             </form>
         </div>
     </div>
-</div>
+</div><br><br><br><br>
 <script>
     function validateImageFile() {
         const fileInput = document.getElementById('upload_dokumentasi');

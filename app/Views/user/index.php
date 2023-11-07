@@ -42,7 +42,7 @@
     <br>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-end">
-            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>index">Beranda</a> / <?= $judul; ?></li>
+            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <?= $judul; ?></li>
         </ol>
     </nav>
     <!-- Judul Halaman -->
@@ -129,7 +129,7 @@
             </div>
         </div>
     </div>
-</div>
+</div><br><br><br><br>
 <div class="clearfix"></div>
 
 <!-- Skrip JavaScript -->
