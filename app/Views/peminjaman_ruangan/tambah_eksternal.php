@@ -17,7 +17,6 @@
                             <h3 class="panel-title" style="text-align: center;"><strong>Ajukan Peminjaman Ruangan</strong></h3>
                         </div><br><br>
                         <div class="panel-body form-group-separated">
-
                             <div class="col-md-12">
                                 <div class="panel-body form-group-separated">
                                     <div class="form-group">
@@ -30,7 +29,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-md-12">
                                 <div class=" panel-body form-group-separated">
                                     <div class="form-group">
@@ -76,7 +74,7 @@
                                         <div class="col-md-6 col-xs-12 control-label">
                                             <div class="input-group">
                                                 <input type="email" name="email_peminjam" class="form-control" autofocus required maxlength="50" />
-                                                <span class="input-group-text">@example.com</span>
+                                                <!-- <span class="input-group-text">@example.com</span> -->
                                             </div>
                                         </div>
                                     </div>

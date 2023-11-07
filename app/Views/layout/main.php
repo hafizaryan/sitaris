@@ -96,7 +96,12 @@
 			color: #fff;
 		}
 
-		/* Media query for mobile devices with a maximum width of 767px */
+		.footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+		}
+
 		@media (max-width: 767px) {
 			body {
 				overflow-x: hidden;
@@ -420,13 +425,16 @@
 			</div>
 		</div>
 	</div>
-	<footer>
-		<b>Versi</b> 1.0.0
-		<div class="pull-right">
+	<footer class="footer">
+		<div class="pull-left">
+			<b>Versi</b> 1.0.0
+		</div>
+		<div class="pull-right" style="margin-right: 230px;">
 			Copyright © <a href="<?= base_url('about'); ?>"><?php echo date('Y') ?></a> Sistem Informasi Inventaris Laboratorium Sistem Informasi
 		</div>
 		<div class="clearfix"></div>
 	</footer>
+
 	<!-- jQuery -->
 	<script src="<?= base_url() ?>/gentelella-master/vendors/jquery/dist/jquery.min.js"></script>
 	<!-- Bootstrap -->

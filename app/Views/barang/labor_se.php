@@ -293,6 +293,7 @@ $this->section('content');
         </div>
     </div>
 </div>
+<br><br>
 <!-- /.container-fluid -->
 <div class="clearfix"></div>
 <!-- Modal Detail Barang -->

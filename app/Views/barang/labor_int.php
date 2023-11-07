@@ -376,6 +376,7 @@ $this->section('content');
         </div>
     </div>
 </div>
+<br><br>
 <!-- /.container-fluid -->
 <!-- Modal Detail Barang -->
 <?php

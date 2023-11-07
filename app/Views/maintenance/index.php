@@ -172,6 +172,7 @@
         </div>
     </div>
 </div>
+<br><br>
 <!-- /.container-fluid -->
 <?php
 $value = array(
