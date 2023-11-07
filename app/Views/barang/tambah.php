@@ -230,8 +230,8 @@
                                         <label class="col-md-3 col-xs-12 control-label">Tanggal Masuk Barang <span style="color: red;">*</span></label>
                                         <div class="col-md-6 col-xs-12 control-label">
                                             <div class="input-group"> -->
-                            <input type="date" hidden name="tgl_masuk_barang" id="tgl_masuk_barang" required class="form-control" autofocus />
-                            <!-- </div>
+                                                <input type="date" hidden name="tgl_masuk_barang" id="tgl_masuk_barang" required class="form-control" autofocus />
+                                            <!-- </div>
                                         </div>
                                     </div>
                                 </div>
@@ -297,33 +297,26 @@
         $('#gambar_barang').change(function() {
             var file = this.files[0];
             var fileType = file.type;
-
             if (fileType.includes('image')) {
                 var reader = new FileReader();
-
                 reader.onload = function(e) {
                     $('#filePreview').html('<img src="' + e.target.result + '" class="img-fluid">');
                 }
-
                 reader.readAsDataURL(file);
             } else if (fileType.includes('pdf')) {
                 var reader = new FileReader();
-
                 reader.onload = function(e) {
                     $('#filePreview').html('<embed src="' + e.target.result + '" type="application/pdf" width="100%" height="600px" />');
                 }
-
                 reader.readAsDataURL(file);
             } else {
                 alert('Format file tidak didukung.');
             }
         });
     });
-
     // Get the select elements
     const kategoriSelect = document.getElementById('kategori_barang');
     // const subKategoriSelect = document.getElementById('sub_kategori');
-
     // Define the options for each Kategori Barang
     const kategoriOptions = {
         'Alat': ['Cutter', 'Krimping', 'Set_Obeng', 'Toolbox'],
@@ -331,59 +324,45 @@
         'Media': ['GPS_Mobile', 'Layar_Proyektor', 'Livecam', 'Papan_Tulis', 'Proyektor'],
         'Perangkat': ['Access_Point', 'Antena', 'Camera_CCTV', 'Camera_Eksternal', 'CPU', 'Hardisk', 'Kabel', 'Keyboard', 'Komputer', 'LAN_Card', 'LAN_Tester', 'Monitor', 'Modem', 'Mouse', 'Poe_Adapter', 'RAM', 'Router', 'Server', 'Speaker', 'Switch', 'UPS', 'USB_Adapter', 'USB_Wireless', 'Wireless_Card'],
     };
-
     // Function to update Sub Kategori options based on the selected Kategori Barang
     function updateSubKategoriOptions() {
         // Clear previous options
         subKategoriSelect.innerHTML = '<option>Pilih Sub Kategori</option>';
         const selectedKategori = kategoriSelect.value;
         const subKategoriOptions = kategoriOptions[selectedKategori] || [];
-
         // Add new options
         for (const subKategori of subKategoriOptions) {
             const option = document.createElement('option');
             // Mengganti underscore (_) dengan spasi untuk tampilan ke pengguna
             option.text = subKategori.replace(/_/g, ' ');
-
             // Tetap menggunakan garis bawah dalam data yang dikirim ke database
             option.value = subKategori;
-
             subKategoriSelect.appendChild(option);
         }
     }
-
     // Add event listener to Kategori Barang select
     kategoriSelect.addEventListener('change', updateSubKategoriOptions);
-
     // Call the function initially to set the default Sub Kategori options
     updateSubKategoriOptions();
-
     function setTodayDate() {
         const tglUploadInput = document.getElementById("tgl_masuk_barang");
         const tglEditInput = document.getElementById("tgl_edit");
-
         // Buat objek tanggal sekarang
         const today = new Date();
-
         // Format tanggal ke bentuk yang sesuai dengan atribut "date" pada input
         const formattedDate = today.toISOString().split("T")[0];
         const formattedDate1 = today.toISOString().split("T")[0];
-
         // Set nilai input dengan tanggal sekarang
         tglUploadInput.value = formattedDate;
         tglEditInput.value = formattedDate1;
     }
-
     // Panggil fungsi saat halaman selesai diload
     window.onload = setTodayDate;
-
     function validateImageFile() {
         const fileInput = document.getElementById('gambar_barang');
         const file = fileInput.files[0];
-
         const allowedExtensions = /(\.jpeg|\.jpg|\.png)$/i;
         const maxSize = 10 * 1024 * 1024; // 10 MB
-
         if (!allowedExtensions.exec(file.name)) {
             alert('File harus berupa gambar dengan format JPG, JPEG atau PNG.');
             fileInput.value = '';

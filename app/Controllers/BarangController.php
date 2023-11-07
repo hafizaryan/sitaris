@@ -23,13 +23,11 @@ class BarangController extends BaseController
 
 	public function __construct()
 	{
-
 		$this->modelBarang = new BarangModel();
 		$this->modelPendanaan = new PendanaanModel();
 		$this->modelRuangan = new RuanganModel();
 		$this->modelUser = new UserModel();
 	}
-
 	public function index()
 	{
 		if (!isset(session('userData')['username'])) {

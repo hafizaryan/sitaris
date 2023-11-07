@@ -1,7 +1,5 @@
 <?php
-// Extends layout/main.php untuk mengatur layout halaman
 $this->extend('layout/main');
-// Mulai bagian konten
 $this->section('content');
 ?>
 <style>
@@ -38,11 +36,9 @@ $this->section('content');
 
     .dropdown-menu {
         max-height: 300px;
-        /* Sesuaikan dengan tinggi maksimum yang Anda inginkan */
         overflow-y: auto;
     }
 
-    /* CSS untuk tampilan mobile */
     @media (max-width: 768px) {
         .btn-group.dropdown {
             margin-top: 10px;
@@ -129,7 +125,6 @@ $this->section('content');
                     $uniqueTahunBarang = array_unique(array_column($model, 'tahun_barang'));
                     // Mengurutkan tahun_barang secara ascending
                     sort($uniqueTahunBarang);
-
                     foreach ($uniqueTahunBarang as $tahun) {
                         echo '<a class="dropdown-item" target="_blank" href="barang/cetak_tahun/' . $tahun . '">' . $tahun . '</a>';
                     }
@@ -146,14 +141,11 @@ $this->section('content');
                     foreach ($uniqueIds as $id) {
                         // Cari indeks pertama dari elemen dengan 'sub_kategori' yang sesuai
                         $index = array_search($id, array_column($model, 'sub_kategori'));
-
                         // Jika indeks ditemukan, tampilkan 'id_ruangan' dan 'nama_ruangan'
                         if ($index !== false) {
                             $sub_kategori = $model[$index]['sub_kategori'];
-
                             // Mengganti underscore (_) dengan spasi
                             $sub_kategori_display = str_replace('_', ' ', $sub_kategori);
-
                             // Tampilkan link dengan teks yang sudah diformat
                             echo '<a class="dropdown-item" target="_blank" href="barang/cetak_kategori/' . $id . '">' . $sub_kategori_display . '</a> ';
                         }
@@ -171,7 +163,6 @@ $this->section('content');
                     foreach ($uniqueIds as $id) {
                         // Cari indeks pertama dari elemen dengan 'id_ruangan' yang sesuai
                         $index = array_search($id, array_column($model, 'id_ruangan'));
-
                         // Jika indeks ditemukan, tampilkan 'id_ruangan' dan 'nama_ruangan'
                         if ($index !== false) {
                             $nama_ruangan = $model[$index]['nama_ruangan'];
@@ -203,7 +194,6 @@ $this->section('content');
                                 foreach ($uniqueIds as $id) {
                                     // Cari indeks pertama dari elemen dengan 'id_pendanaan' yang sesuai
                                     $index = array_search($id, array_column($model, 'id_pendanaan'));
-
                                     // Jika indeks ditemukan, tampilkan 'id_ruangan' dan 'nama_ruangan'
                                     if ($index !== false) {
                                         $jenis_pendanaan = $model[$index]['jenis_pendanaan'];
@@ -259,8 +249,7 @@ $this->section('content');
                         <?php
                         $no = 0;
                         $no1 = 0;
-                        $marginBetweenRows = '10px'; // Atur jarak antara baris di sini
-                        // membuat descending
+                        $marginBetweenRows = '10px';
                         usort($model, function ($a, $b) {
                             return $b['id_barang'] - $a['id_barang'];
                         });
@@ -317,12 +306,10 @@ $this->section('content');
                             <div class="col">Jenis Pendanaan</div>
                             <div class="col-data">${jenis_pendanaan}</div>
                         </div>
-
                         <div class="row">
                             <div class="col">Lokasi Barang</div>
                             <div class="col-data">${nama_ruangan}</div>
                         </div>
-
                         <div class="row">
                             <div class="col">Tahun Barang</div>
                             <div class="col-data">${tahun_barang}</div>
@@ -381,17 +368,14 @@ $this->section('content');
         const cetakButton = document.getElementById("cetakButtonModal");
         const idPendanaanSelect = document.getElementById("id_pendanaan");
         const tahunBarangSelect = document.getElementById("tahun_barang");
-
         // Fungsi untuk memeriksa apakah setidaknya satu data terisi
         function isAtLeastOneDataFilled() {
             return idPendanaanSelect.value !== "" || tahunBarangSelect.value !== "";
         }
-
         // Fungsi untuk mengatur status tombol
         function updateButtonStatus() {
             cetakButton.disabled = !isAtLeastOneDataFilled();
         }
-
         // Panggil fungsi pertama kali dan juga setiap kali input berubah
         updateButtonStatus();
         idPendanaanSelect.addEventListener("change", updateButtonStatus);
@@ -401,24 +385,18 @@ $this->section('content');
     document.getElementById("cetakButtonModal").addEventListener("click", function() {
         var id_pendanaan = document.getElementById("id_pendanaan").value;
         var tahun_barang = document.getElementById("tahun_barang").value;
-
         var url = "barang/cetak_pendanaan/" + id_pendanaan;
-
         if (tahun_barang) {
             url += "?tahun_barang=" + tahun_barang;
         }
-
         window.open(url, "_blank");
     });
-
     document.addEventListener('DOMContentLoaded', function() {
         var toast = document.getElementById('custom-toast');
-
         if (toast) {
             setTimeout(function() {
                 toast.classList.add('show-toast');
             }, 100);
-
             setTimeout(function() {
                 toast.classList.remove('show-toast');
             }, 3000);
