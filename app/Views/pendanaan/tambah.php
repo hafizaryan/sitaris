@@ -29,7 +29,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -42,7 +41,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="panel-footer">
                             <input type="submit" value="SIMPAN" class="btn btn-primary pull-right">
                             <input type="button" value="KEMBALI" class="btn btn-danger pull-right" onclick="history.back()">
