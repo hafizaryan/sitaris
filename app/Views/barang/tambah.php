@@ -287,11 +287,8 @@
             </form>
         </div>
     </div>
-</div>
-<!-- Input untuk preview file-->
-
+</div><br><br><br><br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 <script>
     $(document).ready(function() {
         $('#gambar_barang').change(function() {

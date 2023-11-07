@@ -1,22 +1,26 @@
-<?= $this->extend('layout/main1') ?>
+<?= $this->extend('layout/main_form') ?>
 <?= $this->section('content') ?>
 <style>
     p {
         color: grey;
+    }
+
+    .body {
+        background-color: white !important;
     }
 </style>
 <!-- PAGE CONTENT WRAPPER -->
 
 <div class="page-content-wrap">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" style="background-color: white; padding-bottom: 100px;">
             <form class="form-horizontal" method="POST" action="<?= base_url('/peminjaman_ruangan/tambah') ?>" enctype="multipart/form-data">
                 <div class="panel panel-default">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default"><br>
                         <div class="panel-heading">
                             <h3 class="panel-title" style="text-align: center;"><strong>Ajukan Peminjaman Ruangan</strong></h3>
                         </div><br><br>
-                        <div class="panel-body form-group-separated">
+                        <div class="panel-body form-group-separated" style="padding-left: 65px; ">
                             <div class="col-md-12">
                                 <div class="panel-body form-group-separated">
                                     <div class="form-group">
@@ -24,7 +28,6 @@
                                         <div class="col-md-6 col-xs-12 control-label">
                                             <div class="input-group">
                                                 <input type="text" style="text-align: center;" name="organisasi" placeholder="Data Peminjam Internal" class="form-control" autofocus required readonly />
-
                                             </div>
                                         </div>
                                     </div>
@@ -47,7 +50,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="col-md-3 col-xs-12 control-label">Program Studi / Unit <span style="color: red;">*</span></label>
@@ -65,7 +67,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-md-12" ">
                                 <div class=" panel-body form-group-separated">
                                 <div class="form-group">
@@ -79,7 +80,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -117,7 +117,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -130,7 +129,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label class="col-md-3 col-xs-12 control-label">Nama Ruangan <span style="color: red;">*</span></label>
@@ -193,7 +191,6 @@
                                 var fileInput = document.getElementById('bukti_peminjaman');
                                 var file = fileInput.files[0];
                                 var fileType = file.type;
-
                                 if (fileType.includes('pdf')) {
                                     var reader = new FileReader();
 
@@ -236,18 +233,15 @@
                             </div>
                         </div>
                     </div>
-
                     <input hidden type="text" name="asal_peminjam" class="form-control" autofocus required value="Internal" />
-
-                    <div class="panel-footer">
-                        <input type="submit" value="SIMPAN" class="btn btn-primary pull-right" onclick="return validateForm()">
-                        <input type="button" value="KEMBALI" class="btn btn-danger pull-right" onclick="history.back()">
+                    <div class="panel-footer" style="margin-right: 20px;">
+                        <input type="submit" value="Selesai" class="btn btn-primary pull-right" onclick="return validateForm()">
+                        <input type="button" value="Kembali" class="btn btn-danger pull-right" onclick="history.back()">
                     </div>
                 </div>
         </div>
         </form>
     </div>
-</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
@@ -412,5 +406,4 @@
         });
     });
 </script>
-<br><br><br><br><br><br><br>
 <?= $this->endSection() ?>

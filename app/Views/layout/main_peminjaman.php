@@ -59,20 +59,20 @@
 						</ul>
 					</div>
 					<!-- /sidebar menu -->
-					<div class="sidebar-footer hidden-small">
-						<a data-toggle="tooltip" data-placement="top" title="Beranda" href="#">
-							<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-						</a>
-						<a id="fullscreenButton" data-toggle="tooltip" data-placement="top" title="FullScreen">
-							<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-						</a>
-						<a data-toggle="tooltip" data-placement="top" title="About" href="#">
-							<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-						</a>
-						<a data-toggle="tooltip" data-placement="top" title="Logout" href="#">
-							<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-						</a>
-					</div>
+						<!-- <div class="sidebar-footer hidden-small">
+							<a data-toggle="tooltip" data-placement="top" title="Beranda" href="#">
+								<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+							</a>
+							<a id="fullscreenButton" data-toggle="tooltip" data-placement="top" title="FullScreen">
+								<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+							</a>
+							<a data-toggle="tooltip" data-placement="top" title="About" href="#">
+								<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+							</a>
+							<a data-toggle="tooltip" data-placement="top" title="Logout" href="#">
+								<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+							</a>
+						</div> -->
 					<!-- /menu footer buttons -->
 				</div>
 			</div>

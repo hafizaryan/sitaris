@@ -1,8 +1,4 @@
-<!-- File: views/prosedur_peminjaman_barang.php -->
-<!-- File ini merupakan tampilan untuk prosedur peminjaman barang laboratorium Sistem Informasi. -->
-<!-- File ini meng-extend layout 'main1', yang berisi tampilan umum. -->
-<?= $this->extend('layout/main1') ?>
-<!-- Bagian 'content' dimulai -->
+<?= $this->extend('layout/main_peminjaman') ?>
 <?= $this->section('content') ?>
 <style>
     .heading {

@@ -1,18 +1,22 @@
-<?= $this->extend('layout/main1') ?>
+<?= $this->extend('layout/main_form') ?>
 <?= $this->section('content') ?>
 <style>
     p {
         color: grey;
+    }
+
+    .body {
+        background-color: white !important;
     }
 </style>
 <!-- PAGE CONTENT WRAPPER -->
 
 <div class="page-content-wrap">
     <div class="row">
-        <div class="col-md-12">
-            <form class="form-horizontal" method="POST" action="<?= base_url('/peminjaman_ruangan/tambah') ?>" enctype="multipart/form-data">
+        <div class="col-md-12" style="background-color: white; padding-bottom: 100px;">
+            <form class="form-horizontal" style="padding-left: 80px;" method="POST" action="<?= base_url('/peminjaman_ruangan/tambah') ?>" enctype="multipart/form-data">
                 <div class="panel panel-default">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default"><br>
                         <div class="panel-heading">
                             <h3 class="panel-title" style="text-align: center;"><strong>Ajukan Peminjaman Ruangan</strong></h3>
                         </div><br><br>
@@ -246,10 +250,9 @@
                             </div>
                         </div>
                         <input hidden type="text" name="asal_peminjam" class="form-control" autofocus required value="Eksternal" />
-
-                        <div class="panel-footer">
-                            <input type="submit" value="SIMPAN" class="btn btn-primary pull-right" onclick="return validateForm()">
-                            <input type="button" value="KEMBALI" class="btn btn-danger pull-right" onclick="history.back()">
+                        <div class="panel-footer" style="margin-right: 20px;">
+                            <input type="submit" value="Selesai" class="btn btn-primary pull-right" onclick="return validateForm()">
+                            <input type="button" value="Kembali" class="btn btn-danger pull-right" onclick="history.back()">
                         </div>
                     </div>
                 </div>
@@ -420,6 +423,4 @@
         });
     });
 </script>
-
-<br><br><br><br><br><br><br>
 <?= $this->endSection() ?>

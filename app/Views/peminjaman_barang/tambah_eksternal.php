@@ -1,4 +1,4 @@
-<?= $this->extend('layout/main1') ?>
+<?= $this->extend('layout/main_form') ?>
 <?= $this->section('content') ?>
 <style>
     p {
@@ -9,7 +9,8 @@
 <div class="page-content-wrap">
     <div class="container">
 
-        <div class="x_panel">
+    <div class="x_panel" style="padding-bottom: 100px; padding-left: 80px;">
+
             <div class="x_title">
                 <h2>Peminjaman Barang</h2>
                 <div class="clearfix"></div>
@@ -276,8 +277,6 @@
         </div>
         </form>
     </div>
-</div>
-</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>

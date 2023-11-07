@@ -1,4 +1,4 @@
-<?= $this->extend('layout/main1') ?>
+<?= $this->extend('layout/main_peminjaman') ?>
 <!-- Bagian 'content' dimulai -->
 <?= $this->section('content') ?>
 <style>

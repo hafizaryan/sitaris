@@ -22,7 +22,7 @@
                         <h3 class="panel-title ml-3"><strong><?= $judul ?></strong></h3>
                         <input type="hidden" name="<?= $key ?>" value="<?= $id ?>" class="form-control" />
                     </div>
-                    <div class="col-md-12">
+                    <!-- <div class="col-md-12">
                         <div class="panel-body form-group-separated">
                             <div class="form-group">
                                 <label class="col-md-3 col-xs-12 control-label">Jenis Pendanaan</label>
@@ -40,8 +40,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-12">
+                    </div>-->
+                    <!-- <div class="col-md-12">
                         <div class="panel-body form-group-separated">
                             <div class="form-group">
                                 <label class="col-md-3 col-xs-12 control-label">Ruang</label>
@@ -59,8 +59,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-12">
+                    </div> -->
+                    <!-- <div class="col-md-12">
                         <div class="panel-body form-group-separated">
                             <div class="form-group">
                                 <label class="col-md-3 col-xs-12 control-label">Tahun Barang</label>
@@ -78,7 +78,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <input type="text" class="form-control" name="id_pendanaan" id="id_pendanaan" value="<?= $model['id_pendanaan'] ?>" readonly hidden />
+                    <input type="text" class="form-control" name="id_ruangan" id="id_ruangan" value="<?= $model['id_ruangan'] ?>" readonly hidden />
+                    <input type="text" class="form-control" name="tahun_barang" id="tahun_barang" value="<?= $model['tahun_barang'] ?>" readonly hidden />
+                    <input type="text" class="form-control" name="kategori_barang" id="kategori_barang" value="<?= $model['kategori_barang'] ?>" readonly hidden />
                     <!-- <div class="col-md-12">
                         <div class="panel-body form-group-separated">
                             <div class="form-group">
@@ -102,18 +106,6 @@
                             </div>
                         </div>
                     </div> -->
-                    <div class="col-md-12">
-                        <div class="panel-body form-group-separated">
-                            <div class="form-group">
-                                <label class="col-md-3 col-xs-12 control-label">Kategori</label>
-                                <div class="col-md-6 col-xs-12 control-label">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="kategori_barang" id="kategori_barang" value="<?= $model['kategori_barang'] ?>" readonly />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- <div class="col-md-12">
                         <div class="panel-body form-group-separated">
                             <div class="form-group">
@@ -128,28 +120,17 @@
                             </div>
                         </div>
                     </div> -->
-                    <div class="col-md-12">
-                        <div class="panel-body form-group-separated">
-                            <div class="form-group">
-                                <label class="col-md-3 col-xs-12 control-label">Subkategori</label>
-                                <div class="col-md-6 col-xs-12 control-label">
-                                    <div class="input-group">
-                                        <?php
-                                        $sub_kategori = str_replace('_', ' ', $model['sub_kategori']);
-                                        ?>
-                                        <input type="text" class="form-control" name="sub_kategori" id="sub_kategori" value="<?= $sub_kategori ?>" readonly />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                    $sub_kategori = str_replace('_', ' ', $model['sub_kategori']);
+                    ?>
+                    <input type="text" class="form-control" name="sub_kategori" id="sub_kategori" value="<?= $sub_kategori ?>" readonly hidden />
                     <div class="col-md-12">
                         <div class="panel-body form-group-separated">
                             <div class="form-group">
                                 <label class="col-md-3 col-xs-12 control-label">Merk Barang</label>
                                 <div class="col-md-6 col-xs-12 control-label">
                                     <div class="input-group">
-                                        <input type="text" name="nama_barang" maxlength="50" value="<?= $model['nama_barang'] ?>" class="form-control" id="nama_barang" autofocus required />
+                                        <input type="text" name="nama_barang" maxlength="50" value="<?= $model['nama_barang'] ?>" class="form-control" id="nama_barang" autofocus required readonly />
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +160,6 @@
                                             foreach ($enumValues as $enumValue) {
                                                 $displayValue = str_replace("_", " ", $enumValue); // Mengganti garis bawah dengan spasi untuk tampilan
                                                 $databaseValue = $enumValue; // Nilai asli dengan garis bawah untuk disimpan ke database
-
                                                 if ($databaseValue === $model['kondisi']) {
                                                     echo "<option value='$databaseValue' selected>$displayValue</option>";
                                                 } else {
@@ -210,13 +190,14 @@
                             <div class="form-group">
                                 <label class="col-md-3 col-xs-12 control-label">Tanggal Masuk Barang</label>
                                 <div class="col-md-6 col-xs-12 control-label">
-                                    <div class="input-group"> -->
-                    <input type="date" hidden name="tgl_masuk_barang" value="<?= $model['tgl_masuk_barang'] ?>" class="form-control" autofocus />
-                    <!-- </div>
+                                    <div class="input-group">
+                                        <input type="date" hidden name="tgl_masuk_barang" value="<?= $model['tgl_masuk_barang'] ?>" class="form-control" autofocus />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div> -->
+                    <input type="date" name="tgl_masuk_barang" value="<?= $model['tgl_masuk_barang'] ?>" class="form-control" autofocus hidden />
                     <div class="col-md-12">
                         <div class="panel-body form-group-separated">
                             <div class="form-group">
@@ -241,34 +222,27 @@
             </form>
         </div>
     </div>
-</div>
+</div><br><br><br><br>
 
 <?php
 // Ambil nilai waktu_input dari $model
 $waktu_input = $model['waktu_input'];
-
 // Ubah format waktu_input ke dalam objek DateTime
 $dateTime = new DateTime($waktu_input);
-
 // Ambil bagian jam dan menit dari objek DateTime
 $jam_dan_waktu = $dateTime->format('H:i');
-
 // Tampilkan nilai jam dan waktu pada input
 ?>
 <script>
     // Ambil elemen input tanggal
     var inputTanggal = document.getElementById("tgl_edit");
-
     // Dapatkan tanggal sekarang dalam format YYYY-MM-DD
     var tanggalSekarang = new Date().toISOString().split("T")[0];
-
     // Setel nilai input tanggal ke tanggal sekarang
     inputTanggal.value = tanggalSekarang;
     // Get the select elements
-
     const kategoriSelect = document.getElementById('kategori_barang');
     // const subKategoriSelect = document.getElementById('sub_kategori');
-
     const kategoriOptions = {
         'Alat': ['Cutter', 'Krimping', 'Set_Obeng', 'Toolbox'],
         'Furnitur': ['Air_Conditioner', 'Jam_Dinding', 'Kursi', 'Lemari', 'Loker', 'Meja', 'Rak'],
@@ -284,14 +258,12 @@ $jam_dan_waktu = $dateTime->format('H:i');
         const selectedKategori = kategoriSelect.value;
         // Mengambil daftar opsi Sub Kategori berdasarkan Kategori yang dipilih
         const subKategoriOptions = kategoriOptions[selectedKategori] || [];
-
         // Menambahkan opsi-opsi baru
         for (const subKategori of subKategoriOptions) {
             const option = document.createElement('option');
             option.text = subKategori;
             subKategoriSelect.appendChild(option);
         }
-
         // Menetapkan opsi yang dipilih sebelumnya
         const selectedSubKategori = '<?= $model['sub_kategori'] ?>';
         // Memeriksa apakah opsi yang dipilih sebelumnya ada dalam daftar opsi Sub Kategori yang baru
@@ -299,20 +271,15 @@ $jam_dan_waktu = $dateTime->format('H:i');
             subKategoriSelect.value = selectedSubKategori;
         }
     }
-
     kategoriSelect.addEventListener('change', updateSubKategoriOptions);
-
     updateSubKategoriOptions();
 
     // Fungsi untuk mengisi nilai input dengan tanggal sekarang
-
     function validateImageFile() {
         const fileInput = document.getElementById('gambar_barang');
         const file = fileInput.files[0];
-
         const allowedExtensions = /(\.jpeg|\.jpg|\.png)$/i;
         const maxSize = 10 * 1024 * 1024; // 10 MB
-
         if (!allowedExtensions.exec(file.name)) {
             alert('File harus berupa gambar dengan format JPG, JPEG atau PNG.');
             fileInput.value = '';

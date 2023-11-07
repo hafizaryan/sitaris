@@ -1,4 +1,4 @@
-<?= $this->extend('layout/main1') ?>
+<?= $this->extend('layout/main_form') ?>
 <?= $this->section('content') ?>
 <style>
     p {
@@ -8,11 +8,11 @@
 <!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <div class="container">
-        <div class="x_panel">
-            <div class="x_title">
+        <div class="x_panel" style="padding-bottom: 100px; padding-left: 80px;">
+            <!-- <div class="x_title">
                 <h2>Peminjaman Barang</h2>
                 <div class="clearfix"></div>
-            </div>
+            </div> -->
             <div class="x_content">
                 <form id="myForm" class="form-horizontal form-label-left" method="POST" action="<?= base_url('/peminjaman_barang/tambah') ?>" enctype="multipart/form-data">
                     <div class="panel-heading">
@@ -49,9 +49,19 @@
                             </li>
                         </ul>
                         <div id="step-1" class="content" style="display: block;">
-                            <h2>Data Peminjam Internal</h2>
-                            <hr>
                             <input type="text" name="kode" id="kode" hidden>
+                            <div class="col-md-12">
+                                <div class="panel-body form-group-separated">
+                                    <div class="form-group">
+                                        <label class="col-md-3 col-xs-12 control-label"></label>
+                                        <div class="col-md-6 col-xs-12 control-label">
+                                            <div class="input-group">
+                                                <input type="text" style="text-align: center;" name="organisasi" placeholder="Data Peminjam Internal" class="form-control" autofocus required readonly />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="form-group row">
                                 <label class="col-md-3 col-xs-12 control-label">Fakultas / Lembaga <span style="color: red;">*</span></label>
                                 <div class="col-md-6 col-xs-12">
@@ -68,7 +78,6 @@
                                         </select>
                                     </div>
                                     <div class="valid-feedback">
-
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +154,6 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-
                                         </tbody>
                                     </table>
                                     <div class="input-group">
