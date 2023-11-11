@@ -11,6 +11,8 @@ Sistem Informasi Inventaris Laboratorium adalah platform yang telah dikembangkan
 - **Pembuatan Laporan**: Membuat laporan yang informatif tentang inventaris laboratorium.
 - **Tingkat Akses Terkontrol**: Memberikan tingkat akses yang berbeda sesuai dengan peran pengguna, sehingga mereka hanya dapat mengakses bagian-bagian tertentu sesuai dengan wewenang mereka.
 
+## Teknologi yang Digunakan
+
 ## Manfaat
 
 Dengan adanya sistem ini, diharapkan pengelolaan inventaris laboratorium menjadi lebih mudah dan efisien, sehingga memungkinkan staf laboratorium untuk fokus pada tugas-tugas yang lebih penting. Selain itu, laporan yang dihasilkan oleh sistem dapat memberikan wawasan yang berharga untuk pengambilan keputusan yang lebih baik terkait dengan persediaan barang dan peralatan di laboratorium.
