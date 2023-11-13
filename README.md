@@ -13,6 +13,9 @@ Sistem Informasi Inventaris Laboratorium adalah platform yang telah dikembangkan
 
 ## Teknologi yang Digunakan
 
+- PHP Versi 8
+- CodeIgniter 4
+
 ## Manfaat
 
 Dengan adanya sistem ini, diharapkan pengelolaan inventaris laboratorium menjadi lebih mudah dan efisien, sehingga memungkinkan staf laboratorium untuk fokus pada tugas-tugas yang lebih penting. Selain itu, laporan yang dihasilkan oleh sistem dapat memberikan wawasan yang berharga untuk pengambilan keputusan yang lebih baik terkait dengan persediaan barang dan peralatan di laboratorium.
