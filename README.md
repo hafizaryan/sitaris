@@ -13,8 +13,12 @@ Sistem Informasi Inventaris Laboratorium adalah platform yang telah dikembangkan
 
 ## Teknologi yang Digunakan
 
+- HTML 5
+- CSS 3
+- Bootstrap 4
 - PHP Versi 8
 - CodeIgniter 4
+- Database MariaDB
 
 ## Manfaat
 
