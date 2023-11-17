@@ -26,7 +26,7 @@ class PendanaanController extends BaseController
 			return redirect()->to(base_url() . '/login');
 		}
 		if (session('userData')['role_user'] == "Aslab") {
-			return redirect()->to(base_url() . 'index');
+			return redirect()->to(base_url() . 'dashboard');
 		}
 		$data['judul'] = 'Pendanaan';
 		$data['model'] = $this->modelPendanaan->findAll();
@@ -36,7 +36,7 @@ class PendanaanController extends BaseController
 	public function tambah()
 	{
 		if (session('userData')['role_user'] == "Aslab") {
-			return redirect()->to(base_url() . 'index');
+			return redirect()->to(base_url() . 'dashboard');
 		}
 		$data['judul'] = 'Tambah Pendanaan Barang';
 		echo view('pendanaan/tambah', $data);
@@ -58,7 +58,7 @@ class PendanaanController extends BaseController
 	public function edit()
 	{
 		if (session('userData')['role_user'] == "Aslab") {
-			return redirect()->to(base_url() . 'index');
+			return redirect()->to(base_url() . 'dashboard');
 		}
 		$id = $this->request->uri->getSegment(3);
 		$data['id'] = $id;
@@ -71,7 +71,7 @@ class PendanaanController extends BaseController
 	public function updateData()
 	{
 		if (session('userData')['role_user'] == "Aslab") {
-			return redirect()->to(base_url() . 'index');
+			return redirect()->to(base_url() . 'dashboard');
 		}
 		$data = array(
 			'id_pendanaan' => $this->request->getPost('id_pendanaan'),
@@ -89,7 +89,7 @@ class PendanaanController extends BaseController
 	public function delete()
 	{
 		if (session('userData')['role_user'] == "Aslab") {
-			return redirect()->to(base_url() . 'index');
+			return redirect()->to(base_url() . 'dashboard');
 		}
 		$id = $this->request->uri->getSegment(3);
 		if ($this->modelPendanaan->delete($id)) {

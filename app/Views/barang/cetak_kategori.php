@@ -56,7 +56,6 @@
             background-color: #5DA5FA;
             color: white;
             vertical-align: middle;
-
         }
 
         .table-container {
@@ -81,8 +80,6 @@
         <?php
         $firstValue = reset($model);
         $kategoriInventaris = $firstValue["sub_kategori"];
-
-        // Mengganti underscore dengan spasi
         $kategoriDisplay = str_replace('_', ' ', $kategoriInventaris);
         ?>
         <h5>DAFTAR INVENTARIS LABORATORIUM KATEGORI <?php echo strtoupper($kategoriDisplay); ?>
@@ -123,7 +120,6 @@
     <div class="container">
         <div class="ttd">
             <?php
-            // Fungsi untuk mengubah nama bulan bahasa Inggris menjadi bahasa Indonesia
             function bulanIndonesia($bulan)
             {
                 $bulan = strtolower($bulan);
@@ -156,7 +152,6 @@
                         return $bulan;
                 }
             }
-            // Mengubah format tanggal menjadi format Indonesia
             $tanggal = date('d');
             $bulanInggris = date('F');
             $bulanIndonesia = bulanIndonesia($bulanInggris);

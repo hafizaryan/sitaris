@@ -84,7 +84,6 @@
         <h5>DAFTAR INVENTARIS LABORATORIUM TAHUN <?php echo $tahunInventaris; ?><br> PROGRAM STUDI SISTEM INFORMASI FAKULTAS SAINS DAN TEKNOLOGI UIN SUSKA RIAU</h5>
     </div>
 
-
     <div class="container-md">
         <table>
             <thead>
@@ -121,7 +120,6 @@
     <div class="container">
         <div class="ttd">
             <?php
-            // Fungsi untuk mengubah nama bulan bahasa Inggris menjadi bahasa Indonesia
             function bulanIndonesia($bulan)
             {
                 $bulan = strtolower($bulan);
@@ -154,7 +152,6 @@
                         return $bulan;
                 }
             }
-            // Mengubah format tanggal menjadi format Indonesia
             $tanggal = date('d');
             $bulanInggris = date('F');
             $bulanIndonesia = bulanIndonesia($bulanInggris);

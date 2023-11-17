@@ -46,7 +46,6 @@ $this->section('content');
             margin-bottom: 10px;
         }
 
-
         .btn-group.dropdown .btn {
             width: 45%;
             text-align: left;
@@ -82,7 +81,6 @@ $this->section('content');
         }
     }
 </style>
-<!-- Begin Page Content -->
 <div class="container-fluid">
     <br>
     <nav aria-label="breadcrumb">
@@ -90,7 +88,6 @@ $this->section('content');
             <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <?= $judul; ?></li>
         </ol>
     </nav>
-    <!-- Page Heading -->
     <h1 class="h5 mt-4 mb-4 ml-1 ">Sistem Informasi Inventaris Laboratorium</h1>
     <?php if (session()->has('success')) : ?>
         <div id="custom-toast" class="custom-toast">
@@ -98,13 +95,11 @@ $this->section('content');
             <?= session('success') ?>
         </div>
     <?php endif; ?>
-    <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold" style="color: #2A3F54;">BARANG</h6>
         </div>
         <div class="card-body">
-            <!-- Tombol untuk tambah data -->
             <?php if (session('userData')['role_user'] == "Admin") : ?>
                 <a href="barang/tambah" class="btn btn-success">Tambah Data</a>
             <?php elseif (session('userData')['role_user'] == "Kalab") : ?>
@@ -121,9 +116,7 @@ $this->section('content');
                 <button type="button" class="btn btn-info pull-right " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-file-pdf"></i> Tahun</button>
                 <div class="dropdown-menu">
                     <?php
-                    // Mengumpulkan tahun_barang yang unik dari model
                     $uniqueTahunBarang = array_unique(array_column($model, 'tahun_barang'));
-                    // Mengurutkan tahun_barang secara ascending
                     sort($uniqueTahunBarang);
                     foreach ($uniqueTahunBarang as $tahun) {
                         echo '<a class="dropdown-item" target="_blank" href="barang/cetak_tahun/' . $tahun . '">' . $tahun . '</a>';
@@ -131,26 +124,66 @@ $this->section('content');
                     ?>
                 </div>
             </div>
-            <!-- Tombol dropdown untuk filter berdasarkan Kategori -->
+            <!-- Tombol dropdown untuk filter berdasarkan Kondisi -->
             <div class="btn-group dropdown pull-right mr-2 mb-3">
-                <button type="button" class="btn btn-info pull-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-file-pdf"></i> Kategori</button>
+                <button type="button" class="btn btn-info pull-right " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-file-pdf"></i> Kondisi</button>
                 <div class="dropdown-menu">
                     <?php
-                    // Memilih sub kategori yang unik dari model
-                    $uniqueIds = array_unique(array_column($model, 'sub_kategori'));
-                    foreach ($uniqueIds as $id) {
-                        // Cari indeks pertama dari elemen dengan 'sub_kategori' yang sesuai
-                        $index = array_search($id, array_column($model, 'sub_kategori'));
-                        // Jika indeks ditemukan, tampilkan 'id_ruangan' dan 'nama_ruangan'
-                        if ($index !== false) {
-                            $sub_kategori = $model[$index]['sub_kategori'];
-                            // Mengganti underscore (_) dengan spasi
-                            $sub_kategori_display = str_replace('_', ' ', $sub_kategori);
-                            // Tampilkan link dengan teks yang sudah diformat
-                            echo '<a class="dropdown-item" target="_blank" href="barang/cetak_kategori/' . $id . '">' . $sub_kategori_display . '</a> ';
-                        }
+                    $uniqueKondisiBarang = array_unique(array_column($model, 'kondisi'));
+                    sort($uniqueKondisiBarang);
+                    foreach ($uniqueKondisiBarang as $kondisi) {
+                        $displayValue = str_replace('_', ' ', $kondisi);
+                        echo '<a class="dropdown-item" target="_blank" href="barang/cetak_kondisi/' . $kondisi . '">' . $displayValue . '</a>';
                     }
                     ?>
+                </div>
+            </div>
+            <!-- Tombol dropdown untuk filter berdasarkan Kategori -->
+            <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#cetakModal1">
+                <i class="fas fa-file-pdf"></i> Kategori
+            </button>
+            <div class="modal fade" id="cetakModal1" tabindex="-1" role="dialog" aria-labelledby="cetakModal1Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cetakModal1Label">Cetak Kategori</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="sub_kategori">Kategori</label>
+                                    <select name="sub_kategori" id="sub_kategori" class="form-control" required>
+                                        <?php
+                                        $uniqueSubKategori = array_unique(array_column($model, 'sub_kategori'));
+                                        sort($uniqueSubKategori);
+                                        ?>
+                                        <?php foreach ($uniqueSubKategori as $sub_kategori) : ?>
+                                            <?php
+                                            $displayValue = str_replace('_', ' ', $sub_kategori);
+                                            ?>
+                                            <option value="<?= $sub_kategori ?>"><?= $displayValue ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="id_ruangan">Ruangan</label>
+                                    <select name="id_ruangan" id="id_ruangan" class="form-control" required>
+                                        <option value="">Pilih Ruangan</option>
+                                        <?php foreach ($data_ruangan as $data) : ?>
+                                            <option value="<?= $data['id_ruangan'] ?>"><?= $data['nama_ruangan'] ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button id="cetakButtonModal1" class="btn btn-primary"><i class="fas fa-print"></i> Cetak</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Tombol dropdown untuk filter berdasarkan Ruangan -->
@@ -158,12 +191,9 @@ $this->section('content');
                 <button type="button" class="btn btn-info pull-right " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-file-pdf"></i> Ruangan</button>
                 <div class="dropdown-menu">
                     <?php
-                    // Memilih ID ruangan yang unik dari model
                     $uniqueIds = array_unique(array_column($model, 'id_ruangan'));
                     foreach ($uniqueIds as $id) {
-                        // Cari indeks pertama dari elemen dengan 'id_ruangan' yang sesuai
                         $index = array_search($id, array_column($model, 'id_ruangan'));
-                        // Jika indeks ditemukan, tampilkan 'id_ruangan' dan 'nama_ruangan'
                         if ($index !== false) {
                             $nama_ruangan = $model[$index]['nama_ruangan'];
                             echo '<a class="dropdown-item" target="_blank" href="barang/cetak_ruangan/' . $id . '">' . $nama_ruangan . '</a> ';
@@ -172,11 +202,9 @@ $this->section('content');
                     ?>
                 </div>
             </div>
-            <!-- Button untuk membuka modal -->
             <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#cetakModal">
                 <i class="fas fa-file-pdf"></i> Pendanaan
             </button>
-            <!-- Modal -->
             <div class="modal fade" id="cetakModal" tabindex="-1" role="dialog" aria-labelledby="cetakModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -188,18 +216,6 @@ $this->section('content');
                         </div>
                         <div class="modal-body">
                             <form>
-                                <?php
-                                // Memilih ID pendanaan yang unik dari model
-                                $uniqueIds = array_unique(array_column($model, 'id_pendanaan'));
-                                foreach ($uniqueIds as $id) {
-                                    // Cari indeks pertama dari elemen dengan 'id_pendanaan' yang sesuai
-                                    $index = array_search($id, array_column($model, 'id_pendanaan'));
-                                    // Jika indeks ditemukan, tampilkan 'id_ruangan' dan 'nama_ruangan'
-                                    if ($index !== false) {
-                                        $jenis_pendanaan = $model[$index]['jenis_pendanaan'];
-                                    }
-                                }
-                                ?>
                                 <div class="form-group">
                                     <label for="id_pendanaan">Jenis Pendanaan</label>
                                     <select name="id_pendanaan" id="id_pendanaan" class="form-control" required>
@@ -213,9 +229,7 @@ $this->section('content');
                                     <select name="tahun_barang" id="tahun_barang" class="form-control" required>
                                         <option value="">Pilih Tahun Pendanaan</option>
                                         <?php
-                                        // Mengumpulkan tahun_barang yang unik dari model
                                         $uniqueTahunBarang = array_unique(array_column($model, 'tahun_barang'));
-                                        // Mengurutkan tahun-barang secara ascending
                                         sort($uniqueTahunBarang);
                                         ?>
                                         <?php foreach ($uniqueTahunBarang as $tahun) : ?>
@@ -233,7 +247,6 @@ $this->section('content');
                 </div>
             </div>
             <div class="table-responsive" style="max-height: 900px;">
-                <!-- Tabel untuk menampilkan data -->
                 <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
@@ -295,12 +308,10 @@ $this->section('content');
 </div>
 <div class="clearfix"></div>
 <script>
-    // Fungsi untuk menampilkan modal dengan data detail barang
     function showModal(jenis_pendanaan, nama_ruangan, tahun_barang, kategori_barang, sub_kategori, nama_barang, spek_barang, kondisi, deskripsi, tgl_masuk_barang, gambar_barang, waktu_input, user_input, user_edit, tgl_edit) {
         document.getElementById('modalxlLabel').innerText = 'Detail Barang';
         var modalBody = document.querySelector('#modalxl .modal-body');
         modalBody.innerHTML = '';
-        // Tambahkan data lain di bawah baris-baris data yang sudah ada
         modalBody.innerHTML += `
                         <div class="row">
                             <div class="col">Jenis Pendanaan</div>
@@ -368,15 +379,14 @@ $this->section('content');
         const cetakButton = document.getElementById("cetakButtonModal");
         const idPendanaanSelect = document.getElementById("id_pendanaan");
         const tahunBarangSelect = document.getElementById("tahun_barang");
-        // Fungsi untuk memeriksa apakah setidaknya satu data terisi
+
         function isAtLeastOneDataFilled() {
             return idPendanaanSelect.value !== "" || tahunBarangSelect.value !== "";
         }
-        // Fungsi untuk mengatur status tombol
+
         function updateButtonStatus() {
             cetakButton.disabled = !isAtLeastOneDataFilled();
         }
-        // Panggil fungsi pertama kali dan juga setiap kali input berubah
         updateButtonStatus();
         idPendanaanSelect.addEventListener("change", updateButtonStatus);
         tahunBarangSelect.addEventListener("change", updateButtonStatus);
@@ -391,6 +401,34 @@ $this->section('content');
         }
         window.open(url, "_blank");
     });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const cetakButton = document.getElementById("cetakButtonModal1");
+        const subKategoriSelect = document.getElementById("sub_kategori");
+        const ruanganSelect = document.getElementById("id_ruangan");
+
+        function isAtLeastOneDataFilled() {
+            return subKategoriSelect.value !== "" || ruanganSelect.value !== "";
+        }
+
+        function updateButtonStatus() {
+            cetakButton.disabled = !isAtLeastOneDataFilled();
+        }
+        updateButtonStatus();
+        subKategoriSelect.addEventListener("change", updateButtonStatus);
+        ruanganSelect.addEventListener("change", updateButtonStatus);
+    });
+
+    document.getElementById("cetakButtonModal1").addEventListener("click", function() {
+        var sub_kategori = document.getElementById("sub_kategori").value;
+        var id_ruangan = document.getElementById("id_ruangan").value;
+        var url = "barang/cetak_kategori/" + sub_kategori;
+        if (id_ruangan) {
+            url += "?id_ruangan=" + id_ruangan;
+        }
+        window.open(url, "_blank");
+    });
+
     document.addEventListener('DOMContentLoaded', function() {
         var toast = document.getElementById('custom-toast');
         if (toast) {
@@ -404,7 +442,6 @@ $this->section('content');
     });
 </script>
 <?php
-// Fungsi untuk mengubah nama bulan bahasa Inggris menjadi bahasa Indonesia
 function bulanIndonesia($bulan)
 {
     $bulan = strtolower($bulan);
@@ -437,11 +474,9 @@ function bulanIndonesia($bulan)
             return $bulan;
     }
 }
-// Mengubah format tanggal menjadi format Indonesia
 $tanggal = date('d');
 $bulanInggris = date('F');
 $bulanIndonesia = bulanIndonesia($bulanInggris);
 $tahun = date('Y');
 ?>
-<!-- Selesai bagian konten -->
 <?= $this->endSection() ?>

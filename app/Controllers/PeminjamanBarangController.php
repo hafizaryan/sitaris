@@ -38,7 +38,7 @@ class PeminjamanBarangController extends BaseController
 	{
 
 		if (session('userData')['role_user'] == "Aslab") {
-			return redirect()->to(base_url() . 'index');
+			return redirect()->to(base_url() . 'dashboard');
 		}
 		// Cek apakah pengguna sudah login
 		if (!isset(session('userData')['username'])) {

@@ -28,6 +28,7 @@ class BarangController extends BaseController
 		$this->modelRuangan = new RuanganModel();
 		$this->modelUser = new UserModel();
 	}
+
 	public function index()
 	{
 		if (!isset(session('userData')['username'])) {
@@ -35,16 +36,18 @@ class BarangController extends BaseController
 		}
 		$role = session('userData')['role_user'];
 		if ($role == "Kaprodi" || $role == "Sekprodi") {
-			return redirect()->to(base_url() . 'index');
+			return redirect()->to(base_url() . 'dashboard');
 		}
 		$data['judul'] = 'Barang';
 		$data['data_pendanaan'] = $this->modelPendanaan->findAll();
+		$data['data_ruangan'] = $this->modelRuangan->findAll();
 		$data['model'] = $this->modelBarang
 			->join('pendanaan', 'pendanaan.id_pendanaan = barang.id_pendanaan', 'left')
 			->join('ruangan', 'ruangan.id_ruangan = barang.id_ruangan', 'left')
 			->findAll();
 		echo view('/barang/index', $data);
 	}
+
 	public function indexRsi()
 	{
 		if (!isset(session('userData')['username'])) {
@@ -52,12 +55,14 @@ class BarangController extends BaseController
 		}
 		$data['judul'] = 'Barang Labor RSI';
 		$data['data_pendanaan'] = $this->modelPendanaan->findAll();
+		$data['data_ruangan'] = $this->modelRuangan->findAll();
 		$data['model'] = $this->modelBarang
 			->join('pendanaan', 'pendanaan.id_pendanaan = barang.id_pendanaan', 'left')
 			->join('ruangan', 'ruangan.id_ruangan = barang.id_ruangan', 'left')
 			->findAll();
 		echo view('/barang/labor_rsi', $data);
 	}
+
 	public function indexSe()
 	{
 		if (!isset(session('userData')['username'])) {
@@ -65,12 +70,14 @@ class BarangController extends BaseController
 		}
 		$data['judul'] = 'Barang Labor SE';
 		$data['data_pendanaan'] = $this->modelPendanaan->findAll();
+		$data['data_ruangan'] = $this->modelRuangan->findAll();
 		$data['model'] = $this->modelBarang
 			->join('pendanaan', 'pendanaan.id_pendanaan = barang.id_pendanaan', 'left')
 			->join('ruangan', 'ruangan.id_ruangan = barang.id_ruangan', 'left')
 			->findAll();
 		echo view('/barang/labor_se', $data);
 	}
+
 	public function indexInt()
 	{
 		if (!isset(session('userData')['username'])) {
@@ -78,12 +85,14 @@ class BarangController extends BaseController
 		}
 		$data['judul'] = 'Barang Labor INT';
 		$data['data_pendanaan'] = $this->modelPendanaan->findAll();
+		$data['data_ruangan'] = $this->modelRuangan->findAll();
 		$data['model'] = $this->modelBarang
 			->join('pendanaan', 'pendanaan.id_pendanaan = barang.id_pendanaan', 'left')
 			->join('ruangan', 'ruangan.id_ruangan = barang.id_ruangan', 'left')
 			->findAll();
 		echo view('/barang/labor_int', $data);
 	}
+
 	public function tambah()
 	{
 		$id = 0;
@@ -101,6 +110,7 @@ class BarangController extends BaseController
 			->findAll();
 		echo view('barang/tambah', $data);
 	}
+
 	public function insertData()
 	{
 		$file = $this->request->getFile('gambar_barang');
@@ -112,7 +122,6 @@ class BarangController extends BaseController
 			$file->move(ROOTPATH . 'public/uploads/', $fileName);
 			session()->setFlashData('message', 'Berhasil Upload');
 		} else {
-
 			$dummyImagePath = ROOTPATH . 'public/gentelella-master/production/images/dummy.png';
 			$fileName = 'dummy.png';
 			copy($dummyImagePath, ROOTPATH . 'public/uploads/' . $fileName);
@@ -151,6 +160,7 @@ class BarangController extends BaseController
 		}
 		return redirect()->to(base_url() . 'barang');
 	}
+
 	public function edit()
 	{
 		$id = $this->request->uri->getSegment(3);
@@ -167,6 +177,7 @@ class BarangController extends BaseController
 			->findAll();
 		echo view('barang/edit', $data);
 	}
+
 	public function updateData()
 	{
 		$id = $this->request->getPost('id_barang');
@@ -217,6 +228,7 @@ class BarangController extends BaseController
 		}
 		return redirect()->to(base_url() . '/barang');
 	}
+
 	public function delete()
 	{
 		$id = $this->request->uri->getSegment(3);
@@ -227,10 +239,11 @@ class BarangController extends BaseController
 		}
 		return redirect()->to(base_url() . '/barang');
 	}
+
 	public function cetakRuangan($id)
 	{
 		$id = $this->request->uri->getSegment(3);
-		$data['model'] = $this->modelBarang->where(["id_ruangan" => $id])->findAll();
+		$data['model'] = $this->modelBarang->where(["id_ruangan" => $id, "kondisi" => "baik"])->findAll();
 		$modelRuangan = new RuanganModel();
 		$data['ruangan'] = $modelRuangan->where('id_ruangan', $id)->findAll();
 		$data['ruangan'][0]['nama_ruangan'];
@@ -257,6 +270,7 @@ class BarangController extends BaseController
 		$this->response->setContentType('application/pdf');
 		$pdf->Output('Laporan Data Inventaris Laboratorium.pdf', 'I');
 	}
+
 	public function cetakTahun($id)
 	{
 		$id = $this->request->uri->getSegment(3);
@@ -284,6 +298,35 @@ class BarangController extends BaseController
 		$this->response->setContentType('application/pdf');
 		$pdf->Output('Laporan Data Inventaris Laboratorium.pdf', 'I');
 	}
+
+	public function cetakKondisi($id)
+	{
+		$id = $this->request->uri->getSegment(3);
+		$data['model'] = $this->modelBarang->where(["kondisi" => $id])->findAll();
+		$userModel = new UserModel();
+		$kalabUsers = $userModel->getUsersByRole('kalab');
+		$kalabNames = [];
+		$kalabNips = [];
+		foreach ($kalabUsers as $user) {
+			$kalabNames[] = $user['nama'];
+			$kalabNips[] = $user['no_identitas'];
+		}
+		$data['kalabNames'] = $kalabNames;
+		$data['kalabNips'] = $kalabNips;
+		$pdf = new TCPDF('P', PDF_UNIT, 'A4', true, 'UTF-8', false);
+		$pdf->SetCreator(PDF_CREATOR);
+		$pdf->SetAuthor('SITARIS DEV');
+		$pdf->SetTitle('Cetak Kondisi');
+		$pdf->SetSubject('Barang');
+		$pdf->setPrintHeader(false);
+		$pdf->setPrintFooter(false);
+		$pdf->AddPage();
+		$html = view('barang/cetak_kondisi', $data);
+		$pdf->writeHTML($html, true, false, true, false, '');
+		$this->response->setContentType('application/pdf');
+		$pdf->Output('Laporan Data Inventaris Laboratorium.pdf', 'I');
+	}
+
 	public function cetakPendanaan($id)
 	{ {
 			$id = $this->request->uri->getSegment(3);
@@ -324,7 +367,12 @@ class BarangController extends BaseController
 	public function cetakKategori($id)
 	{
 		$id = $this->request->uri->getSegment(3);
-		$data['model'] = $this->modelBarang->where(["sub_kategori" => $id])->findAll();
+		$id_ruangan = $this->request->getGet('id_ruangan');
+		$whereCondition = ["sub_kategori" => $id];
+		if ($id_ruangan) {
+			$whereCondition['id_ruangan'] = $id_ruangan;
+		}
+		$data['model'] = $this->modelBarang->where($whereCondition)->findAll();
 		$userModel = new UserModel();
 		$kalabUsers = $userModel->getUsersByRole('kalab');
 		$kalabNames = [];
@@ -348,6 +396,7 @@ class BarangController extends BaseController
 		$this->response->setContentType('application/pdf');
 		$pdf->Output('Laporan Data Inventaris Laboratorium.pdf', 'I');
 	}
+
 	public function cetakQr()
 	{
 		ini_set('max_execution_time', 360);

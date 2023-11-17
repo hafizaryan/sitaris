@@ -5,7 +5,6 @@
         cursor: not-allowed;
     }
 </style>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <br>
     <nav aria-label="breadcrumb">
@@ -13,7 +12,6 @@
             <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <a href="<?= base_url(); ?>barang">Barang</a> / Edit</li>
         </ol>
     </nav>
-    <!-- START WIDGETS -->
     <div class="row">
         <div class="col-md-12">
             <form class="form-horizontal" method="POST" action="<?= base_url('/' . $url) ?>" enctype="multipart/form-data">
@@ -225,24 +223,15 @@
 </div><br><br><br><br>
 
 <?php
-// Ambil nilai waktu_input dari $model
 $waktu_input = $model['waktu_input'];
-// Ubah format waktu_input ke dalam objek DateTime
 $dateTime = new DateTime($waktu_input);
-// Ambil bagian jam dan menit dari objek DateTime
 $jam_dan_waktu = $dateTime->format('H:i');
-// Tampilkan nilai jam dan waktu pada input
 ?>
 <script>
-    // Ambil elemen input tanggal
     var inputTanggal = document.getElementById("tgl_edit");
-    // Dapatkan tanggal sekarang dalam format YYYY-MM-DD
     var tanggalSekarang = new Date().toISOString().split("T")[0];
-    // Setel nilai input tanggal ke tanggal sekarang
     inputTanggal.value = tanggalSekarang;
-    // Get the select elements
     const kategoriSelect = document.getElementById('kategori_barang');
-    // const subKategoriSelect = document.getElementById('sub_kategori');
     const kategoriOptions = {
         'Alat': ['Cutter', 'Krimping', 'Set_Obeng', 'Toolbox'],
         'Furnitur': ['Air_Conditioner', 'Jam_Dinding', 'Kursi', 'Lemari', 'Loker', 'Meja', 'Rak'],
@@ -250,23 +239,16 @@ $jam_dan_waktu = $dateTime->format('H:i');
         'Perangkat': ['Access_Point', 'Antena', 'Camera_CCTV', 'Camera_Eksternal', 'CPU', 'Hardisk', 'Kabel', 'Keyboard', 'Komputer', 'LAN_Card', 'LAN_Tester', 'Monitor', 'Modem', 'Mouse', 'Poe_Adapter', 'RAM', 'Router', 'Server', 'Speaker', 'Switch', 'UPS', 'USB_Adapter', 'USB_Wireless', 'Wireless_Card'],
     };
 
-    // Fungsi untuk memperbarui opsi Sub Kategori
     function updateSubKategoriOptions() {
-        // Menghapus opsi sebelumnya
         subKategoriSelect.innerHTML = '';
-        // Mendapatkan nilai Kategori yang dipilih
         const selectedKategori = kategoriSelect.value;
-        // Mengambil daftar opsi Sub Kategori berdasarkan Kategori yang dipilih
         const subKategoriOptions = kategoriOptions[selectedKategori] || [];
-        // Menambahkan opsi-opsi baru
         for (const subKategori of subKategoriOptions) {
             const option = document.createElement('option');
             option.text = subKategori;
             subKategoriSelect.appendChild(option);
         }
-        // Menetapkan opsi yang dipilih sebelumnya
         const selectedSubKategori = '<?= $model['sub_kategori'] ?>';
-        // Memeriksa apakah opsi yang dipilih sebelumnya ada dalam daftar opsi Sub Kategori yang baru
         if (subKategoriOptions.includes(selectedSubKategori)) {
             subKategoriSelect.value = selectedSubKategori;
         }
@@ -274,12 +256,11 @@ $jam_dan_waktu = $dateTime->format('H:i');
     kategoriSelect.addEventListener('change', updateSubKategoriOptions);
     updateSubKategoriOptions();
 
-    // Fungsi untuk mengisi nilai input dengan tanggal sekarang
     function validateImageFile() {
         const fileInput = document.getElementById('gambar_barang');
         const file = fileInput.files[0];
         const allowedExtensions = /(\.jpeg|\.jpg|\.png)$/i;
-        const maxSize = 10 * 1024 * 1024; // 10 MB
+        const maxSize = 10 * 1024 * 1024;
         if (!allowedExtensions.exec(file.name)) {
             alert('File harus berupa gambar dengan format JPG, JPEG atau PNG.');
             fileInput.value = '';
@@ -292,5 +273,4 @@ $jam_dan_waktu = $dateTime->format('H:i');
         return true;
     }
 </script>
-<!-- END PAGE CONTENT WRAPPER -->
 <?= $this->endSection() ?>

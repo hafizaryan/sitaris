@@ -59,6 +59,7 @@ $routes->get('/barang/hapus/(:any)', 'BarangController::delete');
 $routes->get('/barang/cetak_ruangan/(:num)', 'BarangController::cetakRuangan/$1');
 $routes->get('/barang/cetak_pendanaan/(:num)', 'BarangController::cetakPendanaan/$1');
 $routes->get('/barang/cetak_tahun/(:num)', 'BarangController::cetakTahun/$1');
+$routes->get('/barang/cetak_kondisi/(:any)', 'BarangController::cetakKondisi/$1');
 $routes->get('/barang/cetak_kategori/(:any)', 'BarangController::cetakKategori/$1');
 $routes->get('/barang/cetak_qr', 'BarangController::cetakQr');
 

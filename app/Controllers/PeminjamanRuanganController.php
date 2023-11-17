@@ -30,7 +30,7 @@ class PeminjamanRuanganController extends BaseController
     public function index()
     {
         if (session('userData')['role_user'] == "Aslab") {
-            return redirect()->to(base_url() . 'index');
+            return redirect()->to(base_url() . 'dashboard');
         }
         // Cek apakah pengguna sudah login
         if (!isset(session('userData')['username'])) {
@@ -165,7 +165,7 @@ class PeminjamanRuanganController extends BaseController
     public function delete()
     {
         if (session('userData')['role_user'] == "Aslab") {
-            return redirect()->to(base_url() . 'index');
+            return redirect()->to(base_url() . 'dashboard');
         }
         $id = $this->request->uri->getSegment(3);
         if ($this->modelPeminjamanRuangan->delete($id)) {

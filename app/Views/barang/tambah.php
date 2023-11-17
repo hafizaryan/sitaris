@@ -5,7 +5,6 @@
         cursor: not-allowed;
     }
 </style>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <br>
     <nav aria-label="breadcrumb">
@@ -13,7 +12,6 @@
             <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <a href="<?= base_url(); ?>barang">Barang</a> / Tambah</li>
         </ol>
     </nav>
-    <!-- START WIDGETS -->
     <div class="row">
         <div class="col-md-12">
             <form class="form-horizontal" method="POST" action="<?= base_url('/' . $url) ?>" enctype="multipart/form-data">
@@ -139,42 +137,30 @@
                                 </div>
                             </div>
                             <script>
-                                // Dapatkan referensi ke elemen-elemen input yang relevan
                                 const tahunBarangSelect = document.querySelector('select[name="tahun_barang"]');
                                 const jenisPendanaanSelect = document.querySelector('select[name="id_pendanaan"]');
                                 const subKategoriSelect = document.querySelector('select[name="sub_kategori"]');
                                 const namaBarangInput = document.getElementById('nama_barang');
                                 const kodeInput = document.getElementById('kode');
 
-                                let lastYear = ""; // Inisialisasi tahun terakhir yang dipilih
-                                let lastSubKategori = ""; // Inisialisasi subkategori terakhir yang dipilih
-                                let usedCounters = {}; // Inisialisasi objek untuk melacak counter yang digunakan
+                                let lastYear = "";
+                                let lastSubKategori = "";
+                                let usedCounters = {};
 
-                                // Tambahkan event listener pada elemen-elemen select yang relevan
                                 tahunBarangSelect.addEventListener('change', updateKode);
                                 subKategoriSelect.addEventListener('change', updateKode);
                                 namaBarangInput.addEventListener('input', updateKode);
 
-                                // Fungsi untuk memperbarui input kode berdasarkan nilai yang dipilih
                                 function updateKode() {
                                     const tahunBarang = tahunBarangSelect.value;
                                     const jenisPendanaan = jenisPendanaanSelect.value;
                                     const subKategori = subKategoriSelect.value;
                                     const namaBarang = namaBarangInput.value;
-
-                                    // Ambil 3 karakter pertama dari subKategori dan ubah menjadi huruf kapital
                                     const formattedSubKategori = subKategori.slice(0, 3).toUpperCase();
-
-                                    // Bangun kode berdasarkan nilai yang dipilih
                                     const kode = `${tahunBarang}-${jenisPendanaan}.${formattedSubKategori}`;
-
-                                    // Generate 2 huruf acak
                                     const randomLetters = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 2).toUpperCase();
-
-                                    // Generate 1 angka acak antara 0 hingga 9
                                     const randomDigit = Math.floor(Math.random() * 10);
-
-                                    // Atur nilai dari input kode dengan kode, huruf acak, dan angka acak
+                                    zzzz
                                     kodeInput.value = `${namaBarang} ${kode}.${randomLetters}${randomDigit}`;
                                 }
                             </script>
@@ -189,8 +175,8 @@
                                                     <?php
                                                     $enumValues = array("Baik", "Rusak", "Hilang", "Musnah", "Tak_Layak_Pakai");
                                                     foreach ($enumValues as $enumValue) {
-                                                        $displayValue = str_replace("_", " ", $enumValue); // Mengganti garis bawah dengan spasi untuk tampilan
-                                                        $databaseValue = $enumValue; // Nilai asli dengan garis bawah untuk disimpan ke database
+                                                        $displayValue = str_replace("_", " ", $enumValue);
+                                                        $databaseValue = $enumValue;
                                                         echo "<option value='$databaseValue'>$displayValue</option>";
                                                     }
                                                     ?>
@@ -230,8 +216,8 @@
                                         <label class="col-md-3 col-xs-12 control-label">Tanggal Masuk Barang <span style="color: red;">*</span></label>
                                         <div class="col-md-6 col-xs-12 control-label">
                                             <div class="input-group"> -->
-                                                <input type="date" hidden name="tgl_masuk_barang" id="tgl_masuk_barang" required class="form-control" autofocus />
-                                            <!-- </div>
+                            <input type="date" hidden name="tgl_masuk_barang" id="tgl_masuk_barang" required class="form-control" autofocus />
+                            <!-- </div>
                                         </div>
                                     </div>
                                 </div>
@@ -311,55 +297,48 @@
             }
         });
     });
-    // Get the select elements
     const kategoriSelect = document.getElementById('kategori_barang');
-    // const subKategoriSelect = document.getElementById('sub_kategori');
-    // Define the options for each Kategori Barang
     const kategoriOptions = {
         'Alat': ['Cutter', 'Krimping', 'Set_Obeng', 'Toolbox'],
         'Furnitur': ['Air_Conditioner', 'Jam_Dinding', 'Kursi', 'Lemari', 'Loker', 'Meja', 'Rak'],
         'Media': ['GPS_Mobile', 'Layar_Proyektor', 'Livecam', 'Papan_Tulis', 'Proyektor'],
         'Perangkat': ['Access_Point', 'Antena', 'Camera_CCTV', 'Camera_Eksternal', 'CPU', 'Hardisk', 'Kabel', 'Keyboard', 'Komputer', 'LAN_Card', 'LAN_Tester', 'Monitor', 'Modem', 'Mouse', 'Poe_Adapter', 'RAM', 'Router', 'Server', 'Speaker', 'Switch', 'UPS', 'USB_Adapter', 'USB_Wireless', 'Wireless_Card'],
     };
-    // Function to update Sub Kategori options based on the selected Kategori Barang
+
     function updateSubKategoriOptions() {
-        // Clear previous options
         subKategoriSelect.innerHTML = '<option>Pilih Sub Kategori</option>';
         const selectedKategori = kategoriSelect.value;
         const subKategoriOptions = kategoriOptions[selectedKategori] || [];
-        // Add new options
         for (const subKategori of subKategoriOptions) {
             const option = document.createElement('option');
-            // Mengganti underscore (_) dengan spasi untuk tampilan ke pengguna
             option.text = subKategori.replace(/_/g, ' ');
-            // Tetap menggunakan garis bawah dalam data yang dikirim ke database
             option.value = subKategori;
             subKategoriSelect.appendChild(option);
         }
     }
-    // Add event listener to Kategori Barang select
+
     kategoriSelect.addEventListener('change', updateSubKategoriOptions);
-    // Call the function initially to set the default Sub Kategori options
     updateSubKategoriOptions();
+
     function setTodayDate() {
         const tglUploadInput = document.getElementById("tgl_masuk_barang");
         const tglEditInput = document.getElementById("tgl_edit");
-        // Buat objek tanggal sekarang
         const today = new Date();
-        // Format tanggal ke bentuk yang sesuai dengan atribut "date" pada input
+
         const formattedDate = today.toISOString().split("T")[0];
         const formattedDate1 = today.toISOString().split("T")[0];
-        // Set nilai input dengan tanggal sekarang
+
         tglUploadInput.value = formattedDate;
         tglEditInput.value = formattedDate1;
     }
-    // Panggil fungsi saat halaman selesai diload
+
     window.onload = setTodayDate;
+
     function validateImageFile() {
         const fileInput = document.getElementById('gambar_barang');
         const file = fileInput.files[0];
         const allowedExtensions = /(\.jpeg|\.jpg|\.png)$/i;
-        const maxSize = 10 * 1024 * 1024; // 10 MB
+        const maxSize = 10 * 1024 * 1024;
         if (!allowedExtensions.exec(file.name)) {
             alert('File harus berupa gambar dengan format JPG, JPEG atau PNG.');
             fileInput.value = '';
@@ -372,6 +351,4 @@
         return true;
     }
 </script>
-
-<!-- END PAGE CONTENT WRAPPER -->
 <?= $this->endSection() ?>

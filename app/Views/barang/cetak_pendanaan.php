@@ -56,7 +56,6 @@
             background-color: #5DA5FA;
             color: white;
             vertical-align: middle;
-
         }
 
         .table-container {
@@ -93,7 +92,6 @@
             </thead>
         </table>
         <table class="table">
-
             <tbody>
                 <?php
                 $no = 0;
