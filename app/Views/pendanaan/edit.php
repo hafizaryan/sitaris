@@ -1,6 +1,5 @@
 <?= $this->extend('layout/main') ?>
 <?= $this->section('content') ?>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <br>
     <nav aria-label="breadcrumb">
@@ -8,7 +7,6 @@
             <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <a href="<?= base_url(); ?>pendanaan">Pendanaan</a> / Edit</li>
         </ol>
     </nav>
-    <!-- START WIDGETS -->
     <div class="row">
         <div class="col-md-12">
             <form class="form-horizontal" method="POST" action="<?= base_url('/pendanaan/edit') ?>" enctype="multipart/form-data">
@@ -50,5 +48,4 @@
         </div>
     </div>
 </div><br><br><br><br>
-<!-- END PAGE CONTENT WRAPPER -->
 <?= $this->endSection() ?>

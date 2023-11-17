@@ -8,7 +8,6 @@
         }
 
         .breadcrumb {
-
             font-size: 10px;
         }
 
@@ -202,5 +201,4 @@
         }
     });
 </script>
-<!-- /top tiles -->
 <?= $this->endSection(); ?>

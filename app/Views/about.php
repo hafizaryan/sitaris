@@ -45,24 +45,20 @@
     <!-- my css -->
     <link rel="stylesheet" href="gentelella-master\production\css\maps\mystyle.css" class="style">
     <style>
-        /* Styles untuk gambar placeholder */
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
-            /* Pengaturan seleksi teks */
             -webkit-user-select: none;
             -moz-user-select: none;
             user-select: none;
         }
 
-        /* Styles untuk gambar placeholder pada layar besar */
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
         }
 
-        /* Styles untuk divider contoh */
         .b-example-divider {
             width: 100%;
             height: 3rem;
@@ -72,20 +68,17 @@
             box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
         }
 
-        /* Styles untuk garis vertikal contoh */
         .b-example-vr {
             flex-shrink: 0;
             width: 1.5rem;
             height: 100vh;
         }
 
-        /* Styles untuk ikon Bootstrap */
         .bi {
             vertical-align: -.125em;
             fill: currentColor;
         }
 
-        /* Styles untuk navigasi */
         .nav-scroller {
             position: relative;
             z-index: 2;
@@ -101,36 +94,21 @@
             overflow-x: auto;
             text-align: center;
             white-space: nowrap;
-            /* Efek scrolling pada perangkat sentuh */
             -webkit-overflow-scrolling: touch;
         }
 
-        /* Styles untuk tombol utama */
         .btn-bd-primary {
-            /* Pengaturan warna latar */
             --bd-violet-bg: #712cf9;
             --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-            /* Pengaturan font-weight */
             --bs-btn-font-weight: 600;
-            /* Pengaturan warna teks tombol */
             --bs-btn-color: var(--bs-white);
-            /* Pengaturan latar tombol */
             --bs-btn-bg: var(--bd-violet-bg);
-            /* Pengaturan border tombol */
             --bs-btn-border-color: var(--bd-violet-bg);
-            /* Pengaturan warna teks tombol saat hover */
             --bs-btn-hover-color: var(--bs-white);
-            /* Pengaturan latar tombol saat hover */
             --bs-btn-hover-bg: #6528e0;
-            /* Pengaturan border tombol saat hover */
-            --bs-btn-hover-border-color: #6528e0;
-            /* Efek bayangan saat fokus pada tombol */
             --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-            /* Pengaturan warna teks tombol saat aktif */
             --bs-btn-active-color: var(--bs-btn-hover-color);
-            /* Pengaturan latar tombol saat aktif */
             --bs-btn-active-bg: #5a23c8;
-            /* Pengaturan border tombol saat aktif */
             --bs-btn-active-border-color: #5a23c8;
         }
 
@@ -139,7 +117,6 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-
         }
 
         .developer-card {
@@ -258,7 +235,6 @@
 
 <body>
     <main>
-        <!-- Bagian Header -->
         <section class=" text-center container">
             <div class="row py-lg-" style="padding-bottom: none !important; margin-bottom: none !important; ">
                 <div class=" col-md-9 mx-auto">
@@ -287,7 +263,6 @@
         </div>
         <h1 class="fw-light" style="text-align: center;">Dikembangkan Oleh</h1>
         <div class="album bg-body-tertiary">
-            <!-- Kontainer Kartu Developer -->
             <div class="container md-9">
                 <div class="developer-card">
                     <img src="<?= base_url() ?>/gentelella-master/production/images/hafiz.jpg" alt="<?= base_url() ?>/gentelella-master." class="img-circle profile_img">

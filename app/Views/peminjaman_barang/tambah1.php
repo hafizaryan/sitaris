@@ -4,10 +4,7 @@
     <li><a href="<?= base_url('/dashboard') ?>">Home</a></li>
     <li class="active"><?= $judul ?></li>
 </ul>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
-
-    <!-- START WIDGETS -->
     <div class="row">
         <div class="col-md-12">
             <form class="form-horizontal" method="POST" action="<?= base_url('/peminjaman_barang/tambah') ?>" enctype="multipart/form-data">
@@ -16,7 +13,6 @@
                         <div class="panel-heading">
                             <h3 class="panel-title"><strong><?= $judul ?></strong></h3>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -34,7 +30,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -48,7 +43,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -62,7 +56,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -79,7 +72,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -93,7 +85,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -107,9 +98,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -123,7 +111,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -137,7 +124,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -151,11 +137,7 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                         <div class="panel-footer">
-                            <!-- <button class="btn btn-default">Kembali</button>                                     -->
                             <input type="submit" value="SIMPAN" class="btn btn-primary pull-right">
                             <input type="button" value="CANCEL" class="btn btn-danger pull-right" onclick="history.back()">
                         </div>
@@ -164,5 +146,4 @@
         </div>
     </div>
 </div>
-<!-- END PAGE CONTENT WRAPPER -->
 <?= $this->endSection() ?>

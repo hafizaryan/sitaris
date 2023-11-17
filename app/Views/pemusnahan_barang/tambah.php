@@ -1,6 +1,5 @@
 <?= $this->extend('layout/main') ?>
 <?= $this->section('content') ?>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <br>
     <nav aria-label="breadcrumb">
@@ -8,7 +7,6 @@
             <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <a href="<?= base_url(); ?>pemusnahan_barang">Pemusnahan Barang</a> / Tambah</li>
         </ol>
     </nav>
-    <!-- START WIDGETS -->
     <div class="row">
         <div class="col-md-12">
             <form class="form-horizontal" method="POST" action="<?= base_url('/pemusnahan_barang/tambah') ?>" enctype="multipart/form-data">
@@ -25,7 +23,6 @@
                                         <?php
                                         // Inisialisasi variabel string kosong
                                         $hasilForeach = array();
-
                                         foreach ($macamBarang as $key => $value) {
                                             // Menambahkan data ke array baru
                                             $hasilForeach[] = array(
@@ -126,40 +123,29 @@
     </div>
 </div>
 </div>
-<!-- END PAGE CONTENT WRAPPER -->
-
-<!-- Input untuk preview file-->
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     $(document).ready(function() {
         $('#fileInput').change(function() {
             var file = this.files[0];
             var fileType = file.type;
-
             if (fileType.includes('image')) {
                 var reader = new FileReader();
-
                 reader.onload = function(e) {
                     $('#filePreview').html('<img src="' + e.target.result + '" class="img-fluid">');
                 }
-
                 reader.readAsDataURL(file);
             } else if (fileType.includes('pdf')) {
                 var reader = new FileReader();
-
                 reader.onload = function(e) {
                     $('#filePreview').html('<embed src="' + e.target.result + '" type="application/pdf" width="100%" height="600px" />');
                 }
-
                 reader.readAsDataURL(file);
             } else {
                 alert('Unsupported file format.');
             }
         });
     });
-</script>
-<script>
     const dataArray = <?php echo json_encode($hasilForeach); ?>;
     const searchInput = document.getElementById('searchInput');
     const searchResult = document.getElementById('searchResult');
@@ -171,31 +157,24 @@
     function performSearch() {
         const searchText = searchInput.value.toLowerCase();
         let matchedItems = '';
-
         dataArray.forEach(item => {
             if (item.nama_barang.toLowerCase().includes(searchText)) {
                 matchedItems += `<option value="${item.id_barang}">${item.nama_barang}</option>`;
             }
         });
-
         populateSelect(matchedItems);
     }
-
     searchInput.addEventListener('input', performSearch);
     // Fungsi untuk mengisi nilai input dengan tanggal sekarang
     function setTodayDate() {
         const tglUploadInput = document.getElementById("tgl_pemusnahan");
-
         // Buat objek tanggal sekarang
         const today = new Date();
-
         // Format tanggal ke bentuk yang sesuai dengan atribut "date" pada input
         const formattedDate = today.toISOString().split("T")[0];
-
         // Set nilai input dengan tanggal sekarang
         tglUploadInput.value = formattedDate;
     }
-
     // Panggil fungsi saat halaman selesai diload
     window.onload = setTodayDate;
 
@@ -203,31 +182,24 @@
         $typing = document.getElementById('search').value;
         console.log($typing);
 
-
         function loadDoc() {
             const xhttp = new XMLHttpRequest();
             xhttp.onload = function() {
                 document.getElementById("hasil").innerHTML = this.responseText;
                 console.log(this.responseText);
-
             }
             xhttp.open("GET", 'search/' + $typing, true);
             xhttp.send();
         }
-
         loadDoc();
-
     }
-
     window.onload = setTodayDate;
 
     function validateImageFile() {
         const fileInput = document.getElementById('upload_dokumentasi');
         const file = fileInput.files[0];
-
         const allowedExtensions = /(\.jpeg|\.jpg|\.png|\.pdf)$/i;
         const maxSize = 10 * 1024 * 1024; // 10 MB
-
         if (!allowedExtensions.exec(file.name)) {
             alert('Dokumentasi harus berupa file dengan format PDF, JPEG atau PNG.');
             fileInput.value = '';

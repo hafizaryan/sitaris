@@ -1,7 +1,6 @@
 <?= $this->extend('layout/main') ?>
 <?= $this->section('content') ?>
 <style>
-    /* Tambahkan CSS untuk mempercantik tampilan */
     .row {
         margin-bottom: 10px;
         display: flex;
@@ -18,7 +17,6 @@
         flex: 2;
         font-size: medium;
         text-transform: capitalize;
-
     }
 
     #image-overlay {
@@ -34,7 +32,6 @@
         text-align: center;
     }
 </style>
-<!-- Begin Page Content -->
 <div class="container-fluid">
     <br>
     <nav aria-label="breadcrumb">
@@ -42,7 +39,6 @@
             <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <?= $judul; ?></li>
         </ol>
     </nav>
-    <!-- Page Heading -->
     <h1 class="h5 mt-4 mb-4 ml-1 ">Sistem Informasi Inventaris Laboratorium</h1>
     <?php if (session()->has('success')) : ?>
         <div id="custom-toast" class="custom-toast">
@@ -50,13 +46,11 @@
             <?= session('success') ?>
         </div>
     <?php endif; ?>
-    <!-- Tampilkan pemberitahuan jika terjadi kesalahan -->
     <?php if (session()->has('error')) : ?>
         <div class="alert alert-danger">
             <?= session('error') ?>
         </div>
     <?php endif; ?>
-    <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold" style="color: #2A3F54;">MAINTENANCE</h6>
@@ -79,7 +73,6 @@
                             <th>Kategori</th>
                             <th>Biaya</th>
                             <th>Tanggal</th>
-                            <!-- <th>Status</th> -->
                             <th class="center-text" width="120px">Aksi</th>
                         </tr>
                     </thead>
@@ -106,59 +99,48 @@
                                 </td> -->
                                 <?php if (session('userData')['role_user'] == "Admin") : ?>
                                     <td class="center">
-                                        <!-- Edit link with icon -->
                                         <a href="maintenance/edit/<?= $value["id_maintenance"] ?>">
                                             <i class="fas fa-edit fa-2x"></i>
                                         </a>
-                                        <!-- Delete link with icon and confirmation dialog -->
                                         <a href="javascript:confirmDelete('maintenance/hapus/<?= $value["id_maintenance"] ?>')">
                                             <i class="fas fa-trash fa-2x"></i>
                                         </a>
-                                        <!-- Modal -->
                                         <a href data-toggle="modal" data-target="#modalxl" onclick="showModal('<?= $value["deskripsi_maintenance"] ?>', '<?= $value["id_maintenance"] ?>')">
                                             <i class="fas fa-info-circle fa-2x" style="color: #5a738e;"></i>
                                         </a>
                                     </td>
                                 <?php elseif (session('userData')['role_user'] == "Kalab") : ?>
                                     <td class="center">
-                                        <!-- Edit link with icon -->
                                         <a href="maintenance/edit/<?= $value["id_maintenance"] ?>">
                                             <i class="fas fa-edit fa-2x"></i>
                                         </a>
-                                        <!-- Delete link with icon and confirmation dialog -->
                                         <a href="javascript:confirmDelete('maintenance/hapus/<?= $value["id_maintenance"] ?>')">
                                             <i class="fas fa-trash fa-2x"></i>
                                         </a>
-                                        <!-- Modal -->
                                         <a href data-toggle="modal" data-target="#modalxl" onclick="showModal('<?= $value["deskripsi_maintenance"] ?>', '<?= $value["id_maintenance"] ?>')">
                                             <i class="fas fa-info-circle fa-2x" style="color: #5a738e;"></i>
                                         </a>
                                     </td>
                                 <?php elseif (session('userData')['role_user'] == "Aslab") : ?>
                                     <td class="center">
-                                        <!-- Edit link with icon -->
                                         <a href="maintenance/edit/<?= $value["id_maintenance"] ?>">
                                             <i class="fas fa-edit fa-2x"></i>
                                         </a>
-                                        <!-- Delete link with icon and confirmation dialog -->
                                         <a href="javascript:confirmDelete('maintenance/hapus/<?= $value["id_maintenance"] ?>')">
                                             <i class="fas fa-trash fa-2x"></i>
                                         </a>
-                                        <!-- Modal -->
                                         <a href data-toggle="modal" data-target="#modalxl" onclick="showModal('<?= $value["deskripsi_maintenance"] ?>', '<?= $value["id_maintenance"] ?>')">
                                             <i class="fas fa-info-circle fa-2x" style="color: #5a738e;"></i>
                                         </a>
                                     </td>
                                 <?php elseif (session('userData')['role_user'] == "Kaprodi") : ?>
                                     <td class="center">
-                                        <!-- Modal -->
                                         <a href data-toggle="modal" data-target="#modalxl" onclick="showModal('<?= $value["deskripsi_maintenance"] ?>', '<?= $value["id_maintenance"] ?>')">
                                             <i class="fas fa-info-circle fa-2x" style="color: #5a738e;"></i>
                                         </a>
                                     </td>
                                 <?php elseif (session('userData')['role_user'] == "Sekprodi") : ?>
                                     <td class="center">
-                                        <!-- Modal -->
                                         <a href data-toggle="modal" data-target="#modalxl" onclick="showModal('<?= $value["deskripsi_maintenance"] ?>', '<?= $value["id_maintenance"] ?>')">
                                             <i class="fas fa-info-circle fa-2x" style="color: #5a738e;"></i>
                                         </a>
@@ -173,10 +155,9 @@
     </div>
 </div>
 <br><br><br><br><br><br>
-<!-- /.container-fluid -->
 <?php
 $value = array(
-    "status" => "sedang proses" // Ubah nilai status sesuai dengan kebutuhan
+    "status" => "sedang proses"
 );
 ?>
 <script>
@@ -184,7 +165,6 @@ $value = array(
         document.getElementById('modalxlLabel').innerText = 'Detail';
         var modalBody = document.querySelector('#modalxl .modal-body');
         modalBody.innerHTML = '';
-        // Tambahkan data lain di bawah baris-baris data yang sudah ada
         modalBody.innerHTML += `
         <div class="row">
             <div class="col">Deskripsi Maintenance</div>
@@ -202,7 +182,6 @@ $value = array(
     }
 </script>
 <?php
-// Fungsi untuk mengubah nama bulan bahasa Inggris menjadi bahasa Indonesia
 function bulanIndonesia($bulan)
 {
     $bulan = strtolower($bulan);
@@ -235,7 +214,6 @@ function bulanIndonesia($bulan)
             return $bulan;
     }
 }
-// Mengubah format tanggal menjadi format Indonesia
 $tanggal = date('d');
 $bulanInggris = date('F');
 $bulanIndonesia = bulanIndonesia($bulanInggris);
@@ -244,12 +222,10 @@ $tahun = date('Y');
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var toast = document.getElementById('custom-toast');
-
         if (toast) {
             setTimeout(function() {
                 toast.classList.add('show-toast');
             }, 100);
-
             setTimeout(function() {
                 toast.classList.remove('show-toast');
             }, 3000);

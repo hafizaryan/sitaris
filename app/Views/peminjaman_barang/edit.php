@@ -4,10 +4,7 @@
         <li><a href="<?= base_url('/dashboard')?>">Home</a></li>
         <li class="active"><?= $judul ?></li>
     </ul>
-    <!-- PAGE CONTENT WRAPPER -->
-    <div class="page-content-wrap">
-        
-        <!-- START WIDGETS -->                                                                
+    <div class="page-content-wrap">                                             
         <div class="row">
             <div class="col-md-12">                            
                 <form class="form-horizontal" method="POST" action="<?= base_url('/peminjaman_barang/edit') ?>" enctype="multipart/form-data">
@@ -16,7 +13,6 @@
                             <h3 class="panel-title"><strong><?= $judul ?></strong></h3>
                             <input type="hidden" name="id_peminjaman_barang" value="<?= $id ?>" class="form-control"/>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">          
                                 <div class="form-group">
@@ -30,7 +26,6 @@
                                 </div>        
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">          
                                 <div class="form-group">
@@ -44,7 +39,6 @@
                                 </div>        
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">          
                                 <div class="form-group">
@@ -72,7 +66,6 @@
                                 </div>        
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">          
                                 <div class="form-group">
@@ -86,7 +79,6 @@
                                 </div>        
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">          
                                 <div class="form-group">
@@ -102,7 +94,6 @@
                                 </div>        
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">          
                                 <div class="form-group">
@@ -116,9 +107,6 @@
                                 </div>        
                             </div>
                         </div>
-
-                        
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">          
                                 <div class="form-group">
@@ -132,9 +120,7 @@
                                 </div>        
                             </div>
                         </div>
-
-                        <div class="panel-footer">
-                            <!-- <button class="btn btn-default">Kembali</button>                                     -->
+                        <div class="panel-footer">                        
                             <input type="submit" value="SIMPAN" class="btn btn-primary pull-right">
                             <input type="button" value="CANCEL" class="btn btn-danger pull-right" onclick="history.back()">
                         </div>
@@ -142,6 +128,5 @@
                 </form>                        
             </div>
         </div>                        
-    </div>
-    <!-- END PAGE CONTENT WRAPPER -->                                
+    </div>                          
 <?= $this->endSection() ?>

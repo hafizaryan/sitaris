@@ -114,7 +114,6 @@
     </div>
     <div class="ttd">
         <?php
-        // Fungsi untuk mengubah nama bulan bahasa Inggris menjadi bahasa Indonesia
         function bulanIndonesia($bulan)
         {
             $bulan = strtolower($bulan);
@@ -147,7 +146,6 @@
                     return $bulan;
             }
         }
-        // Mengubah format tanggal menjadi format Indonesia
         $tanggal = date('d');
         $bulanInggris = date('F');
         $bulanIndonesia = bulanIndonesia($bulanInggris);

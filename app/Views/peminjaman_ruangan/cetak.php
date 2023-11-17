@@ -20,11 +20,9 @@
             text-align: center;
         }
 
-
         #header-img {
             width: 100%;
             max-height: 130px;
-            /* Set a max-height to maintain the image's aspect ratio */
         }
 
         table {
@@ -33,12 +31,7 @@
             margin-top: 20px;
             vertical-align: middle;
             padding: 5px;
-
-
-            /* Add some margin between the header and the table */
         }
-
-
 
         table th,
         table td {
@@ -62,7 +55,6 @@
             background-color: #5DA5FA;
             color: white;
             vertical-align: middle;
-
         }
 
         .table-container {
@@ -71,9 +63,6 @@
             align-items: center;
             height: 80vh;
             vertical-align: middle;
-
-
-            /* Set the desired height for the table container */
         }
 
         .ttd {
@@ -127,7 +116,6 @@
     </div>
     <div class="ttd">
         <?php
-        // Fungsi untuk mengubah nama bulan bahasa Inggris menjadi bahasa Indonesia
         function bulanIndonesia($bulan)
         {
             $bulan = strtolower($bulan);
@@ -160,7 +148,6 @@
                     return $bulan;
             }
         }
-        // Mengubah format tanggal menjadi format Indonesia
         $tanggal = date('d');
         $bulanInggris = date('F');
         $bulanIndonesia = bulanIndonesia($bulanInggris);

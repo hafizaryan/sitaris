@@ -1,6 +1,5 @@
 <?= $this->extend('layout/main') ?>
 <?= $this->section('content') ?>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <br>
     <nav aria-label="breadcrumb">
@@ -8,7 +7,6 @@
             <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <a href="<?= base_url(); ?>gedung">Gedung</a> / Tambah</li>
         </ol>
     </nav>
-    <!-- START WIDGETS -->
     <div class="row">
         <div class="col-md-12">
             <form class="form-horizontal" method="POST" action="<?= base_url('/gedung/tambah') ?>" enctype="multipart/form-data">
@@ -29,7 +27,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -42,7 +39,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -94,22 +90,17 @@
         $('#gambar_gedung').change(function() {
             var file = this.files[0];
             var fileType = file.type;
-
             if (fileType.includes('image')) {
                 var reader = new FileReader();
-
                 reader.onload = function(e) {
                     $('#filePreview').html('<img src="' + e.target.result + '" class="img-fluid">');
                 }
-
                 reader.readAsDataURL(file);
             } else if (fileType.includes('pdf')) {
                 var reader = new FileReader();
-
                 reader.onload = function(e) {
                     $('#filePreview').html('<embed src="' + e.target.result + '" type="application/pdf" width="100%" height="600px" />');
                 }
-
                 reader.readAsDataURL(file);
             } else {
                 alert('Format file tidak didukung.');
@@ -120,14 +111,11 @@
 
 <script>
     window.onload = setTodayDate;
-
     function validateImageFile() {
         const fileInput = document.getElementById('gambar_gedung');
         const file = fileInput.files[0];
-
         const allowedExtensions = /(\.jpeg|\.jpg|\.png)$/i;
-        const maxSize = 10 * 1024 * 1024; // 10 MB
-
+        const maxSize = 10 * 1024 * 1024;
         if (!allowedExtensions.exec(file.name)) {
             alert('Gambar harus berupa file dengan format JPEG atau PNG.');
             fileInput.value = '';
@@ -140,5 +128,4 @@
         return true;
     }
 </script>
-<!-- END PAGE CONTENT WRAPPER -->
 <?= $this->endSection() ?>

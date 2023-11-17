@@ -2,7 +2,6 @@
 <?= $this->section('content') ?>
 
 <style>
-    /* Tambahkan CSS untuk mempercantik tampilan */
     .row {
         margin-bottom: 10px;
         display: flex;
@@ -35,7 +34,6 @@
         text-align: center;
     }
 </style>
-<!-- Begin Page Content -->
 <div class="container-fluid">
     <br>
     <nav aria-label="breadcrumb">
@@ -43,7 +41,6 @@
             <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <?= $judul; ?></li>
         </ol>
     </nav>
-    <!-- Page Heading -->
     <h1 class="h5 mt-4 mb-4 ml-1 ">Sistem Informasi Inventaris Laboratorium</h1>
     <?php if (session()->has('success')) : ?>
         <div id="custom-toast" class="custom-toast">
@@ -51,14 +48,11 @@
             <?= session('success') ?>
         </div>
     <?php endif; ?>
-
-    <!-- Tampilkan pemberitahuan jika terjadi kesalahan -->
     <?php if (session()->has('error')) : ?>
         <div class="alert alert-danger">
             <?= session('error') ?>
         </div>
     <?php endif; ?>
-    <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold" style="color: #2A3F54;">DOKUMENTASI</h6>
@@ -125,7 +119,7 @@
                                         <a href="/dokumentasi/download/<?= $value["id_file"] ?>" target="_blank">
                                             <i class="fas fa-download fa-2x"></i>
                                         </a>
-                                        <?php elseif (session('userData')['role_user'] == "Sekprodi") : ?>
+                                    <?php elseif (session('userData')['role_user'] == "Sekprodi") : ?>
                                         <a href="dokumentasi/edit/<?= $value["id_file"] ?>">
                                             <i class="fas fa-edit fa-2x"></i>
                                         </a>
@@ -142,9 +136,6 @@
                                         <a href="dokumentasi/edit/<?= $value["id_file"] ?>">
                                             <i class="fas fa-edit fa-2x"></i>
                                         </a>
-                                        <!-- <a href="javascript:confirmDelete('dokumentasi/hapus/<?= $value["id_file"] ?>')">
-                                            <i class="fas fa-trash fa-2x"></i>
-                                        </a> -->
                                         <a href data-toggle="modal" data-target="#modalxl" onclick="showModal('<?= $value["deskripsi"] ?>','<?= date('d', strtotime($value["tgl_upload"])) . ' ' . bulanIndonesia(date('F', strtotime($value["tgl_upload"]))) . ' ' . date('Y', strtotime($value["tgl_upload"])) ?>','<?= date("H:i", strtotime($value["waktu_upload"])) ?>','<?= $value["user_upload"] ?>',)">
                                             <i class="fas fa-info-circle fa-2x" style="color: #5a738e;"></i>
                                         </a>
@@ -164,7 +155,6 @@
         function showModal(deskripsi, tgl_upload, waktu_upload, user_upload) {
             document.getElementById('modalxlLabel').innerText = 'Detail Dokumentasi';
             var modalBody = document.querySelector('#modalxl .modal-body');
-
             modalBody.innerHTML = `
                         <div class="row">
                         <div class="col">Deskripsi</div>
@@ -189,7 +179,6 @@
 </div>
 <div class="clearfix"></div><br><br><br><br>
 <?php
-// Fungsi untuk mengubah nama bulan bahasa Inggris menjadi bahasa Indonesia
 function bulanIndonesia($bulan)
 {
     $bulan = strtolower($bulan);
@@ -223,22 +212,18 @@ function bulanIndonesia($bulan)
     }
 }
 
-// Mengubah format tanggal menjadi format Indonesia
 $tanggal = date('d');
 $bulanInggris = date('F');
 $bulanIndonesia = bulanIndonesia($bulanInggris);
 $tahun = date('Y');
 ?>
-<!-- /.container -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var toast = document.getElementById('custom-toast');
-
         if (toast) {
             setTimeout(function() {
                 toast.classList.add('show-toast');
             }, 100);
-
             setTimeout(function() {
                 toast.classList.remove('show-toast');
             }, 3000);

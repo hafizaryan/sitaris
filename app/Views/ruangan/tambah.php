@@ -1,14 +1,12 @@
 <?= $this->extend('layout/main') ?>
 <?= $this->section('content') ?>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <br>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-end">
-        <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <a href="<?= base_url(); ?>ruangan">Ruangan</a> / Tambah</li>
+            <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <a href="<?= base_url(); ?>ruangan">Ruangan</a> / Tambah</li>
         </ol>
     </nav>
-    <!-- START WIDGETS -->
     <div class="row">
         <div class="col-md-12">
             <form class="form-horizontal" method="POST" action="<?= base_url('/ruangan/tambah') ?>" enctype="multipart/form-data">
@@ -103,38 +101,30 @@
         </div>
     </div>
 </div><br><br><br><br>
-
-<!-- Input untuk preview file-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     $(document).ready(function() {
         $('#fileInput').change(function() {
             var file = this.files[0];
             var fileType = file.type;
-
             if (fileType.includes('image')) {
                 var reader = new FileReader();
-
                 reader.onload = function(e) {
                     $('#filePreview').html('<img src="' + e.target.result + '" class="img-fluid">');
                 }
-
                 reader.readAsDataURL(file);
             } else if (fileType.includes('pdf')) {
                 var reader = new FileReader();
-
                 reader.onload = function(e) {
                     $('#filePreview').html('<embed src="' + e.target.result + '" type="application/pdf" width="100%" height="600px" />');
                 }
-
                 reader.readAsDataURL(file);
             } else {
                 alert('Unsupported file format.');
             }
         });
     });
-</script>
-<script>
+
     window.onload = setTodayDate;
 
     function validateImageFile() {
@@ -156,5 +146,5 @@
         return true;
     }
 </script>
-<!-- END PAGE CONTENT WRAPPER -->
+<script>
 <?= $this->endSection() ?>

@@ -1,6 +1,5 @@
 <?= $this->extend('layout/main') ?>
 <?= $this->section('content') ?>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <br>
     <nav aria-label="breadcrumb">
@@ -13,34 +12,25 @@
             align-items: center;
             text-align: center;
             background-color: #26B99A;
-            /* Warna latar belakang hijau */
             color: white;
-            /* Warna teks putih */
             padding: 10px;
-            /* Jarak antara teks dan pinggiran div */
             border-radius: 5px;
-            /* Sudut bulat */
         }
-
         input[readonly] {
             cursor: not-allowed;
         }
     </style>
-
-    <!-- Tampilkan pemberitahuan jika berhasil -->
     <?php if (session()->has('success')) : ?>
         <div id="custom-toast" style="align-items: center; text-align: center;" class="custom-toast">
             <i class="fas fa-check-circle checkmark-icon"></i>
             <?= session('success') ?>
         </div>
     <?php endif; ?>
-
     <?php if (session()->has('error')) : ?>
         <div class="alert alert-danger" style="align-items: center; text-align: center;">
             <?= session('error') ?>
         </div>
     <?php endif; ?>
-    <!-- START WIDGETS -->
     <div class="row">
         <div class="col-md-12">
             <form class="form-horizontal" method="POST" action="<?= base_url('/user/ubahdata') ?>" enctype="multipart/form-data">
@@ -50,8 +40,6 @@
                             <h3 class="panel-title ml-3"><strong><?= $judul ?></strong></h3>
                         </div>
                         <input type="hidden" name="id_user" value="<?= $model['id_user'] ?>" class="form-control" autofocus />
-
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -98,7 +86,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -111,7 +98,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -140,16 +126,13 @@
                                 </div>
                             </div>
                         </div>
-
                         <script>
                             const passwordInput = document.getElementById("passwordInput");
                             const confirmPasswordInput = document.getElementById("confirmPasswordInput");
                             const message = document.getElementById("message");
-
                             function checkPassword() {
                                 const password = passwordInput.value;
                                 const confirmPassword = confirmPasswordInput.value;
-
                                 if (password === confirmPassword) {
                                     message.textContent = "Kata sandi cocok";
                                     message.style.color = "green";
@@ -158,19 +141,13 @@
                                     message.style.color = "red";
                                 }
                             }
-
-                            // Fungsi untuk menghapus spasi dari input kata sandi
                             function removeSpaces() {
                                 passwordInput.value = passwordInput.value.replace(/\s/g, "");
                                 confirmPasswordInput.value = confirmPasswordInput.value.replace(/\s/g, "");
                             }
-
-                            // Tambahkan event listener untuk memeriksa kata sandi saat input berubah
                             passwordInput.addEventListener("input", checkPassword);
                             confirmPasswordInput.addEventListener("input", checkPassword);
                         </script>
-
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -184,26 +161,20 @@
                                 </div>
                             </div>
                         </div>
-
                         <script>
                             function cropImage() {
                                 const input = document.getElementById('foto');
                                 const preview = document.getElementById('preview-image');
                                 const file = input.files[0];
                                 const reader = new FileReader();
-
                                 reader.onload = function(e) {
                                     const img = new Image();
                                     img.src = e.target.result;
-
                                     img.onload = function() {
                                         const canvas = document.createElement('canvas');
                                         const ctx = canvas.getContext('2d');
-                                        const aspectRatio = 1; // 1:1 aspect ratio
-
-                                        // Calculate dimensions for cropping
+                                        const aspectRatio = 1; 
                                         let width, height, offsetX, offsetY;
-
                                         if (img.width > img.height) {
                                             width = img.height;
                                             height = img.height;
@@ -215,19 +186,12 @@
                                             offsetX = 0;
                                             offsetY = (img.height - img.width) / 2;
                                         }
-
-                                        // Set canvas dimensions
                                         canvas.width = width;
                                         canvas.height = height;
-
-                                        // Perform the cropping
                                         ctx.drawImage(img, offsetX, offsetY, width, height, 0, 0, width, height);
-
-                                        // Update the preview image
-                                        preview.src = canvas.toDataURL('image/jpeg'); // You can change the format if needed
+                                        preview.src = canvas.toDataURL('image/jpeg'); 
                                     };
                                 };
-
                                 if (file) {
                                     reader.readAsDataURL(file);
                                 }
@@ -245,7 +209,6 @@
 <br><br><br><br>
 <script>
     const togglePassword = document.getElementById('togglePassword');
-
     togglePassword.addEventListener('click', function() {
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
@@ -257,44 +220,36 @@
             togglePassword.classList.add('fa-eye-slash');
         }
     });
-
     function validateFile() {
         const input = document.getElementById('foto');
         const file = input.files[0];
-
         if (!file) {
             alert('Mohon pilih file terlebih dahulu.');
             return false;
         }
-
         const allowedExtensions = /(\.jpeg|\.jpg|\.png)$/i;
         if (!allowedExtensions.exec(file.name)) {
             alert('Format file tidak diizinkan. Hanya file JPG, JPEG, dan PNG yang diperbolehkan.');
-            input.value = ''; // Reset the input
+            input.value = '';
             return false;
         }
-
-        const maxSizeInBytes = 2 * 1024 * 1024; // 2 MB
+        const maxSizeInBytes = 2 * 1024 * 1024;
         if (file.size > maxSizeInBytes) {
             alert('Ukuran file melebihi batas maksimal 2 MB.');
-            input.value = ''; // Reset the input
+            input.value = ''; 
             return false;
         }
-
         return true;
     }
-
     function validateInput() {
         var userInput = document.getElementById("username");
         var sanitizedInput = userInput.value.replace(/[^A-Za-z0-9]/g, ""); // Menghapus karakter selain huruf dan angka
         userInput.value = sanitizedInput;
     }
-
     function removeSpaces() {
         var userInput = document.getElementById("passwordInput");
         var sanitizedInput = userInput.value.replace(/\s/g, ""); // Menghapus semua jenis spasi
         userInput.value = sanitizedInput;
     }
 </script>
-<!-- END PAGE CONTENT WRAPPER -->
 <?= $this->endSection() ?>

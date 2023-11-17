@@ -1,6 +1,5 @@
 <?= $this->extend('layout/main') ?>
 <?= $this->section('content') ?>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <br>
     <nav aria-label="breadcrumb">
@@ -13,20 +12,13 @@
         .error-message {
             color: red;
             background-color: #f8d7da;
-            /* Warna latar belakang merah muda */
             color: #721c24;
-            /* Warna teks merah gelap */
             border: 1px solid #f5c6cb;
-            /* Garis pinggir merah muda */
             padding: 10px;
-            /* Jarak padding di sekitar teks */
             margin-bottom: 20px;
-            /* Jarak dari elemen di bawahnya */
             text-align: center;
         }
     </style>
-
-    <!-- START WIDGETS -->
     <div class="row">
         <div class="col-md-12">
             <form class="form-horizontal" method="POST" action="<?= base_url('/user/tambah') ?>" enctype="multipart/form-data">
@@ -53,18 +45,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-md-12">
-                            <div class="panel-body form-group-separated">
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">Gambar</label>
-                                    <div class="col-md-6 col-xs-12 control-label">
-                                        <div class="input-group"> -->
-                        <input hidden type="file" name="foto" id="foto" style="width:100%" class="form-control" accept=".jpeg, .jpg, .png" autofocus onchange="validateFile()" />
-                        <!-- </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -117,16 +97,14 @@
                                 </div>
                             </div>
                         </div>
-
+                        <input hidden type="file" name="foto" id="foto" style="width:100%" class="form-control" accept=".jpeg, .jpg, .png" autofocus onchange="validateFile()" />
                         <script>
-                            // const passwordInput = document.getElementById("passwordInput");
                             const confirmPasswordInput = document.getElementById("confirmPasswordInput");
                             const message = document.getElementById("message");
 
                             function checkPassword() {
                                 const password = passwordInput.value;
                                 const confirmPassword = confirmPasswordInput.value;
-
                                 if (password === confirmPassword) {
                                     message.textContent = "Kata sandi cocok";
                                     message.style.color = "green";
@@ -135,18 +113,13 @@
                                     message.style.color = "red";
                                 }
                             }
-
-                            // Fungsi untuk menghapus spasi dari input kata sandi
                             function removeSpaces() {
                                 passwordInput.value = passwordInput.value.replace(/\s/g, "");
                                 confirmPasswordInput.value = confirmPasswordInput.value.replace(/\s/g, "");
                             }
-
-                            // Tambahkan event listener untuk memeriksa kata sandi saat input berubah
                             passwordInput.addEventListener("input", checkPassword);
                             confirmPasswordInput.addEventListener("input", checkPassword);
                         </script>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -169,7 +142,6 @@
                                             <?php
                                             $enumValues = array("Admin", "Kalab", "Kaprodi", "Sekprodi", "Aslab");
                                             $role_user = session('userData')['role_user'];
-
                                             if ($role_user == "Kalab") {
                                                 echo "<option>Aslab</option>";
                                             }
@@ -186,7 +158,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="panel-footer">
                             <input type="submit" value="SIMPAN" class="btn btn-primary pull-right">
                             <input type="button" value="KEMBALI" class="btn btn-danger pull-right" onclick="history.back()">
@@ -196,11 +167,9 @@
         </div>
     </div>
 </div><br><br><br><br>
-
 <script>
     const passwordInput = document.getElementById('passwordInput');
     const togglePassword = document.getElementById('togglePassword');
-
     togglePassword.addEventListener('click', function() {
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
@@ -212,44 +181,36 @@
             togglePassword.classList.add('fa-eye-slash');
         }
     });
-
     function validateInput() {
         var userInput = document.getElementById("username");
         var sanitizedInput = userInput.value.replace(/[^A-Za-z0-9]/g, ""); // Menghapus karakter selain huruf dan angka
         userInput.value = sanitizedInput;
     }
-
     function removeSpaces() {
         var userInput = document.getElementById("passwordInput");
         var sanitizedInput = userInput.value.replace(/\s/g, ""); // Menghapus semua jenis spasi
         userInput.value = sanitizedInput;
     }
-
     function validateFile() {
         const input = document.getElementById('foto');
         const file = input.files[0];
-
         if (!file) {
             alert('Mohon pilih file terlebih dahulu.');
             return false;
         }
-
         const allowedExtensions = /(\.jpeg|\.jpg|\.png)$/i;
         if (!allowedExtensions.exec(file.name)) {
             alert('Format file tidak diizinkan. Hanya file JPG, JPEG, dan PNG yang diperbolehkan.');
-            input.value = ''; // Reset the input
+            input.value = '';
             return false;
         }
-
-        const maxSizeInBytes = 2 * 1024 * 1024; // 2 MB
+        const maxSizeInBytes = 2 * 1024 * 1024; 
         if (file.size > maxSizeInBytes) {
             alert('Ukuran file melebihi batas maksimal 2 MB.');
-            input.value = ''; // Reset the input
+            input.value = ''; 
             return false;
         }
-
         return true;
     }
 </script>
-<!-- END PAGE CONTENT WRAPPER -->
 <?= $this->endSection() ?>

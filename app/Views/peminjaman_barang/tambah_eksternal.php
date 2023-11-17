@@ -5,12 +5,9 @@
         color: grey;
     }
 </style>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <div class="container">
-
-    <div class="x_panel" style="padding-bottom: 100px; padding-left: 80px;">
-
+        <div class="x_panel" style="padding-bottom: 100px; padding-left: 80px;">
             <div class="x_title">
                 <h2>Peminjaman Barang</h2>
                 <div class="clearfix"></div>
@@ -52,7 +49,6 @@
                     <div id="step-1" class="content" style="display: block;">
                         <h2>Data Peminjam</h2>
                         <hr>
-                        <!-- <input type="text" name="kode" id="kode" hidden> -->
                         <div class="form-group row">
                             <label class="col-form-label col-md-3 col-sm-3 label-align">Nama Organisasi <span style="color: red;">*</span></label>
                             <div class="col-md-6 col-xs-12 control-label">
@@ -83,7 +79,6 @@
                             <div class="col-md-6 col-xs-12 control-label">
                                 <div class="input-group">
                                     <input type="email" name="email_peminjam" class="form-control" autofocus required maxlength="50" />
-                                    <!-- <span class="input-group-text">@example.com</span> -->
                                 </div>
                             </div>
                         </div>
@@ -121,11 +116,9 @@
                                             <th>Pilih</th>
                                             <th>Nama Barang</th>
                                             <th>Spesifikasi</th>
-                                            <!-- <th>Kategori</th> -->
                                         </tr>
                                     </thead>
                                     <tbody>
-
                                     </tbody>
                                 </table>
                                 <div class="input-group">
@@ -158,13 +151,11 @@
                                             <input type="date" id="tanggal_mulai" name="tanggal_mulai" class="form-control" oninput="updateCostBasedOnDays()" autofocus required />
                                             <span class="input-group-addon">Sampai</span>
                                             <input type="date" id="tanggal_selesai" name="tanggal_selesai" class="form-control" oninput="updateCostBasedOnDays()" required min="<?php echo date('Y-m-d'); ?>" />
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -175,7 +166,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -195,19 +185,15 @@
                             function updateCostBasedOnDays() {
                                 var startDate = new Date(document.getElementById("tanggal_mulai").value);
                                 var endDate = new Date(document.getElementById("tanggal_selesai").value);
-
                                 // Calculate the number of days between dates
                                 var timeDiff = endDate.getTime() - startDate.getTime();
                                 var days = Math.ceil(timeDiff / (1000 * 3600 * 24));
-
                                 // Update the displayed number of days
                                 document.getElementById("jumlah_hari").value = days;
-
                                 // Calculate the total cost and update the displayed value
                                 calculateCost(days);
                             }
                         </script>
-
                         <div id="pdfPreview" style="display: none;"></div>
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
@@ -229,10 +215,8 @@
                                 var fileInput = document.getElementById('bukti_peminjaman');
                                 var file = fileInput.files[0];
                                 var fileType = file.type;
-
                                 if (fileType.includes('pdf')) {
                                     var reader = new FileReader();
-
                                     reader.onload = function(e) {
                                         var pdfData = e.target.result;
                                         var newTab = window.open('', '_blank');
@@ -240,7 +224,6 @@
                                         newTab.document.write('<embed src="' + pdfData + '" type="application/pdf" width="100%" height="600px" />');
                                         newTab.document.close();
                                     }
-
                                     reader.readAsDataURL(file);
                                 } else {
                                     alert('Format file harus berupa PDF.');
@@ -299,7 +282,6 @@
                             return '<input type="checkbox" name="barang[]" required class="item-checkbox" value="' + data.id_barang + '">';
                         } else {
                             return '<p class="text-danger"> Not Avalible </p>';
-
                         }
                     }
                 },
@@ -310,7 +292,6 @@
                 {
                     "tittle": "Spesifikasi",
                     data: 'spek_barang'
-
                 },
             ],
             lengthMenu: [
@@ -331,9 +312,7 @@
                 [1, 'asc']
             ],
         });
-
         var selectedItems = [];
-
         $('#myTable tbody').on('change', 'input[type="checkbox"]', function() {
             if (this.checked) {
                 // Jika checkbox dicentang, tambahkan nilai ke dalam selectedItems
@@ -345,20 +324,15 @@
                     selectedItems.splice(index, 1);
                 }
             }
-
             // Menggabungkan data menjadi string dengan pemisah tertentu, seperti koma
             var selectedItemsString = selectedItems.join(',');
-
             // Menyimpan data yang terpilih ke input dengan ID tertentu
             $('#selectedItemsInput').val(selectedItemsString);
         });
-
-
         $('#filter').on('change', function() {
             var filterValue = $(this).val();
             $('#myTable').DataTable().search(filterValue).draw();
         });
-
         $('#myForm').validate({
             rules: {
                 id_fakultas: {
@@ -396,13 +370,10 @@
             unhighlight: function(element, errorClass, validClass) {
                 $(element).removeClass("is-invalid");
             },
-
         });
-
         $('#tanggalPeminjaman, #tanggalPengembalian').on('change', function() {
             var tanggalPeminjaman = $('#tanggalPeminjaman').val();
             var tanggalPengembalian = $('#tanggalPengembalian').val();
-
             $.ajax({
                 url: '/peminjaman_barang/getData',
                 type: 'POST', // Metode HTTP yang sesuai dengan server Anda
@@ -425,18 +396,15 @@
                             }
                         });
                     });
-
                     // Re-render DataTables untuk mengupdate status checkbox
                     table.draw();
                 }
             });
         });
-
         var table2 = $('#tabel2').DataTable({
             searching: false,
             lengthChange: false
         });
-
         $('#myTable tbody').on('change', 'input[type="checkbox"]', function() {
             var rowData = table.row($(this).closest('tr')).data();
             if (this.checked) {
@@ -450,8 +418,6 @@
                 }
             }
         });
-
-
         // Update "Check All" state when rows are selected/deselected
         table2.on('select deselect', function() {
             var allRowsSelected = table.rows({
@@ -459,24 +425,18 @@
             }).count() === table.rows().count();
             $('check-all').prop('checked', allRowsSelected);
         });
-
-
-
         // Ketika elemen dengan ID 'bukti_peminjaman' berubah (file dipilih), fungsi ini akan dijalankan
         $('#bukti_peminjaman').change(function() {
             var file = this.files[0];
             var fileType = file.type;
-
             // Jika file yang dipilih adalah gambar
             if (fileType.includes('image')) {
                 // Buat objek FileReader untuk membaca konten file
                 var reader = new FileReader();
-
                 // Ketika pembacaan selesai, tampilkan gambar di elemen dengan ID 'filePreview'
                 reader.onload = function(e) {
                     $('#filePreview').html('<img src="' + e.target.result + '" class="img-fluid">');
                 }
-
                 // Membaca isi file sebagai URL data (gambar)
                 reader.readAsDataURL(file);
             }
@@ -484,12 +444,10 @@
             else if (fileType.includes('pdf')) {
                 // Buat objek FileReader untuk membaca konten file
                 var reader = new FileReader();
-
                 // Ketika pembacaan selesai, tampilkan PDF di elemen dengan ID 'filePreview'
                 reader.onload = function(e) {
                     $('#filePreview').html('<embed src="' + e.target.result + '" type="application/pdf" width="100%" height="600px" />');
                 }
-
                 // Membaca isi file sebagai URL data (PDF)
                 reader.readAsDataURL(file);
             }
@@ -498,20 +456,17 @@
                 alert('Format file tidak didukung.');
             }
         });
-
         var awalanKode = 'PB-'; // Awalan string yang ditentukan
         var panjangAngka = 4; // Panjang Angka
         var kodeOtomatis = generateKode(awalanKode, panjangAngka);
         $('#kode').val(kodeOtomatis);
     });
-
     // Generate Kode peminjaman
     function generateKode(awalan, panjangAngka) {
         var angkaAcak = Math.floor(Math.random() * Math.pow(10, panjangAngka));
         var kode = awalan + angkaAcak.toString().padStart(panjangAngka, '0');
         return kode;
     }
-
     // Fungsi untuk memvalidasi apakah checkbox "confirmCheckbox" telah dicentang sebelum mengirimkan data
     function validateForm() {
         var checkbox = document.getElementById("confirmCheckbox");
@@ -521,7 +476,6 @@
         }
         return true; // Lanjutkan pengiriman data
     }
-
     // Fungsi konfirmasi sebelum pergi ke URL tertentu
     function confirm(url) {
         if (confirm("Pastikan data yang anda isi sudah benar?")) {
@@ -530,17 +484,14 @@
             return false;
         }
     }
-
     // Fungsi untuk memvalidasi file gambar yang diunggah
     function validateImageFile() {
         // Mendapatkan elemen input file dengan ID 'bukti_peminjaman'
         const fileInput = document.getElementById('bukti_peminjaman');
         const file = fileInput.files[0];
-
         // Ekstensi file yang diizinkan adalah PDF
         const allowedExtensions = /(\.pdf)$/i;
         const maxSize = 2 * 1024 * 1024; // Ukuran maksimal 2 MB
-
         // Validasi ekstensi dan ukuran file
         if (!allowedExtensions.exec(file.name)) {
             alert('File harus berupa file dengan format pdf.');
@@ -553,12 +504,10 @@
         }
         return true;
     }
-
     // Fungsi untuk memformat angka dengan pemisah ribuan
     function formatNumber() {
         let input = document.getElementById("numberInput");
         let value = input.value.replace(/\D/g, ""); // Menghapus semua karakter non-digit
-
         // Memformat angka dengan tanda titik sebagai pemisah ribuan
         if (value.length > 3) {
             let formattedValue = "";
@@ -575,56 +524,43 @@
             input.value = value;
         }
     }
-
     // Fungsi untuk menampilkan nilai tanpa format 3-digit pada elemen "result"
     function showRealTimeValue(value) {
         let resultElement = document.getElementById("result");
         resultElement.value = value.replace(/\D/g, ""); // Menampilkan nilai tanpa format 3-digit
     }
-
     // Mendapatkan elemen input tanggal mulai, tanggal selesai, dan jumlah hari
     const tanggalMulaiInput = document.getElementById('tanggal_mulai');
     const tanggalSelesaiInput = document.getElementById('tanggal_selesai');
     const jumlahHariInput = document.getElementById('jumlah_hari');
-
     // Menambahkan event listener untuk memperbarui jumlah hari saat tanggal berubah
     tanggalMulaiInput.addEventListener('change', updateJumlahHari);
     tanggalSelesaiInput.addEventListener('change', updateJumlahHari);
-
     // Fungsi untuk memperbarui jumlah hari berdasarkan tanggal mulai dan tanggal selesai
     function updateJumlahHari() {
         const tanggalMulai = new Date(tanggalMulaiInput.value);
         const tanggalSelesai = new Date(tanggalSelesaiInput.value);
-
         if (!isNaN(tanggalMulai) && !isNaN(tanggalSelesai)) {
             const timeDiff = Math.abs(tanggalSelesai - tanggalMulai);
             const jumlahHari = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
-
             jumlahHariInput.value = jumlahHari;
         }
     }
-
     // Fungsi untuk mengatur nilai tanggal pada elemen input ke tanggal hari ini
     function setTodayDate() {
         const today = new Date();
         const year = today.getFullYear();
         const month = String(today.getMonth() + 1).padStart(2, '0'); // Bulan dimulai dari 0
         const day = String(today.getDate()).padStart(2, '0');
-
         const formattedDate = `${year}-${month}-${day}`;
         document.getElementById('tanggal_mulai').value = formattedDate;
     }
-
     // Memanggil fungsi setTodayDate untuk mengatur nilai tanggal pada elemen input
     setTodayDate();
-</script>
-<!-- Recaptcha -->
-<script src="https://www.google.com/recaptcha/api.js?render=6LdFjE8oAAAAAORk5aKHi1UkwcH5UXkIO7gPI0tU"></script>
-<script>
+
     function recaptchaCallback(token) {
         document.getElementById("recaptcha_response").value = token;
     }
-
     // Menjalankan reCAPTCHA v3
     grecaptcha.ready(function() {
         grecaptcha.execute('6LdFjE8oAAAAAORk5aKHi1UkwcH5UXkIO7gPI0tU', {
@@ -634,4 +570,6 @@
         });
     });
 </script>
+<!-- Recaptcha -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LdFjE8oAAAAAORk5aKHi1UkwcH5UXkIO7gPI0tU"></script>
 <?= $this->endSection() ?>

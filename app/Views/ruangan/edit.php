@@ -1,6 +1,5 @@
 <?= $this->extend('layout/main') ?>
 <?= $this->section('content') ?>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <br>
     <nav aria-label="breadcrumb">
@@ -8,7 +7,6 @@
             <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <a href="<?= base_url(); ?>prodi">Prodi</a> / Edit</li>
         </ol>
     </nav>
-    <!-- START WIDGETS -->
     <div class="row">
         <div class="col-md-12">
             <form class="form-horizontal" method="POST" action="<?= base_url('/ruangan/edit') ?>" enctype="multipart/form-data">
@@ -58,7 +56,6 @@
                         <div class="panel-footer">
                             <input type="submit" value="SIMPAN" class="btn btn-primary pull-right">
                             <input type="button" value="KEMBALI" class="btn btn-danger pull-right" onclick="history.back()">
-
                         </div>
                     </div>
             </form>
@@ -67,14 +64,11 @@
 </div><br><br><br><br>
 <script>
     window.onload = setTodayDate;
-
     function validateImageFile() {
         const fileInput = document.getElementById('gambar_ruangan');
         const file = fileInput.files[0];
-
         const allowedExtensions = /(\.jpeg|\.jpg|\.png)$/i;
-        const maxSize = 10 * 1024 * 1024; // 10 MB
-
+        const maxSize = 10 * 1024 * 1024;
         if (!allowedExtensions.exec(file.name)) {
             alert('Gambar harus berupa file dengan format JPEG atau PNG.');
             fileInput.value = '';
@@ -87,5 +81,4 @@
         return true;
     }
 </script>
-<!-- END PAGE CONTENT WRAPPER -->
 <?= $this->endSection() ?>

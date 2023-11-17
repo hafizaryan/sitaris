@@ -1,6 +1,5 @@
 <?= $this->extend('layout/main') ?>
 <?= $this->section('content') ?>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <br>
     <nav aria-label="breadcrumb">
@@ -8,7 +7,6 @@
             <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <a href="<?= base_url(); ?>dokumentas">Dokumentasi</a> / Edit</li>
         </ol>
     </nav>
-    <!-- START WIDGETS -->
     <div class="row">
         <div class="col-md-12">
             <form class="form-horizontal" method="POST" action="<?= base_url('/dokumentasi/edit') ?>" enctype="multipart/form-data">
@@ -72,7 +70,7 @@
                                     <div class="col-md-6 col-xs-12 control-label">
                                         <input type="file" name="upload_dokumentasi" id="upload_dokumentasi" style="width: 100%;" class="form-control" accept=".pdf, .jpeg, .jpg, .png" onchange="validateImageFile()" autofocus />
                                         <div class="input-group">
-                                            <embed src="<?= base_url('/uploads/dokumentasi/' . $model['upload_dokumentasi']) ?>" type="application/pdf" width="100%" >
+                                            <embed src="<?= base_url('/uploads/dokumentasi/' . $model['upload_dokumentasi']) ?>" type="application/pdf" width="100%">
                                         </div>
                                     </div>
                                 </div>
@@ -92,8 +90,7 @@
         const fileInput = document.getElementById('upload_dokumentasi');
         const file = fileInput.files[0];
         const allowedExtensions = /(\.jpeg|\.jpg|\.png|\.pdf)$/i;
-        const maxSize = 10 * 1024 * 1024; // 10 MB
-
+        const maxSize = 10 * 1024 * 1024;
         if (!allowedExtensions.exec(file.name)) {
             alert('Dokumentasi harus berupa file dengan format PDF, JPEG atau PNG.');
             fileInput.value = '';
@@ -106,5 +103,4 @@
         return true;
     }
 </script>
-<!-- END PAGE CONTENT WRAPPER -->
 <?= $this->endSection() ?>

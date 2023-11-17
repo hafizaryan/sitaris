@@ -9,8 +9,6 @@
         background-color: white !important;
     }
 </style>
-<!-- PAGE CONTENT WRAPPER -->
-
 <div class="page-content-wrap">
     <div class="row">
         <div class="col-md-12" style="background-color: white; padding-bottom: 100px;">
@@ -193,7 +191,6 @@
                                 var fileType = file.type;
                                 if (fileType.includes('pdf')) {
                                     var reader = new FileReader();
-
                                     reader.onload = function(e) {
                                         var pdfData = e.target.result;
                                         var newTab = window.open('', '_blank');
@@ -201,7 +198,6 @@
                                         newTab.document.write('<embed src="' + pdfData + '" type="application/pdf" width="100%" height="600px" />');
                                         newTab.document.close();
                                     }
-
                                     reader.readAsDataURL(file);
                                 } else {
                                     alert('Format file harus berupa PDF.');
@@ -251,17 +247,14 @@
         $('#bukti_peminjaman').change(function() {
             var file = this.files[0];
             var fileType = file.type;
-
             // Jika file yang dipilih adalah gambar
             if (fileType.includes('image')) {
                 // Buat objek FileReader untuk membaca konten file
                 var reader = new FileReader();
-
                 // Ketika pembacaan selesai, tampilkan gambar di elemen dengan ID 'filePreview'
                 reader.onload = function(e) {
                     $('#filePreview').html('<img src="' + e.target.result + '" class="img-fluid">');
                 }
-
                 // Membaca isi file sebagai URL data (gambar)
                 reader.readAsDataURL(file);
             }
@@ -269,12 +262,10 @@
             else if (fileType.includes('pdf')) {
                 // Buat objek FileReader untuk membaca konten file
                 var reader = new FileReader();
-
                 // Ketika pembacaan selesai, tampilkan PDF di elemen dengan ID 'filePreview'
                 reader.onload = function(e) {
                     $('#filePreview').html('<embed src="' + e.target.result + '" type="application/pdf" width="100%" height="600px" />');
                 }
-
                 // Membaca isi file sebagai URL data (PDF)
                 reader.readAsDataURL(file);
             }
@@ -284,7 +275,6 @@
             }
         });
     });
-
     // Fungsi untuk memvalidasi apakah checkbox "confirmCheckbox" telah dicentang sebelum mengirimkan data
     function validateForm() {
         var checkbox = document.getElementById("confirmCheckbox");
@@ -294,7 +284,6 @@
         }
         return true; // Lanjutkan pengiriman data
     }
-
     // Fungsi konfirmasi sebelum pergi ke URL tertentu
     function confirm(url) {
         if (confirm("Pastikan data yang anda isi sudah benar?")) {
@@ -303,17 +292,14 @@
             return false;
         }
     }
-
     // Fungsi untuk memvalidasi file gambar yang diunggah
     function validateImageFile() {
         // Mendapatkan elemen input file dengan ID 'bukti_peminjaman'
         const fileInput = document.getElementById('bukti_peminjaman');
         const file = fileInput.files[0];
-
         // Ekstensi file yang diizinkan adalah PDF
         const allowedExtensions = /(\.pdf)$/i;
         const maxSize = 2 * 1024 * 1024; // Ukuran maksimal 2 MB
-
         // Validasi ekstensi dan ukuran file
         if (!allowedExtensions.exec(file.name)) {
             alert('File harus berupa file dengan format pdf.');
@@ -326,12 +312,10 @@
         }
         return true;
     }
-
     // Fungsi untuk memformat angka dengan pemisah ribuan
     function formatNumber() {
         let input = document.getElementById("numberInput");
         let value = input.value.replace(/\D/g, ""); // Menghapus semua karakter non-digit
-
         // Memformat angka dengan tanda titik sebagai pemisah ribuan
         if (value.length > 3) {
             let formattedValue = "";
@@ -348,55 +332,43 @@
             input.value = value;
         }
     }
-
     // Fungsi untuk menampilkan nilai tanpa format 3-digit pada elemen "result"
     function showRealTimeValue(value) {
         let resultElement = document.getElementById("result");
         resultElement.value = value.replace(/\D/g, ""); // Menampilkan nilai tanpa format 3-digit
     }
-
     // Mendapatkan elemen input tanggal mulai, tanggal selesai, dan jumlah hari
     const tanggalMulaiInput = document.getElementById('tanggal_mulai');
     const tanggalSelesaiInput = document.getElementById('tanggal_selesai');
     const jumlahHariInput = document.getElementById('jumlah_hari');
-
     // Menambahkan event listener untuk memperbarui jumlah hari saat tanggal berubah
     tanggalMulaiInput.addEventListener('change', updateJumlahHari);
     tanggalSelesaiInput.addEventListener('change', updateJumlahHari);
-
     // Fungsi untuk memperbarui jumlah hari berdasarkan tanggal mulai dan tanggal selesai
     function updateJumlahHari() {
         const tanggalMulai = new Date(tanggalMulaiInput.value);
         const tanggalSelesai = new Date(tanggalSelesaiInput.value);
-
         if (!isNaN(tanggalMulai) && !isNaN(tanggalSelesai)) {
             const timeDiff = Math.abs(tanggalSelesai - tanggalMulai);
             const jumlahHari = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
-
             jumlahHariInput.value = jumlahHari;
         }
     }
-
     // Fungsi untuk mengatur nilai tanggal pada elemen input ke tanggal hari ini
     function setTodayDate() {
         const today = new Date();
         const year = today.getFullYear();
         const month = String(today.getMonth() + 1).padStart(2, '0'); // Bulan dimulai dari 0
         const day = String(today.getDate()).padStart(2, '0');
-
         const formattedDate = `${year}-${month}-${day}`;
         document.getElementById('tanggal_mulai').value = formattedDate;
     }
-
     // Memanggil fungsi setTodayDate untuk mengatur nilai tanggal pada elemen input
     setTodayDate();
-</script>
-<script src="https://www.google.com/recaptcha/api.js?render=6LdFjE8oAAAAAORk5aKHi1UkwcH5UXkIO7gPI0tU"></script>
-<script>
+
     function recaptchaCallback(token) {
         document.getElementById("recaptcha_response").value = token;
     }
-
     // Menjalankan reCAPTCHA v3
     grecaptcha.ready(function() {
         grecaptcha.execute('6LdFjE8oAAAAAORk5aKHi1UkwcH5UXkIO7gPI0tU', {
@@ -406,4 +378,5 @@
         });
     });
 </script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LdFjE8oAAAAAORk5aKHi1UkwcH5UXkIO7gPI0tU"></script>
 <?= $this->endSection() ?>

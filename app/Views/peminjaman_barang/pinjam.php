@@ -9,11 +9,8 @@
     .media-body {
         font-size: 1.6em;
         text-align: justify;
-
-        /* Anda bisa menyesuaikan ukuran font sesuai keinginan */
     }
 
-    /* Tambahkan kode CSS berikut untuk membuat tampilan responsif */
     @media (max-width: 768px) {
         .media {
             flex-direction: column;
@@ -22,17 +19,14 @@
 
         .media img {
             width: 80%;
-            /* Sesuaikan lebar gambar sesuai kebutuhan */
             margin-bottom: 10px;
         }
 
         .media-body {
             text-align: center;
             text-align: left;
-
         }
 
-        /* Gaya umum */
         .media-body {
             padding: 20px;
             background-color: #f0f0f0;
@@ -44,7 +38,6 @@
             margin-bottom: 10px;
         }
 
-        /* Responsif pada layar berukuran kecil */
         @media (max-width: 768px) {
             .media-body {
                 flex-direction: column;
@@ -56,10 +49,8 @@
                 font-size: 1.2rem;
             }
         }
-
     }
 </style>
-<!-- PAGE CONTENT WRAPPER -->
 <div class="page-content-wrap">
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -86,7 +77,6 @@
                         <span class="glyphicon glyphicon-send"></span> Pinjam Sebagai Eksternal
                     </a>
                 </div>
-
             </div>
         </div>
         <div class="col-md-12 pull-left">
@@ -97,9 +87,11 @@
 <!-- Add Bootstrap JS and jQuery links here (you need to include these scripts) -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<!-- Bagian 'content' berakhir -->
+<!-- Magnific Popup -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<!-- Recaptcha -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LdFjE8oAAAAAORk5aKHi1UkwcH5UXkIO7gPI0tU"></script>
 <script>
     $(document).ready(function() {
         $('.image-link').magnificPopup({
@@ -109,15 +101,11 @@
             }
         });
     });
-</script>
-<!-- Recaptcha -->
-<script src="https://www.google.com/recaptcha/api.js?render=6LdFjE8oAAAAAORk5aKHi1UkwcH5UXkIO7gPI0tU"></script>
-<script>
+
     function recaptchaCallback(token) {
         document.getElementById("recaptcha_response").value = token;
     }
 
-    // Menjalankan reCAPTCHA v3
     grecaptcha.ready(function() {
         grecaptcha.execute('6LdFjE8oAAAAAORk5aKHi1UkwcH5UXkIO7gPI0tU', {
             action: 'login'

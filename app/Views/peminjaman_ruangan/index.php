@@ -6,7 +6,6 @@
         align-items: center;
     }
 
-    /* Tambahkan CSS untuk mempercantik tampilan */
     .row {
         margin-bottom: 10px;
         display: flex;
@@ -22,7 +21,6 @@
     .col-data {
         flex: 2;
         font-size: medium;
-
     }
 
     #image-overlay {
@@ -38,7 +36,6 @@
         text-align: center;
     }
 </style>
-<!-- Begin Page Content -->
 <div class="container-fluid">
     <br>
     <nav aria-label="breadcrumb">
@@ -46,25 +43,18 @@
             <li class="breadcrumb-item active" aria-current="page">Lokasi Akses: <a href="<?= base_url(); ?>dashboard">Beranda</a> / <?= $judul; ?></li>
         </ol>
     </nav>
-
-    <!-- Page Heading -->
     <h1 class="h5 mt-4 mb-4 ml-1 ">Sistem Informasi Inventaris Laboratorium</h1>
-    <!-- Tampilkan pemberitahuan jika berhasil -->
     <?php if (session()->has('success')) : ?>
         <div id="custom-toast" class="custom-toast">
             <i class="fas fa-check-circle checkmark-icon"></i>
             <?= session('success') ?>
         </div>
     <?php endif; ?>
-
-    <!-- Tampilkan pemberitahuan jika terjadi kesalahan -->
     <?php if (session()->has('error')) : ?>
         <div class="alert alert-danger">
             <?= session('error') ?>
         </div>
     <?php endif; ?>
-
-    <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold" style="color: #2A3F54;">PEMINJAMAN RUANGAN</h6>
@@ -88,14 +78,11 @@
                     <?php endif; ?>
                 </div>
             </div>
-
             <div class="dropdown-menu">
                 <?php
                 $uniqueIds = array_unique(array_column($model, 'id_ruangan'));
                 foreach ($uniqueIds as $id) {
-                    // Cari indeks pertama dari elemen dengan 'id_ruangan' yang sesuai
                     $index = array_search($id, array_column($model, 'id_ruangan'));
-                    // Jika indeks ditemukan, tampilkan 'id_ruangan' dan 'nama_ruangan'
                     if ($index !== false) {
                         $nama_ruangan = $model[$index]['nama_ruangan'];
                         echo '<a target="_blank" class="dropdown-item" href="peminjaman_ruangan/cetak/' . $id . '">' . $nama_ruangan . '</a>';
@@ -105,7 +92,6 @@
             </div>
         </div>
         <div class="table-responsive" style=" max-height: 1100px !important; overflow-y: auto;">
-            <!-- Tabel untuk menampilkan data -->
             <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                 <thead>
                     <tr>
@@ -137,19 +123,15 @@
                                 <a href="mailto:<?= $value["email_peminjam"] ?>?subject=Konfirmasi Peminjaman&body=Peminjaman Anda telah berhasil diterima%0D%0A%0D%0ASITARIS DEV%0D%0A%0D%0A[Catatan: Ini adalah pesan otomatis, jangan membalas email ini]" target="_blank">
                                     <button id="konfirmasiButton" class="btn btn-sm btn-warning" type="button" style="color:white">Konfirmasi</button>
                                 </a>
-
                                 <script>
                                     var button = document.getElementById("konfirmasiButton");
                                     var confirmationKey = "confirmationStatus";
-
                                     // Periksa apakah sudah ada status konfirmasi di cookie
                                     var isConfirmed = getCookie(confirmationKey);
-
                                     if (isConfirmed === "true") {
                                         button.innerText = "Dikonfirmasi";
                                         button.disabled = true;
                                     }
-
                                     button.addEventListener("click", function() {
                                         if (isConfirmed !== "true") {
                                             button.innerText = "Dikonfirmasi";
@@ -158,7 +140,6 @@
                                             setCookie(confirmationKey, "true", 365); // Simpan selama satu tahun
                                         }
                                     });
-
                                     // Fungsi untuk mengatur cookie
                                     function setCookie(name, value, days) {
                                         var expires = "";
@@ -169,7 +150,6 @@
                                         }
                                         document.cookie = name + "=" + value + expires + "; path=/";
                                     }
-
                                     // Fungsi untuk mendapatkan nilai cookie
                                     function getCookie(name) {
                                         var nameEQ = name + "=";
@@ -182,7 +162,6 @@
                                         return null;
                                     }
                                 </script>
-
                             </td>
                             <td class="center" style="width: 120px;">
                                 <?php if (session('userData')['role_user'] == "Admin") : ?>
@@ -201,7 +180,6 @@
                                     <i class="fas fa-download fa-2x"></i>
                                 </a>
                             </td>
-
                         </tr>
                     <?php } ?>
                 </tbody>
@@ -210,9 +188,7 @@
     </div>
 </div>
 <br><br>
-<!-- /.container-fluid -->
 <div class="clearfix"></div>
-
 <script>
     function showModal(nama_ruangan, asal_peminjam, nama_fakultas, nama_prodi, nama_peminjam, email_peminjam, no_hp, tgl_peminjaman, lama_peminjaman, biaya_peminjaman, bukti_peminjaman, keterangan) {
         document.getElementById('modalxlLabel').innerText = 'Detail';
@@ -275,11 +251,20 @@
         }
         modalBody.innerHTML = modalContent;
     }
+    document.addEventListener('DOMContentLoaded', function() {
+        var toast = document.getElementById('custom-toast');
+        if (toast) {
+            setTimeout(function() {
+                toast.classList.add('show-toast');
+            }, 100);
+            setTimeout(function() {
+                toast.classList.remove('show-toast');
+            }, 3000);
+        }
+    });
 </script>
 
-
 <?php
-// Fungsi untuk mengubah nama bulan bahasa Inggris menjadi bahasa Indonesia
 function bulanIndonesia($bulan)
 {
     $bulan = strtolower($bulan);
@@ -312,26 +297,9 @@ function bulanIndonesia($bulan)
             return $bulan;
     }
 }
-
-// Mengubah format tanggal menjadi format Indonesia
 $tanggal = date('d');
 $bulanInggris = date('F');
 $bulanIndonesia = bulanIndonesia($bulanInggris);
 $tahun = date('Y');
 ?>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var toast = document.getElementById('custom-toast');
-
-        if (toast) {
-            setTimeout(function() {
-                toast.classList.add('show-toast');
-            }, 100);
-
-            setTimeout(function() {
-                toast.classList.remove('show-toast');
-            }, 3000);
-        }
-    });
-</script>
 <?= $this->endSection() ?>

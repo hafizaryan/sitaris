@@ -1,20 +1,14 @@
 <?= $this->extend('layout/main') ?>
 <?= $this->section('content') ?>
-<!-- PAGE CONTENT WRAPPER -->
 <?php $error = session('error'); ?>
 <style>
     .error-message {
         color: red;
         background-color: #f8d7da;
-        /* Warna latar belakang merah muda */
         color: #721c24;
-        /* Warna teks merah gelap */
         border: 1px solid #f5c6cb;
-        /* Garis pinggir merah muda */
         padding: 10px;
-        /* Jarak padding di sekitar teks */
         margin-bottom: 20px;
-        /* Jarak dari elemen di bawahnya */
         text-align: center;
     }
 </style>
@@ -30,8 +24,6 @@
             <div class="error-message"><?php echo $error; ?></div>
         <?php endif; ?>
     </div>
-
-    <!-- START WIDGETS -->
     <div class="row">
         <div class="col-md-12">
             <form class="form-horizontal" method="POST" action="<?= base_url('/user/edit') ?>" enctype="multipart/form-data">
@@ -65,7 +57,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -78,7 +69,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -107,16 +97,12 @@
                                 </div>
                             </div>
                         </div>
-
                         <script>
-                            // const passwordInput = document.getElementById("passwordInput");
                             const confirmPasswordInput = document.getElementById("confirmPasswordInput");
                             const message = document.getElementById("message");
-
                             function checkPassword() {
                                 const password = passwordInput.value;
                                 const confirmPassword = confirmPasswordInput.value;
-
                                 if (password === confirmPassword) {
                                     message.textContent = "Kata sandi cocok";
                                     message.style.color = "green";
@@ -125,18 +111,13 @@
                                     message.style.color = "red";
                                 }
                             }
-
-                            // Fungsi untuk menghapus spasi dari input kata sandi
                             function removeSpaces() {
                                 passwordInput.value = passwordInput.value.replace(/\s/g, "");
                                 confirmPasswordInput.value = confirmPasswordInput.value.replace(/\s/g, "");
                             }
-
-                            // Tambahkan event listener untuk memeriksa kata sandi saat input berubah
                             passwordInput.addEventListener("input", checkPassword);
                             confirmPasswordInput.addEventListener("input", checkPassword);
                         </script>
-
                         <div class="col-md-12">
                             <div class="panel-body form-group-separated">
                                 <div class="form-group">
@@ -149,14 +130,12 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Tampilkan edit level pengguna hanya pada admin -->
                         <?php if (session('userData')['role_user'] == "Admin") : ?>
                             <div class="col-md-12">
                                 <div class="panel-body form-group-separated">
                                     <div class="form-group">
                                         <label class="col-md-3 col-xs-12 control-label">Level Pengguna</label>
                                         <div class="col-md-6 col-xs-12 control-label">
-
                                             <select class="form-control" name="role_user" id="role_user">
                                                 <?php
                                                 $enumValues = array("Admin", "Kalab", "Kaprodi", "Sekprodi", "Aslab");
@@ -183,11 +162,9 @@
         </div>
     </div>
 </div><br><br><br><br>
-
 <script>
     const passwordInput = document.getElementById('passwordInput');
     const togglePassword = document.getElementById('togglePassword');
-
     togglePassword.addEventListener('click', function() {
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
@@ -202,16 +179,14 @@
 
     function validateInput() {
         var userInput = document.getElementById("username");
-        var sanitizedInput = userInput.value.replace(/[^A-Za-z0-9]/g, ""); // Menghapus karakter selain huruf dan angka
+        var sanitizedInput = userInput.value.replace(/[^A-Za-z0-9]/g, "");
         userInput.value = sanitizedInput;
     }
 
     function removeSpaces() {
         var userInput = document.getElementById("passwordInput");
-        var sanitizedInput = userInput.value.replace(/\s/g, ""); // Menghapus semua jenis spasi
+        var sanitizedInput = userInput.value.replace(/\s/g, "");
         userInput.value = sanitizedInput;
     }
 </script>
-
-<!-- END PAGE CONTENT WRAPPER -->
 <?= $this->endSection() ?>
