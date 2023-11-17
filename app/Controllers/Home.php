@@ -105,7 +105,6 @@ class Home extends BaseController
     {
         return view('login');
     }
-
     // Auth login
     public function login2()
     {

@@ -16,6 +16,7 @@
             padding: 10px;
             border-radius: 5px;
         }
+
         input[readonly] {
             cursor: not-allowed;
         }
@@ -109,6 +110,7 @@
                                                 <i id="togglePassword" class="fa fa-eye-slash" aria-hidden="true" style="cursor: pointer;"></i>
                                             </span>
                                         </div>
+                                        <div>Kosongkan jika tidak ingin mengubah password</div> 
                                     </div>
                                 </div>
                             </div>
@@ -130,6 +132,7 @@
                             const passwordInput = document.getElementById("passwordInput");
                             const confirmPasswordInput = document.getElementById("confirmPasswordInput");
                             const message = document.getElementById("message");
+
                             function checkPassword() {
                                 const password = passwordInput.value;
                                 const confirmPassword = confirmPasswordInput.value;
@@ -141,6 +144,7 @@
                                     message.style.color = "red";
                                 }
                             }
+
                             function removeSpaces() {
                                 passwordInput.value = passwordInput.value.replace(/\s/g, "");
                                 confirmPasswordInput.value = confirmPasswordInput.value.replace(/\s/g, "");
@@ -173,7 +177,7 @@
                                     img.onload = function() {
                                         const canvas = document.createElement('canvas');
                                         const ctx = canvas.getContext('2d');
-                                        const aspectRatio = 1; 
+                                        const aspectRatio = 1;
                                         let width, height, offsetX, offsetY;
                                         if (img.width > img.height) {
                                             width = img.height;
@@ -189,7 +193,7 @@
                                         canvas.width = width;
                                         canvas.height = height;
                                         ctx.drawImage(img, offsetX, offsetY, width, height, 0, 0, width, height);
-                                        preview.src = canvas.toDataURL('image/jpeg'); 
+                                        preview.src = canvas.toDataURL('image/jpeg');
                                     };
                                 };
                                 if (file) {
@@ -220,6 +224,7 @@
             togglePassword.classList.add('fa-eye-slash');
         }
     });
+
     function validateFile() {
         const input = document.getElementById('foto');
         const file = input.files[0];
@@ -236,16 +241,18 @@
         const maxSizeInBytes = 2 * 1024 * 1024;
         if (file.size > maxSizeInBytes) {
             alert('Ukuran file melebihi batas maksimal 2 MB.');
-            input.value = ''; 
+            input.value = '';
             return false;
         }
         return true;
     }
+
     function validateInput() {
         var userInput = document.getElementById("username");
         var sanitizedInput = userInput.value.replace(/[^A-Za-z0-9]/g, ""); // Menghapus karakter selain huruf dan angka
         userInput.value = sanitizedInput;
     }
+
     function removeSpaces() {
         var userInput = document.getElementById("passwordInput");
         var sanitizedInput = userInput.value.replace(/\s/g, ""); // Menghapus semua jenis spasi

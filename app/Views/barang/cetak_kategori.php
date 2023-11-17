@@ -79,9 +79,15 @@
         <img id="header-img" src="gentelella-master/production/images/kop.jpg" alt="Header Image">
         <?php
         $firstValue = reset($model);
-        $kategoriInventaris = $firstValue["sub_kategori"];
-        $kategoriDisplay = str_replace('_', ' ', $kategoriInventaris);
+        $kategoriInventaris = isset($firstValue["sub_kategori"]) ? $firstValue["sub_kategori"] : null;
+        if ($kategoriInventaris !== null) {
+            $kategoriDisplay = str_replace('_', ' ', $kategoriInventaris);        
+        } else {
+            header("Location: " . base_url('404'));
+            exit();
+        }
         ?>
+
         <h5>DAFTAR INVENTARIS LABORATORIUM KATEGORI <?php echo strtoupper($kategoriDisplay); ?>
             <br> PROGRAM STUDI SISTEM INFORMASI FAKULTAS SAINS DAN TEKNOLOGI UIN SUSKA RIAU
         </h5>

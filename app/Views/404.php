@@ -72,7 +72,7 @@
   <h1>404</h1>
   <p>Sepertinya halaman yang anda cari tidak ditemukan</p>
   <p class="quotething"> “Looks like the page you're looking for doesn't exist.” </p><br>
-  <div align="center"> <a href="<?=base_url('index');?>"><input type="button" class="button404" value="Kembali" /></a> </div>
+  <div align="center"> <a href="<?=base_url('dashboard');?>"><input type="button" class="button404" value="Kembali" /></a> </div>
 </body>
 
 </html>
