@@ -55,6 +55,7 @@ class PendanaanController extends BaseController
 		}
 		return redirect()->to(base_url() . '/pendanaan');
 	}
+	
 	public function edit()
 	{
 		if (session('userData')['role_user'] == "Aslab") {
@@ -68,6 +69,7 @@ class PendanaanController extends BaseController
 			->find()[0];
 		echo view('pendanaan/edit', $data);
 	}
+
 	public function updateData()
 	{
 		if (session('userData')['role_user'] == "Aslab") {

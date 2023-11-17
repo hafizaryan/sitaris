@@ -57,23 +57,7 @@
 							</ul>
 						</div>
 						</ul>
-					</div>
-					<!-- /sidebar menu -->
-						<!-- <div class="sidebar-footer hidden-small">
-							<a data-toggle="tooltip" data-placement="top" title="Beranda" href="#">
-								<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-							</a>
-							<a id="fullscreenButton" data-toggle="tooltip" data-placement="top" title="FullScreen">
-								<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-							</a>
-							<a data-toggle="tooltip" data-placement="top" title="About" href="#">
-								<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-							</a>
-							<a data-toggle="tooltip" data-placement="top" title="Logout" href="#">
-								<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-							</a>
-						</div> -->
-					<!-- /menu footer buttons -->
+					</div>					
 				</div>
 			</div>
 			<!-- top navigation -->
@@ -145,32 +129,7 @@
 		const fullscreenButton = document.getElementById('fullscreenButton');
 		fullscreenButton.addEventListener('click', () => {
 			toggleFullScreen();
-		});
-
-		function toggleFullScreen() {
-			if (!document.fullscreenElement && // untuk mode normal
-				!document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
-				if (document.documentElement.requestFullscreen) {
-					document.documentElement.requestFullscreen();
-				} else if (document.documentElement.msRequestFullscreen) {
-					document.documentElement.msRequestFullscreen();
-				} else if (document.documentElement.mozRequestFullScreen) {
-					document.documentElement.mozRequestFullScreen();
-				} else if (document.documentElement.webkitRequestFullscreen) {
-					document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-				}
-			} else { // untuk mode fullscreen
-				if (document.exitFullscreen) {
-					document.exitFullscreen();
-				} else if (document.msExitFullscreen) {
-					document.msExitFullscreen();
-				} else if (document.mozCancelFullScreen) {
-					document.mozCancelFullScreen();
-				} else if (document.webkitExitFullscreen) {
-					document.webkitExitFullscreen();
-				}
-			}
-		}
+		});		
 	</script>
 </body>
 

@@ -10,7 +10,7 @@ namespace App\Controllers;
 class TolakController extends  BaseController
 {
 
-	// Fungsi menampilkan tampilan 404
+	
 	public function index()
 	{
 		echo view('/tolak');

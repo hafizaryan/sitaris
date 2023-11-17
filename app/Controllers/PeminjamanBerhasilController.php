@@ -9,7 +9,6 @@ namespace App\Controllers;
  */
 class PeminjamanBerhasilController extends  BaseController
 {
-	// Fungsi menampilkan tampilan index peminjaman_berhasil
 	public function index()
 	{
 		echo view('/peminjaman_berhasil');

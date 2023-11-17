@@ -66,13 +66,6 @@ class Home extends BaseController
         return view('dashboard', $data);
     }
 
-    // public function beranda()
-    // {
-    //     $session = session();
-    //     $session->remove('status');
-    //     return view('Beranda');
-    // }
-
     public function index2()
     {
         return view('welcome_message');
@@ -126,7 +119,7 @@ class Home extends BaseController
         $recaptchaVerification = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecretKey&response=$recaptchaResponse");
         $recaptchaData = json_decode($recaptchaVerification);
 
-        // // Jika recaptcha tidak sukses berikan notifikasi error
+        // Jika recaptcha tidak sukses berikan notifikasi error
         if (!$recaptchaData->success) {
             $error_message = 'Terjadi kesalahan! Silahkan ulangi lagi';
             return redirect()->back()->withInput()->with('error', $error_message);

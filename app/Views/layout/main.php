@@ -191,7 +191,6 @@
 			height: 80%;
 			background: #fff;
 			margin-top: 2px;
-			/* margin-left: 15%; */
 			z-index: 1000;
 			position: inherit;
 			margin-top: 20px;
@@ -419,7 +418,7 @@
 	</div>
 	<footer class="footer">
 		<div class="pull-left">
-			<b>Versi</b> 1.0.0
+			<b>Versi</b> 1.1.2
 		</div>
 		<div class="pull-right" style="margin-right: 230px;">
 			Copyright © <a href="<?= base_url('about'); ?>"><?php echo date('Y') ?></a> Sistem Informasi Inventaris Laboratorium Sistem Informasi

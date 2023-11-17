@@ -30,7 +30,6 @@
 	<!-- Custom Theme Style -->
 	<link href="<?= base_url() ?>/gentelella-master/build/css/custom.min.css" rel="stylesheet">
 	<style>
-		/* CSS untuk membuat elemen <footer> transparan */
 		footer {
 			background-color: #F7F7F7;
 			border: none;
@@ -42,7 +41,6 @@
 <body class="nav-md">
 	<div class="container body">
 		<div class="main_container">
-			<!-- <div class="clearfix"></div> -->
 		</div>
 	</div>
 	<div class="right_col" role="main">
