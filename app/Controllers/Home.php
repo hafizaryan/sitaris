@@ -70,7 +70,7 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
-
+    
     // Tampilan about
     public function about()
     {
