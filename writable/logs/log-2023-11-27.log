@@ -1,0 +1,59 @@
+CRITICAL - 2023-11-27 16:35:09 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:35:18 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:35:19 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:35:25 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:37:09 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:37:23 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:38:22 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:38:22 --> Undefined array key 0
+in APPPATH\Controllers\BarangController.php on line 173.
+ 1 APPPATH\Controllers\BarangController.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\BarangController.php', 173)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-27 16:38:22 --> Undefined array key 0
+in APPPATH\Controllers\BarangController.php on line 173.
+ 1 APPPATH\Controllers\BarangController.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\BarangController.php', 173)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-27 16:38:24 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:38:25 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:38:36 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:38:39 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:38:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:39:12 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:39:18 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:39:27 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:39:34 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:40:06 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:40:20 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:40:36 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:40:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:41:03 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:41:03 --> Undefined array key 0
+in APPPATH\Controllers\BarangController.php on line 173.
+ 1 APPPATH\Controllers\BarangController.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\BarangController.php', 173)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-27 16:41:03 --> Undefined array key 0
+in APPPATH\Controllers\BarangController.php on line 173.
+ 1 APPPATH\Controllers\BarangController.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\BarangController.php', 173)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-27 16:41:09 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:41:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:41:24 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:41:26 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:41:28 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2023-11-27 16:41:35 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.

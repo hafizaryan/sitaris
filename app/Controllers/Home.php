@@ -46,7 +46,6 @@ class Home extends BaseController
         $this->modelUser = new UserModel();
     }
 
-    // Fungsi Dashboard
     public function dashboard()
     {
         $data['judul'] = 'Beranda';
@@ -70,26 +69,22 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
-    
-    // Tampilan about
+
     public function about()
     {
         return view('about');
     }
 
-    // Tampilan about di page login
     public function aboutLogin()
     {
         return view('pengembang');
     }
 
-    // Tampilan 404
     public function tolak()
     {
         return view('404');
     }
 
-    // Tampilan peminjaman berhasil
     public function peminjamanBerhasil()
     {
         if (session('status') == "Berhasil") {
@@ -100,40 +95,28 @@ class Home extends BaseController
         return redirect()->to(base_url('/'));
     }
 
-    // Tampilan login
     public function login()
     {
         return view('login');
     }
-    // Auth login
+
     public function login2()
     {
-        // Ambil username dan password dari form login
         $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
-
-        // Kode recaptcha
         $recaptchaSecretKey = '6LdFjE8oAAAAACgdIZk5pslogTPrVGmlbgUd7q2C';
         $recaptchaResponse = $this->request->getPost('recaptcha_response');
         $recaptchaVerification = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecretKey&response=$recaptchaResponse");
         $recaptchaData = json_decode($recaptchaVerification);
-
-        // Jika recaptcha tidak sukses berikan notifikasi error
         if (!$recaptchaData->success) {
             $error_message = 'Terjadi kesalahan! Silahkan ulangi lagi';
             return redirect()->back()->withInput()->with('error', $error_message);
         }
-
-        // Cek apakah usernamenya ada
         $user = $this->modelUser->where('username', $username)->first();
-
-        // Cek apakah cocok dengan Database
         if (is_null($user) || !password_verify($password, $user['password_hash'])) {
             $error_message = 'Username atau Password anda salah';
             return redirect()->back()->withInput()->with('error', $error_message);
         }
-
-        //    Login berhasil simpan data session
         $userData = [
             'id_user'       => $user["id_user"],
             'nama'          => $user["nama"],
@@ -143,17 +126,12 @@ class Home extends BaseController
             'role_user'     => $user["role_user"],
             'email'         => $user["email"]
         ];
-
-        // Penyimpanan data dalam session 
         $this->session->set('isLoggedIn', true);
         $this->session->set('userData', $userData);
-
-        // Login berhasil arahkan ke index dengan pesan sukses
         $success_message = 'Login berhasil. Selamat Datang, ' . $user["nama"] . '!';
         return redirect()->to(base_url('dashboard'))->with('success', $success_message);
     }
 
-    // Fungsi logout
     public function logout()
     {
         $this->session->destroy();

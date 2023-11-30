@@ -36,7 +36,6 @@ class PemusnahanBarangController extends BaseController
         echo view('/pemusnahan_barang/index', $data);
     }
 
-
     public function tambah()
     {
         $data['judul'] = 'Tambah Pemusnahan Barang';

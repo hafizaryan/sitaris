@@ -10,7 +10,6 @@ namespace App\Controllers;
 class TolakController extends  BaseController
 {
 
-	
 	public function index()
 	{
 		echo view('/tolak');

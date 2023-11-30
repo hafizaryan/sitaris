@@ -57,7 +57,7 @@
 							</ul>
 						</div>
 						</ul>
-					</div>					
+					</div>
 				</div>
 			</div>
 			<!-- top navigation -->
@@ -129,7 +129,7 @@
 		const fullscreenButton = document.getElementById('fullscreenButton');
 		fullscreenButton.addEventListener('click', () => {
 			toggleFullScreen();
-		});		
+		});
 	</script>
 </body>
 

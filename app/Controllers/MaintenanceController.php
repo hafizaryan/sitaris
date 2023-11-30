@@ -115,7 +115,6 @@ class MaintenanceController extends BaseController
         return redirect()->to(base_url() . '/maintenance');
     }
 
-
     public function delete()
     {
         $id = $this->request->uri->getSegment(3);

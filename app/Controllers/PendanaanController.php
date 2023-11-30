@@ -19,7 +19,6 @@ class PendanaanController extends BaseController
 		$this->modelPendanaan = new PendanaanModel();
 	}
 
-
 	public function index()
 	{
 		if (!isset(session('userData')['username'])) {
@@ -55,7 +54,7 @@ class PendanaanController extends BaseController
 		}
 		return redirect()->to(base_url() . '/pendanaan');
 	}
-	
+
 	public function edit()
 	{
 		if (session('userData')['role_user'] == "Aslab") {

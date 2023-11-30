@@ -43,7 +43,6 @@ class GedungController extends BaseController
 		echo view('gedung/tambah', $data);
 	}
 
-
 	public function insertData()
 	{
 		$role = session('userData')['role_user'];
@@ -86,7 +85,6 @@ class GedungController extends BaseController
 		$data['model'] = $this->modelGedung->where('id_gedung', $id)->find()[0];
 		echo view('gedung/edit', $data);
 	}
-
 
 	public function updateData()
 	{

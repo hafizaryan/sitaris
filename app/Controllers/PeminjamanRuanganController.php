@@ -73,7 +73,6 @@ class PeminjamanRuanganController extends BaseController
         echo view('peminjaman_ruangan/tambah_internal', $data);
     }
 
-
     public function tambah_eksternal()
     {
         $data['judul'] = 'Tambah Peminjaman Ruangan';
@@ -88,7 +87,6 @@ class PeminjamanRuanganController extends BaseController
             ->findAll();
         echo view('peminjaman_ruangan/tambah_eksternal', $data);
     }
-
 
     public function insertData()
     {
