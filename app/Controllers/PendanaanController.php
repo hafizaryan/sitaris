@@ -42,18 +42,47 @@ class PendanaanController extends BaseController
 	}
 
 	public function insertData()
-	{
-		$data = array(
-			'jenis_pendanaan' => $this->request->getPost('jenis_pendanaan'),
-			'keterangan' => $this->request->getPost('keterangan'),
-		);
-		if ($this->modelPendanaan->save($data)) {
-			session()->setFlashdata('success', 'Data berhasil ditambahkan');
-		} else {
-			session()->setFlashdata('error', 'Terjadi kesalahan saat menambah data');
-		}
-		return redirect()->to(base_url() . '/pendanaan');
-	}
+{
+    // Define the validation rules
+    $validationRules = [
+        'jenis_pendanaan' => [
+            'label' => 'Jenis Pendanaan',
+            'rules' => 'required|min_length[3]|strip_tags',
+            'errors' => [
+                'required' => '{field} harus diisi',
+                'min_length' => '{field} minimal 3 karakter',
+            ],
+        ],
+        'keterangan' => [
+            'label' => 'Keterangan',
+            'rules' => 'required|min_length[3]|strip_tags',
+            'errors' => [
+                'required' => '{field} harus diisi',
+                'min_length' => '{field} minimal 3 karakter',
+            ],
+        ],
+    ];
+
+    // Validate the input data
+    if ($this->validate($validationRules)) {
+        $data = [
+            'jenis_pendanaan' => $this->request->getPost('jenis_pendanaan'),
+            'keterangan' => $this->request->getPost('keterangan'),
+        ];
+
+        if ($this->modelPendanaan->save($data)) {
+            session()->setFlashdata('success', 'Data berhasil ditambahkan');
+        } else {
+            session()->setFlashdata('error', 'Terjadi kesalahan saat menambah data');
+        }
+    } else {
+        // Get the validation errors
+        $errors = $this->validator->getErrors();
+        session()->setFlashdata('error', implode(', ', $errors));
+    }
+
+    return redirect()->to(base_url() . '/pendanaan');
+}
 
 	public function edit()
 	{
