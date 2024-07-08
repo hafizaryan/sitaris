@@ -1,0 +1,289 @@
+CRITICAL - 2024-07-08 11:01:45 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-07-08 16:02:29 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:02:30 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:02:30 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:02:56 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:02:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:02:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:02:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:02:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:03:00 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:03:00 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:03:00 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:03:00 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:03:27 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:03:27 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:03:27 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:03:27 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:03:27 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:03:35 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:03:35 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:03:36 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:03:37 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:05 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:05:05 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:06 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:13 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:05:13 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:13 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:13 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:13 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:16 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:05:16 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:18 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:05:18 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:05:18 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:18 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:40 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:05:40 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:40 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:45 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:05:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:05:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:05:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:06:53 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:06:54 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:06:54 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:06:54 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:06:59 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:06:59 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:06:59 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:06:59 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:00 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:03 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:07:03 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:07:03 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:03 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:05 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:07:06 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:06 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:09 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:07:09 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:07:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:22 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:07:23 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:07:23 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:23 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:23 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:07:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:07:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:47 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:07:58 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:07:58 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:58 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:07:58 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:08:01 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:08:01 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:08:01 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:08:01 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:08:36 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:08:37 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:08:37 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:08:37 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:08:37 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:08:38 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:08:38 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:08:38 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:08:38 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:09:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:09:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:09:58 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:09:58 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:09:59 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:10:00 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:00 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:01 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:10:01 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:01 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:01 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:02 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:22 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:10:22 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:10:22 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:22 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:38 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:10:38 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:39 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:41 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:10:41 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:10:41 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:41 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:47 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:10:47 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:10:48 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:48 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:10:48 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:11:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:11:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:32 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:11:32 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:11:32 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:32 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:32 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:33 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:35 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:11:36 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:36 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:41 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:11:41 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:41 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:41 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:41 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:51 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:11:51 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:51 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:53 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:11:53 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:54 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:11:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:11:58 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:16 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:16 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:16 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:16 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:20 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:20 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:21 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:22 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:22 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:22 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:22 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:31 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:31 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:32 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:32 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:38 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:39 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:39 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:39 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:45 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:45 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:47 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:47 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:47 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:47 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:48 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:48 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:49 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:12:50 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:50 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:50 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:12:50 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:13:03 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:13:04 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:13:04 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:13:04 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:13:09 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:13:09 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:13:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:13:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:13:14 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:13:15 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:13:15 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:13:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:13:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:13:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:13:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:13:19 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-07-08 16:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-08 16:13:19 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-07-08 16:13:19 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Timings). Please check $collectors in the app/Config/Toolbar.php file.
