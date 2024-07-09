@@ -22,6 +22,8 @@
   <script src="gentelella-master/production/js/myscript.js"></script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <style>
     .logo {
       text-align: center;
@@ -206,7 +208,7 @@
               <label for="userInput">Username</label>
             </div>
             <div class="wrapper">
-              <input type="password" class="form-control" maxlength="20" placeholder="" name="password" id="password" required>
+              <input type="password" class="form-control" maxlength="" placeholder="" name="password" id="password" required>
               <label for="userInput">Password</label>
               <i id="togglePassword" class="fa fa-eye" onclick="togglePasswordVisibility()"></i>
               <a href="#" onclick="showAlert()" style="text-decoration: none;">Lupa Password?</a>
@@ -274,11 +276,17 @@
 
   // Fungsi untuk memunculkan notifikasi hubungi admin untuk mengubah password
   function showAlert() {
-    alert("Silahkan hubungi admin untuk mengubah password Anda");
+    Swal.fire({
+      title: '<span style="font-size: 20px;">Silahkan hubungi admin untuk mengubah password Anda</span>',
+      confirmButtonColor: '#3085d6'
+    });
   }
 
   function showAlert2() {
-    alert("Maaf, fitur sedang dalam pengembangan :)");
+    Swal.fire({
+      title: '<span style="font-size: 20px;">Fitur sedang dalam pengembangan</span>',
+      confirmButtonColor: '#3085d6'
+    });
   }
 
   // Fungsi untuk validasi username

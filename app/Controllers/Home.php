@@ -100,37 +100,87 @@ class Home extends BaseController
         return view('login');
     }
 
+    // public function login2()
+    // {
+    //     $username = $this->request->getPost('username');
+    //     $password = $this->request->getPost('password');
+    //     $recaptchaSecretKey = '6LdFjE8oAAAAACgdIZk5pslogTPrVGmlbgUd7q2C';
+    //     $recaptchaResponse = $this->request->getPost('recaptcha_response');
+    //     $recaptchaVerification = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecretKey&response=$recaptchaResponse");
+    //     $recaptchaData = json_decode($recaptchaVerification);
+    //     if (!$recaptchaData->success) {
+    //         $error_message = 'Terjadi kesalahan! Silahkan ulangi lagi';
+    //         return redirect()->back()->withInput()->with('error', $error_message);
+    //     }
+    //     $user = $this->modelUser->where('username', $username)->first();
+    //     if (is_null($user) || !password_verify($password, $user['password_hash'])) {
+    //         $error_message = 'Username atau Password anda salah';
+    //         return redirect()->back()->withInput()->with('error', $error_message);
+    //     }
+    //     $userData = [
+    //         'id_user'       => $user["id_user"],
+    //         'nama'          => $user["nama"],
+    //         'foto'          => $user["foto"],
+    //         'no_identitas'  => $user["no_identitas"],
+    //         'username'      => $user["username"],
+    //         'role_user'     => $user["role_user"],
+    //         'email'         => $user["email"]
+    //     ];
+    //     $this->session->set('isLoggedIn', true);
+    //     $this->session->set('userData', $userData);
+    //     $success_message = 'Login berhasil. Selamat Datang, ' . $user["nama"] . '!';
+    //     return redirect()->to(base_url('dashboard'))->with('success', $success_message);
+    // }
+
     public function login2()
-    {
-        $username = $this->request->getPost('username');
-        $password = $this->request->getPost('password');
-        $recaptchaSecretKey = '6LdFjE8oAAAAACgdIZk5pslogTPrVGmlbgUd7q2C';
-        $recaptchaResponse = $this->request->getPost('recaptcha_response');
-        $recaptchaVerification = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecretKey&response=$recaptchaResponse");
-        $recaptchaData = json_decode($recaptchaVerification);
-        if (!$recaptchaData->success) {
-            $error_message = 'Terjadi kesalahan! Silahkan ulangi lagi';
-            return redirect()->back()->withInput()->with('error', $error_message);
-        }
-        $user = $this->modelUser->where('username', $username)->first();
-        if (is_null($user) || !password_verify($password, $user['password_hash'])) {
-            $error_message = 'Username atau Password anda salah';
-            return redirect()->back()->withInput()->with('error', $error_message);
-        }
-        $userData = [
-            'id_user'       => $user["id_user"],
-            'nama'          => $user["nama"],
-            'foto'          => $user["foto"],
-            'no_identitas'  => $user["no_identitas"],
-            'username'      => $user["username"],
-            'role_user'     => $user["role_user"],
-            'email'         => $user["email"]
-        ];
-        $this->session->set('isLoggedIn', true);
-        $this->session->set('userData', $userData);
-        $success_message = 'Login berhasil. Selamat Datang, ' . $user["nama"] . '!';
-        return redirect()->to(base_url('dashboard'))->with('success', $success_message);
+{
+    $username = $this->request->getPost('username');
+    $password = $this->request->getPost('password');
+    $recaptchaSecretKey = '6LdFjE8oAAAAACgdIZk5pslogTPrVGmlbgUd7q2C';
+    $recaptchaResponse = $this->request->getPost('recaptcha_response');
+    
+    // Strip HTML tags
+    $username = strip_tags($username);
+    $password = strip_tags($password);
+    $recaptchaResponse = strip_tags($recaptchaResponse);
+    
+    // Check max length of 20 characters
+    if (strlen($username) > 20) {
+        $error_message = 'Username atau Password terlalu panjang, maksimal 20 karakter';
+        return redirect()->back()->withInput()->with('error', $error_message);
     }
+    
+    $recaptchaVerification = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecretKey&response=$recaptchaResponse");
+    $recaptchaData = json_decode($recaptchaVerification);
+    
+    if (!$recaptchaData->success) {
+        $error_message = 'Terjadi kesalahan! Silahkan ulangi lagi';
+        return redirect()->back()->withInput()->with('error', $error_message);
+    }
+    
+    $user = $this->modelUser->where('username', $username)->first();
+    
+    if (is_null($user) || !password_verify($password, $user['password_hash'])) {
+        $error_message = 'Username atau Password anda salah';
+        return redirect()->back()->withInput()->with('error', $error_message);
+    }
+    
+    $userData = [
+        'id_user'       => $user["id_user"],
+        'nama'          => $user["nama"],
+        'foto'          => $user["foto"],
+        'no_identitas'  => $user["no_identitas"],
+        'username'      => $user["username"],
+        'role_user'     => $user["role_user"],
+        'email'         => $user["email"]
+    ];
+    
+    $this->session->set('isLoggedIn', true);
+    $this->session->set('userData', $userData);
+    $success_message = 'Login berhasil. Selamat Datang, ' . $user["nama"] . '!';
+    return redirect()->to(base_url('dashboard'))->with('success', $success_message);
+}
+
 
     public function logout()
     {
