@@ -32,6 +32,8 @@
 	<script src="gentelella-master/production/js/myscript.js"></script>
 	<!-- my css -->
 	<link rel="stylesheet" href="gentelella-master\production\css\maps\mystyle.css" class="style">
+	<!-- sweet alert -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 	<style>
 		.left_col {
@@ -92,7 +94,7 @@
 		}
 
 		.footer {
-			position: fixed;
+			position: relative;
 			bottom: 0;
 			width: 100%;
 		}
@@ -524,12 +526,19 @@
 				document.body.removeChild(overlay);
 			};
 		}
-
 		// Fungsi untuk konfirmasi logout
 		function confirmLogout() {
-			if (confirm("Apakah Anda yakin ingin keluar?")) {
-				window.location.href = "<?php echo base_url('logout') ?>";
-			}
+			Swal.fire({
+				title: '<span style="font-size: 20px;">Apakah Anda yakin ingin keluar?</span>',
+				icon: 'warning',
+				showCancelButton: true,
+				confirmButtonText: 'Ya, keluar!',
+				cancelButtonText: 'Batal'
+			}).then((result) => {
+				if (result.isConfirmed) {
+					window.location.href = "<?php echo base_url('logout') ?>";
+				}
+			});
 		}
 	</script>
 	<!-- jQuery -->

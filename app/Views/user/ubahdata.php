@@ -124,6 +124,7 @@
                                             <input type="password" name="confirmPasswordInput" id="confirmPasswordInput" class="form-control" minlength="8" maxlength="30" oninput="removeSpaces()" />
                                         </div>
                                         <p id="message"></p>
+                                        <div>Kosongkan jika tidak ingin mengubah password</div> 
                                     </div>
                                 </div>
                             </div>

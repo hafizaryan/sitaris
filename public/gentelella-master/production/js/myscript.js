@@ -1,8 +1,19 @@
 // Fungsi untuk menampilkan konfirmasi sebelum menghapus data
 function confirmDelete(url) {
-  if (confirm("Apakah Anda yakin ingin menghapus data ini?")) {
-    window.location.href = url;
-  }
+  // if (confirm("Apakah Anda yakin ingin menghapus data ini?")) {
+  //   window.location.href = url;
+  // }
+  Swal.fire({
+    title:'<span style="font-size: 20px;">Apakah Anda yakin ingin hapus data?</span>',
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonText: "Ya, hapus!",
+    cancelButtonText: "Batal",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.location.href = url;
+    }
+  });
 }
 
 // Fungsi untuk menampilkan gambar dalam tampilan overlay
@@ -136,7 +147,6 @@ function validateImageFile() {
 }
 
 // fungsi alert
-
 document.addEventListener("DOMContentLoaded", function () {
   var toast = document.getElementById("custom-toast");
 
@@ -150,3 +160,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 2000);
   }
 });
+

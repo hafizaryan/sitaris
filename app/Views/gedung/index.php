@@ -51,15 +51,30 @@
     </nav>
     <h1 class="h5 mt-4 mb-4 ml-1 ">Sistem Informasi Inventaris Laboratorium</h1>
     <?php if (session()->has('success')) : ?>
-        <div id="custom-toast" class="custom-toast">
-            <i class="fas fa-check-circle checkmark-icon"></i>
-            <?= session('success') ?>
-        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                Swal.fire({
+                    position: "middle",
+                    icon: "success",
+                    title: "<?= session('success') ?>",
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+            });
+        </script>
     <?php endif; ?>
     <?php if (session()->has('error')) : ?>
-        <div class="alert alert-danger">
-            <?= session('error') ?>
-        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                Swal.fire({
+                    position: "top-end",
+                    icon: "error",
+                    title: "<?= session('error') ?>",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            });
+        </script>
     <?php endif; ?>
     <div class="card shadow mb-4">
         <div class="card-header py-3">
@@ -72,7 +87,7 @@
                 <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                        <td class="center"><b>NO</b></td>
+                            <td class="center"><b>NO</b></td>
                             <th>Nama Gedung</th>
                             <th>Deskripsi Gedung</th>
                             <th>Gambar Gedung</th>

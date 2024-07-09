@@ -17,3 +17,10 @@
   opacity: 1; /* Fade in */
 }
 
+.swal2-title {
+  font-size: 20px;
+}
+
+.swal2-icon {
+  font-size: 20px;
+}

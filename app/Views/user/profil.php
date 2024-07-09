@@ -43,21 +43,36 @@
         }
     </style>
     <?php if (session()->has('success')) : ?>
-        <div id="custom-toast" style="align-items: center; text-align: center;" class="custom-toast">
-            <i class="fas fa-check-circle checkmark-icon"></i>
-            <?= session('success') ?>
-        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                Swal.fire({
+                    position: "middle",
+                    icon: "success",
+                    title: "<?= session('success') ?>",
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+            });
+        </script>
     <?php endif; ?>
     <?php if (session()->has('error')) : ?>
-        <div class="alert alert-danger">
-            <?= session('error') ?>
-        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                Swal.fire({
+                    position: "top-end",
+                    icon: "error",
+                    title: "<?= session('error') ?>",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            });
+        </script>
     <?php endif; ?>
-    <?php foreach ($model as $key => $value) {    
+    <?php foreach ($model as $key => $value) {
         if ((isset($_SESSION['userData']['id_user']) && $_SESSION['userData']['id_user'] === $value['id_user'])) { ?>
             <div class="x_content" style="display: block;">
                 <br>
-                <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">                  
+                <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
                     <div class="item form-group">
                         <label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">Nama
                         </label>
