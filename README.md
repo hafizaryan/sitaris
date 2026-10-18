@@ -1,31 +1,64 @@
-# Sistem Informasi Inventaris Laboratorium
+# SITARIS - Sistem Informasi Inventaris Laboratorium
 
-Sistem Informasi Inventaris Laboratorium adalah platform yang telah dikembangkan dengan menggunakan bahasa pemrograman PHP dan Framework CodeIgniter 4. Platform ini dirancang khusus untuk membantu pengelolaan dan pemantauan persediaan barang dan peralatan di laboratorium. Dengan berbagai fitur utama yang disediakan, sistem ini memiliki potensi untuk meningkatkan efisiensi dan produktivitas dalam operasional laboratorium.
+SITARIS adalah sistem informasi berbasis web untuk pengelolaan inventaris laboratorium, dikembangkan dengan PHP dan framework CodeIgniter 4. Sistem ini membantu pencatatan barang dan peralatan laboratorium, peminjaman dan pengembalian, peminjaman ruangan, kunjungan pengunjung, perawatan, sampai pembuatan laporan.
+
+Pengembang: Hafiz Aryan Siregar, Indah Nirwana, dan Nasya Amirah Melyani.
 
 ## Fitur Utama
 
-- **Pencatatan Data**: Melakukan pencatatan detail tentang barang dan peralatan laboratorium.
-- **Pencarian Cepat**: Memungkinkan pencarian cepat untuk menemukan informasi yang dibutuhkan.
-- **Peminjaman dan Pengembalian**: Memantau proses peminjaman dan pengembalian barang.
-- **Perawatan**: Melacak jadwal perawatan dan pemeliharaan barang dan peralatan.
-- **Pembuatan Laporan**: Membuat laporan yang informatif tentang inventaris laboratorium.
-- **Tingkat Akses Terkontrol**: Memberikan tingkat akses yang berbeda sesuai dengan peran pengguna, sehingga mereka hanya dapat mengakses bagian-bagian tertentu sesuai dengan wewenang mereka.
+- **Pencatatan data inventaris**: data barang dan peralatan laboratorium beserta data pendukung seperti gedung, ruangan, fakultas, dan program studi.
+- **Peminjaman dan pengembalian barang**: pemantauan proses pinjam dan kembali barang oleh pengguna laboratorium.
+- **Peminjaman ruangan**: pengelolaan jadwal pemakaian ruangan laboratorium.
+- **Kunjungan dan pengunjung**: pencatatan kunjungan ke laboratorium.
+- **Perawatan (maintenance)**: pelacakan jadwal perawatan dan pemeliharaan barang.
+- **Pemusnahan barang**: pencatatan barang yang dimusnahkan.
+- **Pendanaan dan referensi**: pengelolaan data pendanaan serta referensi barang.
+- **Pembuatan laporan**: laporan inventaris yang dapat dicetak ke PDF menggunakan TCPDF, serta dokumentasi pendukung.
+- **Tingkat akses terkontrol**: hak akses berbeda sesuai peran pengguna (admin dan pengguna biasa).
 
-## Teknologi yang Digunakan
+## Teknologi
 
-- HTML 5
-- CSS 3
-- Bootstrap 4
-- PHP Versi 8
-- CodeIgniter 4
-- Database MariaDB
+- PHP 8 dengan framework CodeIgniter 4
+- Database MariaDB atau MySQL
+- Bootstrap 4, HTML5, dan CSS3 untuk antarmuka
+- TCPDF untuk pembuatan dokumen PDF
+- Google API Client dan Mailjet API (terdaftar pada `composer.json`) untuk integrasi layanan surat dan Google
 
-## Manfaat
+## Struktur Folder
 
-Dengan adanya sistem ini, diharapkan pengelolaan inventaris laboratorium menjadi lebih mudah dan efisien, sehingga memungkinkan staf laboratorium untuk fokus pada tugas-tugas yang lebih penting. Selain itu, laporan yang dihasilkan oleh sistem dapat memberikan wawasan yang berharga untuk pengambilan keputusan yang lebih baik terkait dengan persediaan barang dan peralatan di laboratorium.
+- `app/` - kode aplikasi CodeIgniter 4 (Controllers, Models, Views, Config)
+- `public/` - document root dan aset publik
+- `system/` - inti framework CodeIgniter 4
+- `db/` - dump database `man_lab.sql` beserta dokumentasi PDF struktur database
+- `writable/` - folder cache, log, dan unggahan
+- `tests/` - pengujian PHPUnit
+- `spark` - perintah baris perintah CodeIgniter
 
-## Contributors
+## Persyaratan Sistem
 
-Hafiz Aryan Siregar
-Indah Nirwana
-Nasya Amirah Melyani
+- PHP 7.4 atau 8.x dengan ekstensi intl, mbstring, dan json
+- Composer
+- MariaDB atau MySQL
+
+## Cara Menjalankan
+
+1. Clone repositori ini.
+2. Instal dependensi:
+
+   ```bash
+   composer install
+   ```
+
+3. Buat database baru, lalu impor berkas `db/man_lab.sql`.
+4. Salin berkas `env` menjadi `.env`, kemudian sesuaikan nilai `CI_ENVIRONMENT`, `app.baseURL`, dan konfigurasi `database.default` (hostname, database, username, password).
+5. Jalankan server pengembangan:
+
+   ```bash
+   php spark serve
+   ```
+
+6. Buka `http://localhost:8080` di browser.
+
+## Lisensi
+
+MIT, lihat berkas `LICENSE`.
